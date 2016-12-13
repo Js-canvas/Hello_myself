@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Particle</title>
+    <style type="text/css">
+        *{margin:0;padding:0;}
+        body{background:#000;overflow:hidden;}
+    </style>
+</head>
+<body>
+    <canvas id = "mycanvas" width="1423" height = "768" ></canvas>
+</body>
+<script type="text/javascript">
+window.onload = function(){
+    var canvas = document.getElementById("mycanvas");
+    var ctx = canvas.getContext("2d");
+    var particleArr = [];
+    var speedArr = [-2,-1,0,1,2];
+    var timer;
+    var obj = {
+        init:function(){
+            for(var i = 0 ; i < 500 ; i++){
+                var particle = {
+                    posX:parseInt(Math.random()*1413+5),
+                    posY:parseInt(Math.random()*758+5),
+                    r:5,
+                    col:"rgba("+parseInt(Math.random()*255)+","+parseInt(Math.random()*255)+","+parseInt(Math.random()*255)+",0.8)"
+                };
+                particleArr.push(particle);
+            }
+            this.timer();
+        },
+        makeParticle:function(){
+            ctx.clearRect(0,0,1432,768);
+            for(var i = 0 ; i < particleArr.length; i++){
+                particle = particleArr[i];
+                ctx.beginPath();
+                ctx.fillStyle = particle.col;
+                ctx.arc(particle.posX, particle.posY,particle.r, 0, 2*Math.PI, false);
+                particle.posX+=speedArr[parseInt(Math.random()*5)];
+                particle.posY+=speedArr[parseInt(Math.random()*5)];
+                ctx.fill();
+            }
+        },
+        timer:function(){
+           timer = setInterval(this.makeParticle, 50);
+        }
+    };
+    obj.init();
+}
+</script>
+</html>

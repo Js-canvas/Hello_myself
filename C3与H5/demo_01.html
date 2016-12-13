@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>demo_01</title>
+    <style type="text/css">
+        *{margin:0;padding:0;}
+        input{
+            display: block;
+            margin:10px;
+        }
+        form:before{
+            display: inline-block;
+            content:"Hi";
+        }
+    </style>
+</head>
+<body>
+<form action="">
+    <input type="tel" name="tel" value="" placeholder="请输入手机号" required autocomplete="on">
+    <input type="email" name="" value="" placeholder="邮箱" required autofocus>
+    <input type="text" name="" value="" placeholder="用户名" pattern = "[a-zA-Z][a-zA-Z0-9_]{6,12}" title="开头为字母，只允许字母数字下划线" required>
+    <input type="text" name="" value="" placeholder="密码" required>
+    <input type="submit" name="" value="提交">
+</form>
+</body>
+</html>

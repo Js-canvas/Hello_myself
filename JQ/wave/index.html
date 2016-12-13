@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>wave</title>	
+	</head>
+	<style>
+		
+	</style>
+	<script src ="jquery-3.0.0.js"></script>
+	<body>
+		<script>
+			$(document).ready(function(){
+				$(document).mousemove(function(e){
+					if($("div").length<100){
+						var e = e||event;
+						var disX = e.clientX;
+						var disY = e.clientY;
+						var oDiv = document.createElement("div");
+						$(oDiv).css({
+							"width":"0",
+							"height":"0",
+							"border":"1px solid #000",
+							"position":"absolute",
+							"left":disX+"px",
+							"top":disY+"px"
+						});
+						$(oDiv).animate({
+							"width":"500px",
+							"height":"500px",
+							"border-radius":"250px",
+							"left":disX-250+"px",
+							"top":disY-250+"px"
+						},10000,function(){
+							oDiv.parentNode.removeChild(oDiv)
+						});
+						$(document.body).append(oDiv);			
+					}								
+				})
+				
+			})
+		</script>
+	</body>
+</html>

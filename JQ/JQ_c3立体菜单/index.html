@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>menu</title>
+		<style>
+			*{margin:0;padding:0;}
+			li,ul{list-style:none;}
+			body{-webkit-perspective:1200px;}
+			#box{
+				width:600px;
+				height:500px;
+				margin:30px auto;
+				position:relative;
+				transform-style: preserve-3d
+			}
+			#fir_ul{
+				width:500px;
+				height:40px;
+				position:absolute;
+				left:50px;
+				top:20px;				
+			}
+			.fir_li{
+				width:100px;
+				height:40px;
+				background:#000;
+				color:#fff;
+				float:left;
+				margin:0 10px;
+				text-align:center;
+				line-height:40px;
+				border-radius: 5px;				
+			}
+			.sec_ul{
+				position:absolute;
+				
+				top:40px;
+				width:100px;
+				height:0px;
+				overflow: hidden;
+			}
+			.sec_li{
+				margin-left: 10px;
+				width:80px;
+				height:40px;
+				line-height:40px;
+				background: #000;	
+				border: 1px solid #fff;
+				color:#fff;
+				border-radius: 5px;
+				position: relative;
+			}			
+		</style>
+	</head>
+	<script src="../js/jquery-3.0.0.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".fir_li").mouseover(function(){
+				$(this).children("ul").stop().animate({"height":"265px"}).parent("li").siblings().children("ul").stop().animate({"height":"0px"})
+			})
+			$(".fir_li").mouseout(function(){
+				$(this).children("ul").stop().animate({"height":"0px"})
+			})  
+			$(".sec_li").mouseover(function(){
+				$(this).css({
+					"transform":"translateZ(20px)",	
+					"left":"5px"
+				}).siblings().css({
+					"transform":"translateZ(0px)",	
+					"left":"0px"
+				});
+				$(this).prev("li").css({
+					"transform":"rotateX(-30deg)",
+				})
+				$(this).next("li").css({
+					"transform":"rotateX(30deg)",
+				})
+			});
+			$(".sec_li").mouseout(function(){
+				$(this).css({
+					"transform":"translateZ(0px)",	
+					"left":"0px"
+				});
+				$(this).prev("li").css({
+					"transform":"rotateX(0deg)",
+				})
+				$(this).next("li").css({
+					"transform":"rotateX(0deg)",
+				})
+			})
+		})
+	</script>
+	<body>
+		<div id = box>
+			<ul id = "fir_ul">
+				<li class = "fir_li">一级菜单
+					<ul class="sec_ul">
+						<li class = "sec_li">二级菜单</li>
+						<li class = "sec_li">二级菜单</li>
+						<li class = "sec_li">二级菜单</li>
+						<li class = "sec_li">二级菜单</li>
+						<li class = "sec_li">二级菜单</li>
+						<li class = "sec_li">二级菜单</li>
+					</ul>
+				</li>				
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css">
+        div{
+            margin-top:50px;
+            width:85px;
+            height:60px;
+            background:url('1.png') no-repeat 0 0;
+            -webkit-animation: move .9s infinite   ;
+            -o-animation: move .9s infinite ;
+            animation: move .9s infinite step-end;
+        }
+        @keyframes move{
+            0%{background-position:0 0 ;}
+            20%{background-position:-89px 0 ;}
+            40%{background-position:-180px 0 ;}
+            60%{background-position:-270px 0 ;}
+            80%{background-position:-360px 0 ;}
+            100%{background-position:-448px 0 ;}
+        }
+        .slow{
+            animation: move 1s infinite step-end;
+        }
+        .normal{
+            animation: move .5s infinite step-end;
+        }
+        .fast{
+             animation: move .1s infinite step-end;
+        }
+    </style>
+</head>
+<body>
+    <div id="pic"></div>
+    <button class = "btn1">slow</button>
+    <button class = "btn2">normal</button>
+    <button class = "btn3">fast</button>
+
+</body>
+<script src="../JQ/js/jquery-3.0.0.js"></script>
+<script>
+    $(".btn1").click(function(){
+        $("#pic").addClass('slow').removeClass("normal fast")
+    })
+    $(".btn2").click(function(){
+        $("#pic").addClass('normal').removeClass("slow fast")
+    })
+    $(".btn3").click(function(){
+        $("#pic").addClass('fast').removeClass("normal slow")
+    })
+</script>
+</html>
