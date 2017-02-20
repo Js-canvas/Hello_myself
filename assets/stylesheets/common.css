@@ -2,6 +2,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, 
 .clear{height:1px;overflow:hidden;clear:both;}
 a,img{border:0;}
 a{text-decoration: none;}
+a:focus{text-decoration: none;}
 li{list-style-type:none;}
 input,button:focus{outline:none;}
 body,html{height:100%;}
