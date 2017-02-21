@@ -32,7 +32,8 @@
                     <a href="javascript:;" class="changeMoney">授信记录</a>
                 </div>
             </div>
-            <div class="tapPic">
+            <!--选项卡表格-->
+            <div class="tabPic">
                 <ul id="myTab" class="nav nav-tabs">
                     <li class="active"><a href="#day" data-toggle="tab">日</a></li>
                     <li><a href="#month" data-toggle="tab">月</a></li>
@@ -41,9 +42,9 @@
                 <div id="myTabContent" class="tab-content">
                     <div class="tab-pane fade in active" id="day">
                         <ul id="mySecTabDay" class="nav nav-tabs">
-                            <li class="active"><a href="#dayOrder" data-toggle="tab">订单统计</a></li>
-                            <li><a href="#dayHost" data-toggle="tab">客户统计</a></li>
-                            <li><a href="#dayNum" data-toggle="tab">订单数量</a></li>
+                            <li class="active" id="do"><a href="#dayOrder" data-toggle="tab">订单统计</a></li>
+                            <li id="dh"><a href="#dayHost" data-toggle="tab">客户统计</a></li>
+                            <li id="dn"><a href="#dayNum" data-toggle="tab">订单数量</a></li>
                         </ul>
                         <div id="mySecTabContentDay" class="tab-content">
                             <div class="tab-pane fade in active" id="dayOrder">
@@ -64,9 +65,15 @@
                             <li><a href="#monthNum" data-toggle="tab">订单数量</a></li>
                         </ul>
                         <div id="myTabContentMonth" class="tab-content">
-                            <div class="tab-pane fade in active" id="monthOrder"></div>
-                            <div class="tab-pane fade" id="monthHost"></div>
-                            <div class="tab-pane fade" id="monthNum"></div>
+                            <div class="tab-pane fade in active" id="monthOrder">
+                                <div id="monthOrderChart"></div>
+                            </div>
+                            <div class="tab-pane fade" id="monthHost">
+                                <div id="monthHostChart"></div>
+                            </div>
+                            <div class="tab-pane fade" id="monthNum">
+                                <div id="monthNumChart"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="tab-pane fade in" id="year">
@@ -76,17 +83,29 @@
                             <li><a href="#yearNum" data-toggle="tab">订单数量</a></li>
                         </ul>
                         <div id="mySecTabContentYear" class="tab-content">
-                            <div class="tab-pane fade in active" id="yearOrder"></div>
-                            <div class="tab-pane fade" id="yearHost"></div>
-                            <div class="tab-pane fade" id="yearNum"></div>
+                            <div class="tab-pane fade in active" id="yearOrder">
+                                <div id="yearOrderChart"></div>
+                            </div>
+                            <div class="tab-pane fade" id="yearHost">
+                                <div id="yearHostChart"></div>
+                            </div>
+                            <div class="tab-pane fade" id="yearNum">
+                                <div id="yearNumChart"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-
+            <!--list-->
+            <div class="listNum">
+                <ul class="listUl">
+                    <li>
+                        <span>日期</span>
+                        <span>订单金额</span>
+                        <span>环比日上</span>
+                    </li>
+                </ul>
+            </div>
         </div>
         <!--footer-->
         <div class="footer">
