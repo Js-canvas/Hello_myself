@@ -4,7 +4,11 @@ a,img{border:0;}
 a{text-decoration: none;}
 a:focus{text-decoration: none;}
 li{list-style-type:none;}
-input,button:focus{outline:none;}
+input,button,textarea:focus{outline:none;}
 body,html{height:100%;}
 i,em{font-style: normal}
 b,strong{font-weight: normal}
+a:link{color:#000;}
+a:visited{color:#000;}
+a:hover{color:#000;}
+a:active{color:#000;}
