@@ -82,7 +82,7 @@ $(document).ready(function(){
         }
 
         if(flag){
-            window.location.href = "sup_detail.html"
+            window.location.href = "sup_perfectInfo.html"
         }else{
             alert("信息填写不正确");
         }

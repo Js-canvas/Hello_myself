@@ -9,6 +9,7 @@
     position:absolute;
     top:41px;
     bottom:0px;
+    overflow-y: scroll;
 }
 .header a{
     display: inline-block;
@@ -28,71 +29,188 @@
     font-size: 13px;
     color:#fff;
 }
-.registerInp{
-    width:77%;
-    padding-left:3%;
-    height:40px;
-    margin:0 10% 10px 10%;
-    font-size: 12px;
-    display: block;
-    border:1px solid #666;
-    border-radius: 2px;
-    border-color:rgba(102,102,102,0.6) ;
+/*content*/
+.orderStateBox,.orderInfoBox,.orderDetailBox,.orderInfoBox{
+    width: 100%;
+    height: auto;
 }
-#phoneNum{
-    margin-bottom:5px;
-    color:rgba(0,0,0,0.6);
-    background: rgba(128,128,128,0.6);
+/*第一部分*/
+.orderStateBox{
+    text-align: center;
+    border-bottom: 1px solid #666666;
+    border-color:rgba(102,102,102,0.6);
 }
-.showMes{
-    clear: both;
-    width:80%;
-    height:11px;
-    font-size: 11px;
-    line-height: 11px;
-    margin:0 10% 10px 10%;
-    color:rgba(0,0,0,0.6);
-}
-.proMes{
-    width:80%;
-    height:12px;
-    line-height: 12px;
-    font-size: 12px;
-    margin:5px 10%;
-}
-.adsInp{
-    width:34.5%;
-    padding-left:3%;
-    height:40px;
+.txt1,.state{
     display: inline-block;
-    border:1px solid #666;
-    margin-bottom:5px;
-    border-radius: 2px;
-    border-color:rgba(102,102,102,0.6) ;
+    font:15px/15px '微软雅黑';
+    width: auto;
+    height: 15px;
+    margin-top:21px;
 }
-#province{
-    float: left;
-    margin-left: 10%;
+.state{
+    color:#cd2f2f;
 }
-#city{
-    float: right;
-    margin-right:10%;
+.txt2,.txt3{
+    font:12px/12px '微软雅黑';
+    height: 12px;
+    width: auto;
+    margin-top:10px;
+    display: inline-block;
 }
-.okBtn{
-    width:80%;
-    height:42px;
-    color:#fff;
-    background: #ff9900;
-    border-radius: 2px;
-    text-align: center;
-    margin:0 10%;
+.txt3{
+    margin-top:20px;
+}
+.stateBtn{
+    width: 100%;
+    height: 30px;
+    margin-top:23px;
+}
+.disagree,.agree{
+    width: 16%;
+    height: 30px;
     border:0;
-    font-size: 18px;
+    border-radius: 2px;
+    color: #ffffff;
+    font-size: 10px;
 }
-.argeeMes{
-    width:100%;
-    height:50px;
-    color:#00ffff;
-    text-align: center;
-    line-height: 50px;
+.disagree{
+    margin-right: 7.2%;
 }
+.agree{
+    margin-left: 7.2%;
+    background: #ff9900;
+}
+.dgIcon{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border:1px solid #cd2f2f;
+    margin-left: 6px;
+    margin-top:1px;
+    position: relative;
+    float: right;
+}
+.dgIcon>img{
+    width: 14px;
+    height: 12px;
+    display: inline-block;
+    line-height: 10px;
+    position: absolute;
+    left:-2px;
+    top:-2px;
+}
+.txt4,.txt5{
+    color:#ff9900;
+    font:12px/12px '微软雅黑';
+    height: 12px;
+    width: auto;
+    margin-top:9px;
+}
+.txt5{
+    margin-bottom:15px;
+}
+/*第二部分*/
+.orderInfoBox{
+    border-bottom: 1px solid #666666;
+    border-color:rgba(102,102,102,0.6);
+}
+.orderInfoBox>div>span{
+    display: inline-block;
+    width: auto;
+    height: 12px;
+    font:12px/12px '微软雅黑';
+    margin-top:10px;
+}
+.tit1,.tit2,.tit3{
+    margin-left:4%;
+}
+.contentSup{
+    width: 80px;
+    height: 30px;
+    background: #ff9900;
+    border:0;
+    color: #ffffff;
+    float: right;
+    margin-right:4%;
+    border-radius: 2px;
+    font-size: 10px;
+}
+.cle{
+    clear: both;
+}
+.phoneNum{
+    float: right;
+    margin-right:4%;
+}
+.tit3,.repayDate{
+    margin-top:5px;
+    margin-bottom:10px;
+}
+.sumMoney{
+    color:#cd2f2f;
+}
+/*第三部分*/
+.orderDetailBox{
+    margin-top:15px;
+    border-top: 1px solid #666666;
+    border-color:rgba(102,102,102,0.6);
+}
+.orderDetailBox>ul{
+    border-bottom: 1px solid #666666;
+    border-color:rgba(102,102,102,0.6);
+}
+.orderDetailBox>ul>li{
+    border-bottom: 1px dashed #666666;
+    border-color:rgba(102,102,102,0.6);
+}
+.mes1,.mes2,.mes3,.mes4{
+    font:12px/12px '微软雅黑';
+    height: 12px;
+    width: auto;
+    margin-left:4%;
+    margin-top:10px;
+    display: inline-block;
+}
+.mes4{
+    margin-bottom: 10px;
+}
+.mes5,.mes6{
+    font:12px/12px '微软雅黑';
+    display: inline-block;
+    height: 12px;
+    width: auto;
+    margin:10px 4%;
+}
+.proName,.proPrice,.proNum,.proSum,.transMoney,.sumMoney{
+    display: inline-block;
+    font:12px/12px '微软雅黑';
+    height: 12px;
+    width: auto;
+    float: right;
+    margin-right: 4%;
+    margin-top:10px;
+}
+.transMoney,.sumMoney{
+    margin-top:10px;
+}
+/*第四部分*/
+.orderInfoBox{
+    border:0;
+    border-top: 1px solid #666666;
+    border-color:rgba(102,102,102,0.6);
+    padding-top:10px;
+}
+.info1,.info2,.info3,.info4,.orderCode,.orderUser,.orderTime,.orderWay{
+    font:12px/12px '微软雅黑';
+    color:#666;
+    height: 12px;
+    width: auto;
+    margin:10px 0 0 4%;
+}
+.info4{
+    margin-bottom: 20px;
+}
+
+
+
+

@@ -31,7 +31,7 @@ $(document).ready(function(){
                         str+="<i class='icon'><img src='../images/uncheck.png'></i></li>"
                     }
                     $ul.append(str);
-                    this.chooseBank();
+                    this.chooseBank().bind(this);
                 },
                 error:function(err){
                     alert("网络异常")
