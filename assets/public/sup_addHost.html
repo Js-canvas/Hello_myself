@@ -10,38 +10,43 @@
 <body>
     <div id="supAddHost">
         <!--header-->
-        <div class="header">
-            <a href="javascript:;" class="reback">&lt;</a>
-            <span class="tit">添加新客户</span>
+        <div class="header bg">
+            <a href="javascript:;" class="reback txtcen">&lt;</a>
+            <span class="tit txtcen">添加新客户</span>
         </div>
         <!--content-->
         <div class="content">
             <ul class="list">
-                <li>
+                <li class="borBom">
                     <span>客户名称</span>
                     <input type="text" placeholder="请填写客户的名称或公司/店名" id="hostName">
                     <i><img src="../images/pen.png" alt=""></i>
                 </li>
-                <li>
+                <li class="borBom">
+                    <span>客户手机</span>
+                    <input type="text" placeholder="请填写客户的手机号码" id="hostPhone">
+                    <i><img src="../images/pen.png" alt=""></i>
+                </li>
+                <li class="borBom">
                     <span>授信额度</span>
                     <input type="text" placeholder="请给客户推荐可透支额度" id="creditMoney">
                     <b>万</b>
                     <i class="icon"><img src="../images/wenhao.png" alt=""></i>
                 </li>
-                <li>
+                <li class="borBom">
                     <span>地区</span>
-                    <div class="box1">
-                        <label for="province" class="downIcon">▼</label>
+                    <div class="box1 bor borR floatL">
+                        <label for="province" class="downIcon txtcen">▼</label>
                         <select name="province" id="province"></select>
                     </div>
-                    <div class="box2">
-                        <label for="city" class="downIcon">▼</label>
+                    <div class="box2 bor borR floatL">
+                        <label for="city" class="downIcon txtcen">▼</label>
                         <select name="city" id="city"></select>
                     </div>
                     <i><img src="../images/pen.png" alt=""></i>
                 </li>
             </ul>
-            <button class="okBtn">保存并邀请</button>
+            <button class="okBtn btnStyle">保存并邀请</button>
         </div>
         <!--透明层-->
         <div id="opacityDiv"></div>

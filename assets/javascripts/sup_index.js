@@ -424,7 +424,7 @@ $(document).ready(function(){
                     alert("数据加载失败");
                     break;
             }
-            $(".listUl").append("<li><span>"+date+"</span><span>"+num+"</span><span class='"+dataClass+"'><b>"+percent+"</b><img src='"+imgUrl+"'></span></li>");
+            $(".listUl").append("<li class='borBom'><span>"+date+"</span><span>"+num+"</span><span class='"+dataClass+"'><b>"+percent+"</b><img src='"+imgUrl+"'></span></li>");
         }
     }
     oList.init();

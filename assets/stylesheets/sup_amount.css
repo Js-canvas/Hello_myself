@@ -1,7 +1,6 @@
 #supAmount .header{
     width:100%;
     height:41px;
-    background: #ff9900;
 }
 #supAmount .content{
     width:100%;
@@ -16,7 +15,6 @@
     width:10%;
     height:41px;
     line-height: 41px;
-    text-align: center;
     font-size: 13px;
     color:#fff;
 }
@@ -24,7 +22,6 @@
     display: inline-block;
     width:80%;
     height:41px;
-    text-align: center;
     line-height: 41px;
     font-size: 13px;
     color:#fff;
@@ -34,8 +31,6 @@
 .circle{
     width: 100%;
     height: 160px;
-    border-bottom:1px solid #666;
-    border-color: rgba(102,102,102,0.6);
     position: relative;
 }
 #myStat{
@@ -50,20 +45,16 @@
     width: 120px;
     height: 12px;
     font:12px/12px '微软雅黑';
-    color: #ff9900;
     position: absolute;
     left:52%;
     top:60%;
     margin-left:-60px;
-    text-align: center;
-
 }
 .overMoney{
     display: block;
     width: 120px;
     height: 14px;
     font:14px/14px '微软雅黑';
-    color: #ff9900;
     position: absolute;
     left:52%;
     top:50%;
@@ -91,8 +82,6 @@
 .infoBox>p{
     width: 100%;
     height: 43px;
-    border-bottom:1px solid #666;
-    border-color: rgba(102,102,102,0.6);
     display: flex;
 }
 .infoBox>p>i{
@@ -100,7 +89,6 @@
     margin-top:15px;
     display: inline-block;
     line-height: 12px;
-    text-align: center;
 }
 .tit2{
     flex: 4;
@@ -134,14 +122,8 @@
     flex: 4;
 }
 .okBtn{
-    width: 80%;
-    height: 40px;
     margin:30px 10%;
-    background: #ff9900;
-    border:0;
     border-radius: 2px;
-    color: #ffffff;
-    font-size:14px;
 }
 /*申请记录*/
 .appRecord{
@@ -154,15 +136,11 @@
     height: 37px;
     font:13px/37px '微软雅黑';
     padding-left:10%;
-    border-bottom:1px solid #666;
-    border-color: rgba(102,102,102,0.6);
 }
 .listHeader{
     width: 100%;
     height: 29px;
     font:11px/29px '微软雅黑';
-    border-bottom:1px solid #666;
-    border-color: rgba(102,102,102,0.6);
     display: flex;
 }
 .listHeader>span{

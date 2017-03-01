@@ -7,33 +7,32 @@
     <link rel="stylesheet" href="../stylesheets/common.css">
     <link rel="stylesheet" href="../stylesheets/sup_amount.css">
     <link href="//cdn.bootcss.com/circliful/1.0.1/css/jquery.circliful.min.css" rel="stylesheet">
-
 </head>
 <body>
     <div id="supAmount">
         <!--header-->
-        <div class="header">
-            <a href="javascript:;" class="reback">&lt;</a>
-            <span class="tit">提额申请</span>
+        <div class="header bg">
+            <a href="javascript:;" class="reback txtcen">&lt;</a>
+            <span class="tit txtcen">提额申请</span>
         </div>
         <!--content-->
         <div class="content">
-            <div class="circle">
+            <div class="circle borBom">
                 <div id="myStat">
-                    <p class="overMoney">¥990000.00</p>
-                    <p class="info">剩余授信额度</p>
+                    <p class="overMoney fontMain">¥990000.00</p>
+                    <p class="info txtcen fontMain">剩余授信额度</p>
                 </div>
                 <a href="sup_creditRecord.html">授信记录</a>
             </div>
             <div class="infoBox">
-                <p><b class="tit2">当前授信总额度:</b><span class="sumAmount">¥1000000.00</span><i class="icon"><img src="../images/wenhao.png"
+                <p class="borBom"><b class="tit2">当前授信总额度:</b><span class="sumAmount">¥1000000.00</span><i class="icon txtcen"><img src="../images/wenhao.png"
                                                                                                               alt=""></i></p>
-                <p><b class="tit2">提升授信总额度至：</b><input type="text" placeholder="请输入你想提升总额度至" id="advAmount"><i>万</i></p>
-                <button class="okBtn">提交申请</button>
+                <p class="borBom"><b class="tit2">提升授信总额度至：</b><input type="text" placeholder="请输入你想提升总额度至" id="advAmount"><i class="txtcen">万</i></p>
+                <button class="okBtn btnStyle">提交申请</button>
             </div>
             <div class="appRecord">
-                <p class="tit3">申请记录</p>
-                <p class="listHeader"><span>授信日期</span><span>状态</span><span>申请额度</span></p>
+                <p class="tit3 borBom">申请记录</p>
+                <p class="listHeader borBom"><span>授信日期</span><span>状态</span><span>申请额度</span></p>
                 <ul>
                     <!--数据模板-->
                     <li><span>2017.7.1</span><span>18612341234</span><span>¥1000000.00</span></li>

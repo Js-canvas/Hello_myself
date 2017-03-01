@@ -9,3 +9,57 @@ body,html{height:100%;}
 i,em{font-style: normal}
 b,strong{font-weight: normal}
 a:link,a:visited,a:hover,a:active{color:#000;}
+
+.fontRed{
+    color:#cd2f2f;
+}
+.fontMain{
+    color:#ff9900!important;
+}
+.bg{
+    background: #ff9900;
+}
+.borTop{
+    border-top:1px solid #666666;
+    border-color: rgba(102,102,102,0.6);
+}
+.borBom{
+    border-bottom:1px solid #666666;
+    border-color: rgba(102,102,102,0.6);
+}
+.borBomD{
+    border-bottom:1px dashed #666666;
+    border-color: rgba(102,102,102,0.2);
+}
+.bor{
+    border:1px solid #666666;
+    border-color: rgba(102,102,102,0.6);
+}
+.font11{
+    font:11px/11px '微软雅黑';
+}
+.floatR{
+    float:right;
+}
+.floatL{
+    float:left;
+}
+.clearB{
+    clear:both;
+}
+.borR{
+    border-radius: 2px;
+}
+.btnStyle{
+    width: 80%;
+    height: 40px;
+    background: #ff9900;
+    border:0;
+    border-radius: 2px;
+    color: #ffffff;
+    font-size: 14px;
+    margin:0 10%;
+}
+.txtcen{
+    text-align: center;
+}

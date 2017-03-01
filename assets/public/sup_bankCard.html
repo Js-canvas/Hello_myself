@@ -10,9 +10,9 @@
 <body>
     <div id="supBankCard">
         <!--header-->
-        <div class="header">
-            <a href="javascript:;" class="reback">&lt;</a>
-            <span class="tit">银行卡绑定</span>
+        <div class="header bg">
+            <a href="javascript:;" class="reback txtcen">&lt;</a>
+            <span class="tit txtcen">银行卡绑定</span>
         </div>
         <!--content-->
         <div class="content">
@@ -20,30 +20,30 @@
             <div class="inpList">
                 <div class="inpBox">
                     <label for="userName">账户:</label>
-                    <input type="text" id="userName" class="inp" readonly name="userName" value="13212341234">
+                    <input type="text" id="userName" class="inp bor borR" readonly name="userName" value="13212341234">
                 </div>
                 <div class="inpBox">
                     <label for="name">真实姓名:</label>
-                    <input type="text" id="name" class="inp" name="name" placeholder="请保证填写的是真实姓名" value="">
-                    <i class="icon" id="nameQusetion">?</i>
+                    <input type="text" id="name" class="inp bor borR" name="name" placeholder="请保证填写的是真实姓名" value="">
+                    <i class="icon txtcen" id="nameQusetion">?</i>
                 </div>
                 <div class="inpBox">
                     <a class="aBox" href="sup_bankList.html">
                         <label for="bank">开户银行:</label>
-                        <input type="text" id="bank" class="inp" name="bank" placeholder="目前支持收款的银行" readonly value="">
-                        <i class="icon">&gt;</i>
+                        <input type="text" id="bank" class="inp bor borR" name="bank" placeholder="目前支持收款的银行" readonly value="">
+                        <i class="icon txtcen">&gt;</i>
                     </a>
                 </div>
                 <div class="inpBox">
                     <label for="bankNum">银行卡号:</label>
-                    <input type="text" id="bankNum" class="inp" name="bankNum" placeholder="请填写与您姓名一致的银行卡" value="">
+                    <input type="text" id="bankNum" class="inp bor borR" name="bankNum" placeholder="请填写与您姓名一致的银行卡" value="">
                 </div>
                 <div class="inpBox">
                     <label for="phoneNum">关联手机:</label>
-                    <input type="text" id="phoneNum" class="inp" name="phoneNum" placeholder="请填写与此卡绑定的手机" value="">
+                    <input type="text" id="phoneNum" class="inp bor borR" name="phoneNum" placeholder="请填写与此卡绑定的手机" value="">
                 </div>
             </div>
-            <button class="okBtn">保存信息</button>
+            <button class="okBtn btnStyle">保存信息</button>
         </div>
         <!--透明层-->
         <div id="opacityDiv"></div>

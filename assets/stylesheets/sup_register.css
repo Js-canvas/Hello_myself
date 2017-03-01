@@ -1,7 +1,6 @@
 #supRegister .header{
     width:100%;
     height:41px;
-    background: #ff9900;
 }
 #supRegister .content{
     width:100%;
@@ -16,7 +15,6 @@
     width:10%;
     height:41px;
     line-height: 41px;
-    text-align: center;
     font-size: 13px;
     color:#fff;
 }
@@ -24,11 +22,11 @@
     display: inline-block;
     width:80%;
     height:41px;
-    text-align: center;
     line-height: 41px;
     font-size: 13px;
     color:#fff;
 }
+/*content*/
 .proMes{
     width:80%;
     margin:5px 10%;
@@ -40,9 +38,6 @@
     margin:0 10% 10px 10%;
     padding-left:3%;
     display: block;
-    border:1px solid #666;
-    border-radius: 2px;
-    border-color:rgba(102,102,102,0.6) ;
     font-size: 12px;
 }
 #messageNum{
@@ -69,13 +64,6 @@
     border-left: 0;
 }
 .okBtn{
-    width:80%;
-    height:42px;
-    color:#fff;
-    background: #ff9900;
-    border-radius: 2px;
-    text-align: center;
     margin:30px 10%;
-    border:0;
     font-size: 18px;
 }

@@ -1,7 +1,6 @@
 #supDetail .header{
     width:100%;
     height:41px;
-    background: #ff9900;
 }
 #supDetail .content{
     width:100%;
@@ -16,7 +15,6 @@
     width:10%;
     height:41px;
     line-height: 41px;
-    text-align: center;
     font-size: 13px;
     color:#fff;
 }
@@ -24,31 +22,22 @@
     display: inline-block;
     width:80%;
     height:41px;
-    text-align: center;
     line-height: 41px;
     font-size: 13px;
     color:#fff;
 }
 /*content*/
-.orderStateBox,.orderInfoBox,.orderDetailBox,.orderInfoBox{
+.orderStateBox,.orderInfoBox,.orderDetailBox,.orderMesBox{
     width: 100%;
     height: auto;
 }
 /*第一部分*/
-.orderStateBox{
-    text-align: center;
-    border-bottom: 1px solid #666666;
-    border-color:rgba(102,102,102,0.6);
-}
 .txt1,.state{
     display: inline-block;
     font:15px/15px '微软雅黑';
     width: auto;
     height: 15px;
     margin-top:21px;
-}
-.state{
-    color:#cd2f2f;
 }
 .txt2,.txt3{
     font:12px/12px '微软雅黑';
@@ -69,7 +58,6 @@
     width: 16%;
     height: 30px;
     border:0;
-    border-radius: 2px;
     color: #ffffff;
     font-size: 10px;
 }
@@ -78,7 +66,6 @@
 }
 .agree{
     margin-left: 7.2%;
-    background: #ff9900;
 }
 .dgIcon{
     display: inline-block;
@@ -110,10 +97,6 @@
     margin-bottom:15px;
 }
 /*第二部分*/
-.orderInfoBox{
-    border-bottom: 1px solid #666666;
-    border-color:rgba(102,102,102,0.6);
-}
 .orderInfoBox>div>span{
     display: inline-block;
     width: auto;
@@ -127,41 +110,21 @@
 .contentSup{
     width: 80px;
     height: 30px;
-    background: #ff9900;
     border:0;
     color: #ffffff;
-    float: right;
     margin-right:4%;
-    border-radius: 2px;
     font-size: 10px;
 }
-.cle{
-    clear: both;
-}
 .phoneNum{
-    float: right;
     margin-right:4%;
 }
 .tit3,.repayDate{
     margin-top:5px;
     margin-bottom:10px;
 }
-.sumMoney{
-    color:#cd2f2f;
-}
 /*第三部分*/
 .orderDetailBox{
     margin-top:15px;
-    border-top: 1px solid #666666;
-    border-color:rgba(102,102,102,0.6);
-}
-.orderDetailBox>ul{
-    border-bottom: 1px solid #666666;
-    border-color:rgba(102,102,102,0.6);
-}
-.orderDetailBox>ul>li{
-    border-bottom: 1px dashed #666666;
-    border-color:rgba(102,102,102,0.6);
 }
 .mes1,.mes2,.mes3,.mes4{
     font:12px/12px '微软雅黑';
@@ -194,10 +157,7 @@
     margin-top:10px;
 }
 /*第四部分*/
-.orderInfoBox{
-    border:0;
-    border-top: 1px solid #666666;
-    border-color:rgba(102,102,102,0.6);
+.orderMesBox{
     padding-top:10px;
 }
 .info1,.info2,.info3,.info4,.orderCode,.orderUser,.orderTime,.orderWay{

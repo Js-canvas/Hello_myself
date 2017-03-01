@@ -1,7 +1,6 @@
 #register .header{
     width:100%;
     height:41px;
-    background: #ff9900;
 }
 #register .content{
     width:100%;
@@ -15,7 +14,6 @@
     width:10%;
     height:41px;
     line-height: 41px;
-    text-align: center;
     font-size: 13px;
     color:#fff;
 }
@@ -23,17 +21,16 @@
     display: inline-block;
     width:80%;
     height:41px;
-    text-align: center;
     line-height: 41px;
     font-size: 13px;
     color:#fff;
 }
+/*content*/
 .txt1{
     width:100%;
     height:12px;
     font-size: 12px;
     margin:16px 0 18px 0 ;
-    text-align: center;
 }
 .txt2{
     width:80%;
@@ -53,7 +50,6 @@
     line-height: 18px;
     font-size: 18px;
     margin:42px 0 ;
-    text-align: center;
 }
 .register{
     display: block;
@@ -61,9 +57,6 @@
     height:40px;
     line-height: 40px;
     color:#fff;
-    background: #ff9900;
-    border-radius: 2px;
-    text-align: center;
     margin:0 10%;
     border:0;
     font-size: 14px;

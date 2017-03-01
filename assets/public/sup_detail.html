@@ -11,42 +11,45 @@
 <body>
     <div id="supDetail">
         <!--header-->
-        <div class="header">
-            <a href="javascript:;" class="reback">&lt;</a>
-            <span class="tit">订单详情</span>
+        <div class="header bg">
+            <a href="javascript:;" class="reback txtcen">&lt;</a>
+            <span class="tit txtcen">订单详情</span>
         </div>
         <!--content-->
         <div class="content">
-            <div class="orderStateBox">
-                <p class="txt1">订单状态：</p><span class="state">待确认</span>
+            <!--第一部分-->
+            <div class="orderStateBox borBom txtcen">
+                <p class="txt1">订单状态：</p><span class="state fontRed">待确认</span>
                 <p class="txt2">请确认采购商的下单请求，48小时0分后自动关闭订单</p>
                 <div class="stateBtn">
-                    <button class="disagree">不同意</button>
-                    <button class="agree">确认</button>
+                    <button class="disagree borR">不同意</button>
+                    <button class="agree borR bg">确认</button>
                 </div>
                 <div>
                     <p class="txt3">我已阅读并同意签署以下内容<i class="dgIcon" ><img src="../images/checked.png" alt=""></i></p>
                 </div>
-                <p class="txt4 cle">《购销合同》</p>
+                <p class="txt4 clearB">《购销合同》</p>
                 <p class="txt5">《应收账款债权转让通知书》</p>
             </div>
-            <div class="orderInfoBox">
+            <!--第二部分-->
+            <div class="orderInfoBox borBom">
                 <div>
-                    <span class="tit1">收货人：</span><span class="companyName">兄弟连饭馆</span><span class="phoneNum">13212341234</span>
+                    <span class="tit1">收货人：</span><span class="companyName">兄弟连饭馆</span><span class="phoneNum floatR">13212341234</span>
                 </div>
                 <div>
                     <span class="tit2">收货地址：</span><span class="ads">北京市昌平去XXX路XXX院</span>
                 </div>
                 <div>
-                    <button class="contentSup">联系采购商</button>
+                    <button class="contentSup floatR bg borR">联系采购商</button>
                 </div>
-                <div class="cle">
+                <div class="clearB">
                     <span class="tit3">还款周期：</span><span class="repayDate">30天</span>
                 </div>
             </div>
-            <div class="orderDetailBox">
-                <ul>
-                    <li>
+            <!--第三部分-->
+            <div class="orderDetailBox borTop">
+                <ul class="borBom">
+                    <li class="borBomD">
                         <div class="order">
                             <div>
                                 <span class="mes1">商品名称：</span><span class="proName">茅台酒500ml</span>
@@ -63,7 +66,7 @@
 
                         </div>
                     </li>
-                    <li>
+                    <li class="borBomD">
                         <div class="order">
                             <div>
                                 <span class="mes1">商品名称：</span><span class="proName">茅台酒500ml</span>
@@ -85,10 +88,11 @@
                     </div>
                 </ul>
                 <div>
-                    <b class="mes6">订单金额</b><b class="sumMoney">¥10100.00</b>
+                    <b class="mes6">订单金额</b><b class="sumMoney fontRed">¥10100.00</b>
                 </div>
             </div>
-            <div class="orderInfoBox">
+            <!--第四部分-->
+            <div class="orderMesBox borTop">
                 <div>
                     <span class="info1">订单编号：</span><span class="orderCode">DJ.20161218.001</span>
                 </div>
