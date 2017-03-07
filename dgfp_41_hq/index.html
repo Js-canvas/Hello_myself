@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap Admin</title>
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+    
+    <link rel="stylesheet" type="text/css" href="stylesheets/theme.css">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
+
+    <script src="lib/jquery-1.7.2.min.js" type="text/javascript"></script>
+
+    <!-- Demo page code -->
+
+    <style type="text/css">
+        #line-chart {
+            height:300px;
+            width:800px;
+            margin: 0px auto;
+            margin-top: 1em;
+        }
+        .brand { font-family: georgia, serif; }
+        .brand .first {
+            color: #ccc;
+            font-style: italic;
+        }
+        .brand .second {
+            color: #fff;
+            font-weight: bold;
+        }
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <!--[if lt IE 7 ]> <body class="ie ie6"> <![endif]-->
+  <!--[if IE 7 ]> <body class="ie ie7 "> <![endif]-->
+  <!--[if IE 8 ]> <body class="ie ie8 "> <![endif]-->
+  <!--[if IE 9 ]> <body class="ie ie9 "> <![endif]-->
+  <!--[if (gt IE 9)|!(IE)]><!-->
+  <body class="">
+  <!--<![endif]-->
+    
+    <div class="navbar">
+        <div class="navbar-inner">
+            <ul class="nav pull-right">
+
+                <li id="fat-menu" class="dropdown">
+                    <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="icon-user"></i> Jack Smith
+                        <i class="icon-caret-down"></i>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a tabindex="-1" href="#">我的账号</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" href="#">设置</a></li>
+                        <li class="divider"></li>
+                        <li><a tabindex="-1" href="sign-in.html">退出</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+            <!--logo-->
+            <a class="brand" href="index.html"><span class="first">Your</span> <span class="second">Company</span></a>
+        </div>
+    </div>
+    
+
+<!--左侧菜单-->
+    <div class="sidebar-nav">
+        <form class="search form-inline">
+            <input type="text" placeholder="Search...">
+        </form>
+        <a href="index.html" class="nav-header active" ><i class="icon-legal"></i>工作台</a>
+        <a href="faq.html" class="nav-header" ><i class="icon-book"></i>商品管理</a>
+        <a href="order.html" class="nav-header" ><i class="icon-pencil"></i>订单管理</a>
+        <a href="faq.html" class="nav-header" ><i class="icon-user"></i>用户管理</a>
+        <a href="index.html" class="nav-header" ><i class="icon-sitemap"></i>统计管理</a>
+        <a href="faq.html" class="nav-header" ><i class="icon-folder-open"></i>内容管理</a>
+        <a href="index.html" class="nav-header" ><i class="icon-credit-card"></i>资金管理</a>
+        <a href="faq.html" class="nav-header" ><i class="icon-home"></i>全局设置</a>
+        <a href="index.html" class="nav-header" ><i class="icon-question-sign"></i>反馈建议</a>
+        <a href="faq.html" class="nav-header" ><i class="icon-comment"></i>提额申请</a>
+    </div>
+    
+
+    
+    <div class="content">
+        
+        <div class="header">
+            <div class="header-img">
+                <img src="images/blue-paper.png" alt="">
+            </div>
+            <div class="header-info">
+                <p class="header-detail">姓名</p>
+                <p class="header-detail">职位</p>
+                <p class="header-detail">账号</p>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="row-fluid">
+                    <div class="block stat">
+                        <a href="javascript:;" class="block-heading">代办事务</a>
+                        <div id="tablewidget" class="block-body in">
+                            <ul class="stat-widget-container">
+                                <li class="stat-widget">
+                                    <a href="javascript:;" class="stat-button">
+                                        <p class="title">资料待完善</p>
+                                        <p class="info">采购商<span class="detail">1</span></p>
+                                        <p class="info">供货商<span class="detail">1</span></p>
+                                    </a>
+                                </li>
+                                <li class="stat-widget">
+                                    <a href="javascript:;" class="stat-button">
+                                        <p class="title">提款审核中订单</p>
+                                        <p class="detail">3</p>
+                                    </a>
+                                </li>
+                                <li class="stat-widget">
+                                    <a href="javascript:;" class="stat-button">
+                                        <p class="title">还款审核中订单</p>
+                                        <p class="detail">3</p>
+                                    </a>
+                                </li>
+                                <li class="stat-widget">
+                                    <a href="javascript:;" class="stat-button">
+                                        <p class="title">逾期订单</p>
+                                        <p class="detail">3</p>
+                                    </a>
+                                </li>
+                                <li class="stat-widget">
+                                    <a href="javascript:;" class="stat-button">
+                                        <p class="title">意见反馈</p>
+                                        <p class="detail">3</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-fluid">
+                    <div class="block span6">
+                        <a href="#tablewidgetleft" class="block-heading" data-toggle="collapse">数据统计</a>
+                        <div id="tablewidgetleft" class="block-body collapse in">
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td>采购商总数：</td>
+                                    <td>100人</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>供货商总数：</td>
+                                    <td>100人</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>交易已完成订单总数：</td>
+                                    <td>100单</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>逾期订单总数：</td>
+                                    <td>100单</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>完成订单总金额：</td>
+                                    <td>100000元</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>平台累计出款：</td>
+                                    <td>100000元</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>平台累计回款：</td>
+                                    <td>100000元</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>平台累计收益：</td>
+                                    <td>100000元</td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="block span6">
+                        <a href="#tablewidgetright" class="block-heading" data-toggle="collapse">数据统计</a>
+                        <div id="tablewidgetright" class="block-body collapse in">
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td>今日采购商数：</td>
+                                    <td>100人</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>今日供货商数：</td>
+                                    <td>100人</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>今日订单数：</td>
+                                    <td>100单</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>今日出款：</td>
+                                    <td>100元</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>今日入款：</td>
+                                    <td>100000元</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>今日收益：</td>
+                                    <td>100000元</td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript">
+        $("[rel=tooltip]").tooltip();
+        $(function() {
+            $('.demo-cancel-click').click(function(){return false;});
+        });
+    </script>
+    
+  </body>
+</html>
+
+
