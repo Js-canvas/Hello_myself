@@ -62,12 +62,12 @@
     <a href="javascript:;" class="nav-header" ><i class="icon-book"></i>商品管理</a>
     <a href="order.html" class="nav-header" ><i class="icon-pencil"></i>订单管理</a>
     <a href="user.html" class="nav-header active" ><i class="icon-user"></i>用户管理</a>
-    <a href="index.html" class="nav-header" ><i class="icon-sitemap"></i>统计管理</a>
-    <a href="faq.html" class="nav-header" ><i class="icon-folder-open"></i>内容管理</a>
-    <a href="index.html" class="nav-header" ><i class="icon-credit-card"></i>资金管理</a>
-    <a href="faq.html" class="nav-header" ><i class="icon-home"></i>全局设置</a>
-    <a href="index.html" class="nav-header" ><i class="icon-question-sign"></i>反馈建议</a>
-    <a href="faq.html" class="nav-header" ><i class="icon-comment"></i>提额申请</a>
+    <a href="statistics.html" class="nav-header" ><i class="icon-sitemap"></i>统计管理</a>
+    <a href="content.html" class="nav-header" ><i class="icon-folder-open"></i>内容管理</a>
+    <a href="javascripts:;l" class="nav-header" ><i class="icon-credit-card"></i>资金管理</a>
+    <a href="javascripts:;" class="nav-header" ><i class="icon-home"></i>全局设置</a>
+    <a href="feedback.html" class="nav-header" ><i class="icon-question-sign"></i>反馈建议</a>
+    <a href="application.html" class="nav-header" ><i class="icon-comment"></i>提额申请</a>
 </div>
 
 
@@ -87,29 +87,37 @@
                 <span>用户密码：</span><span>123456</span>
             </div>
             <div class="span">
-                <span>用户身份：</span><span>采购商</span>
+                <span>用户身份：</span><span>供货商</span>
             </div>
             <div class="span">
                 <span>审核状态：</span>
                 <p></p>
-                <select name="" id="">
+                <select name="">
                     <option value="">未通过</option>
                     <option value="">待审核</option>
                     <option value="">已通过</option>
                 </select>
             </div>
             <div class="span">
-                <label for="">名称：</label><input type="text" value="兄弟连饭馆">
+                <label for="">名称：</label><input type="text" value="北方科技有限公司">
                 <label for="">真实姓名：</label><input type="text" value="王大锤">
             </div>
             <div class="span">
-                <span>上游供货商：</span>
+                <span>行业：</span>
+                <p></p>
+                <select name="">
+                    <option value="">互联网</option>
+                    <option value="">IT</option>
+                </select>
             </div>
             <div class="span">
-                <span>北方科技公司（1878878686）</span>
-                <span>北方科技公司（1878878686）</span>
-                <span>北方科技公司（1878878686）</span>
-                <span>北方科技公司（1878878686）</span>
+                <span>下游采购商：</span>
+            </div>
+            <div class="span">
+                <span>兄弟连饭馆（1878878686）</span>
+                <span>兄弟连饭馆（1878878686）</span>
+                <span>兄弟连饭馆（1878878686）</span>
+                <span>兄弟连饭馆（1878878686）</span>
             </div>
             <div class="span">
                 <span>所在地区：</span><span>北京昌平，回龙观</span>
@@ -120,21 +128,20 @@
             <div class="span">
                 <span>供货商建议透支额度：</span><span>¥1000.00</span>
             </div>
-            <div class="span7 block">
-                <p class="header">透支额度</p>
-                <div class="span7">
-                    <span>透支总额度：</span><span>¥100000.00</span>
-                </div>
-                <div class="span">
-                    <label for="">北方科技：</label><input type="text" value="¥5000.00">
-                    <label for="">南方科技：</label><input type="text" value="¥5000.00">
-                </div>
+            <div class="span">
+                <span>日利率：</span><span>0.05%</span>
             </div>
             <div class="span7 block">
-                <p class="header">店址管理</p>
+                <p class="header">授信额度</p>
+                <div class="span7">
+                    <span>授信总额度：</span><span>¥100000.00</span>
+                </div>
+                <div class="span7">
+                    <span>当前剩余授信额度：</span><span>¥70000.00</span>
+                </div>
                 <div class="span">
-                    <p>1.新街口分店   地址：新街口1786号</p>
-                    <p>2.新街口分店   地址：新街口1786号</p>
+                    <label for="">兄弟连：</label><input type="text" value="¥5000.00">
+                    <label for="">饭馆：</label><input type="text" value="¥5000.00">
                 </div>
             </div>
             <div class="span">
@@ -149,7 +156,7 @@
 
 
 <script src="lib/bootstrap/js/bootstrap.js"></script>
-<script src="javascripts/user-detail-purchaser.js"></script>
+<script src="javascripts/user-detail-supplier.js"></script>
 <!--<script type="text/javascript">-->
 <!--$("[rel=tooltip]").tooltip();-->
 <!--$(function() {-->
