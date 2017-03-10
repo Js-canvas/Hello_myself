@@ -1,8 +1,8 @@
-#purRegister .header{
+ .header{
     width:100%;
     height:41px;
 }
-#purRegister .content{
+.content{
     width:100%;
     height:auto;
     position:absolute;

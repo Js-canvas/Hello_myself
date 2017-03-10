@@ -71,10 +71,10 @@ $(document).ready(function(){
             var invoiceFlag = true;
             $('.invoiceFlag').on('click',function(){
                 if(invoiceFlag){
-                    $('.invoice img').css({"display":"block"})
+                    $('.invoice').addClass('icon-gou')
                     invoiceFlag = false
                 }else{
-                    $('.invoice img').css({"display":"none"})
+                    $('.invoice').removeClass('icon-gou')
                     invoiceFlag = true
                 }
             })
@@ -83,24 +83,24 @@ $(document).ready(function(){
             var read = false;
             $('.readFlag').on('click',function(){
                 if(read){
-                    $('.readImg img').css({"display":"block"})
+                    $('.readImg').addClass('icon-gou')
                     read = false
                 }else{
-                    $('.readImg img').css({"display":"none"})
+                    $('.readImg').removeClass('icon-gou')
                     read = true
                 }
             })
         },
         iconAlert:function(){
-            // $('.icon').on('click',function(){
-            //     $("#opacityDiv").css({'display':'block'});
-            //     $(".askAlert").css({'display':'block'});
-            // })
-            //
-            // $(".yesBtn").on('click',function(){
-            //     $("#opacityDiv").css({'display':'none'});
-            //     $(".askAlert").css({'display':'none'});
-            // })
+            $('.icon').on('click',function(){
+                $("#opacityDiv").css({'display':'block'});
+                $(".askAlert").css({'display':'block'});
+            })
+
+            $(".yesBtn").on('click',function(){
+                $("#opacityDiv").css({'display':'none'});
+                $(".askAlert").css({'display':'none'});
+            })
         },
         reback:function(){
             $(".reback").on("click",function(){

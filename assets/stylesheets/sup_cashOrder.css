@@ -1,8 +1,8 @@
-#supCashOrder .header{
+ .header{
     width:100%;
     height:41px;
 }
-#supCashOrder .content{
+ .content{
     width:100%;
     height:auto;
     position:absolute;
@@ -98,14 +98,16 @@
     line-height: 15px;
 }
 .password{
-    width:35%;
+    width:45%;
+    display: inline-block;
 }
 .invoice{
     width: 12px;
     height:12px;
     display: inline-block;
     position: relative;
-    margin:15px 0 13px 8%
+    margin:15px 0 13px 8%;
+    color:#cd2f2f;
 }
 .invoice>img{
     width: 15px;
@@ -135,6 +137,7 @@
     position: relative;
     margin:10px 0 0 6px;
     border-color:#cd2f2f;
+    color:#cd2f2f;
 }
 .readImg>img{
     width: 15px;

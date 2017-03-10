@@ -30,29 +30,24 @@
 <body class="">
 <!--<![endif]-->
 
-<div class="navbar">
-    <div class="navbar-inner">
-        <ul class="nav pull-right">
-
-            <li id="fat-menu" class="dropdown">
-                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
-                    <i class="icon-user"></i> Jack Smith
-                    <i class="icon-caret-down"></i>
-                </a>
-
-                <ul class="dropdown-menu">
-                    <li><a tabindex="-1" href="#">我的账号</a></li>
-                    <li class="divider"></li>
-                    <li><a tabindex="-1" href="#">设置</a></li>
-                    <li class="divider"></li>
-                    <li><a tabindex="-1" href="sign-in.html">退出</a></li>
-                </ul>
-            </li>
-
-        </ul>
-        <!--logo-->
-        <a class="logo" href="index.html"><span class="first">Your</span> <span class="second">Company</span></a>
-    </div>
+<div class="navbar " role="navigation">
+    <ul class="nav pull-right">
+        <li class="dropdown">
+            <a href="#" role="button" class="dropdown-toggle nav-info-btn" data-toggle="dropdown">
+                <i class="fa fa-user"></i> Jack Smith
+                <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-info">
+                <li><a tabindex="-1" href="#">我的账号</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="#">设置</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="sign-in.html">退出</a></li>
+            </ul>
+        </li>
+    </ul>
+    <!--logo-->
+    <a class="logo" href="index.html"><span class="first">Your</span> <span class="second">Company</span></a>
 </div>
 
 
@@ -61,16 +56,16 @@
     <form class="search form-inline">
         <input type="text" placeholder="Search...">
     </form>
-    <a href="index.html" class="nav-header " ><i class="icon-legal"></i>工作台</a>
-    <a href="javascript:;" class="nav-header" ><i class="icon-book"></i>商品管理</a>
-    <a href="order.html" class="nav-header" ><i class="icon-pencil"></i>订单管理</a>
-    <a href="user.html" class="nav-header active" ><i class="icon-user"></i>用户管理</a>
-    <a href="statistics.html" class="nav-header" ><i class="icon-sitemap"></i>统计管理</a>
-    <a href="content.html" class="nav-header" ><i class="icon-folder-open"></i>内容管理</a>
-    <a href="javascripts:;" class="nav-header" ><i class="icon-credit-card"></i>资金管理</a>
-    <a href="javascripts:;" class="nav-header" ><i class="icon-home"></i>全局设置</a>
-    <a href="feedback.html" class="nav-header" ><i class="icon-question-sign"></i>反馈建议</a>
-    <a href="application.html" class="nav-header" ><i class="icon-comment"></i>提额申请</a>
+    <a href="index.html" class="nav-header " ><i class="fa fa-legal"></i>工作台</a>
+    <a href="javascript:;" class="nav-header" ><i class="fa fa-book"></i>商品管理</a>
+    <a href="order.html" class="nav-header " ><i class="fa fa-pencil"></i>订单管理</a>
+    <a href="user.html" class="nav-header active" ><i class="fa fa-user"></i>用户管理</a>
+    <a href="statistics.html" class="nav-header" ><i class="fa fa-sitemap"></i>统计管理</a>
+    <a href="content.html" class="nav-header" ><i class="fa fa-folder-open"></i>内容管理</a>
+    <a href="javascripts:;" class="nav-header" ><i class="fa fa-credit-card"></i>资金管理</a>
+    <a href="javascripts:;" class="nav-header" ><i class="fa fa-home"></i>全局设置</a>
+    <a href="feedback.html" class="nav-header" ><i class="fa fa-question"></i>反馈建议</a>
+    <a href="application.html" class="nav-header " ><i class="fa fa-comment"></i>提额申请</a>
 </div>
 
 
@@ -79,7 +74,6 @@
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="container-header">
-                <div class="span"></div>
                 <div class="header-title">
                     <p>今日新增<span class="data-span">10</span>个用户，其中<span class="data-span">3</span>个为供货商，<span class="data-span">3</span>个为采购商，当前待审核<span class="data-span">3</span>个</p>
                 </div>
@@ -94,15 +88,15 @@
                             <div class="header-sortnav">
                                 <div  class="header-detail">
                                     <label>日期：</label><input type="date" class="data-input">至<input type="date" class="data-input">
-                                    <label class="radio-btn">手机</label><input type="text" class="radio-input">
-                                    <a href="user-add.html">客户添加管理</a>
                                 </div>
-
+                                <div>
+                                    <label class="radio-btn">手机:</label><input type="text" class="radio-input">
+                                    <a href="user-add.html" class="user-tovisit">客户添加管理</a>
+                                </div>
                                 <div class="right">
-                                    <input type="submit" value="搜索" class="btn search-btn">
-                                    <button class="clear-btn btn">清空筛选条件</button>
+                                    <input type="submit" value="搜索" class="btn-primary search-btn">
+                                    <button class="clear-btn btn-primary">清空筛选条件</button>
                                 </div>
-                                <p></p>
                             </div>
 
                             <div class="table-wrap">
@@ -185,10 +179,10 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="pagination">
-                                <ul>
+                            <div class="text-center">
+                                <ul class="pagination">
                                     <li><a href="#">&laquo;</a></li>
-                                    <li><a href="#">1</a></li>
+                                    <li class="active"><a href="#">1</a></li>
                                     <li><a href="#">2</a></li>
                                     <li><a href="#">3</a></li>
                                     <li><a href="#">4</a></li>
@@ -201,15 +195,15 @@
                             <div class="header-sortnav">
                                 <div  class="header-detail">
                                     <label>日期：</label><input type="date" class="data-input">至<input type="date" class="data-input">
-                                    <label class="radio-btn">手机</label><input type="text" class="radio-input">
-                                    <a href="user-add.html">客户添加管理</a>
                                 </div>
-
+                                <div>
+                                    <label class="radio-btn">手机:</label><input type="text" class="radio-input">
+                                    <a href="user-add.html" class="user-tovisit">客户添加管理</a>
+                                </div>
                                 <div class="right">
-                                    <input type="submit" value="搜索" class="btn search-btn">
-                                    <button class="clear-btn btn">清空筛选条件</button>
+                                    <input type="submit" value="搜索" class="btn-primary search-btn">
+                                    <button class="clear-btn btn-primary">清空筛选条件</button>
                                 </div>
-                                <p></p>
                             </div>
 
                             <div class="table-wrap">
@@ -292,10 +286,10 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="pagination">
-                                <ul>
+                            <div class="text-center">
+                                <ul class="pagination">
                                     <li><a href="#">&laquo;</a></li>
-                                    <li><a href="#">1</a></li>
+                                    <li class="active"><a href="#">1</a></li>
                                     <li><a href="#">2</a></li>
                                     <li><a href="#">3</a></li>
                                     <li><a href="#">4</a></li>
@@ -308,15 +302,15 @@
                             <div class="header-sortnav">
                                 <div  class="header-detail">
                                     <label>日期：</label><input type="date" class="data-input">至<input type="date" class="data-input">
-                                    <label class="radio-btn">手机</label><input type="text" class="radio-input">
-                                    <a href="user-add.html">客户添加管理</a>
                                 </div>
-
+                                <div>
+                                    <label class="radio-btn">手机:</label><input type="text" class="radio-input">
+                                    <a href="user-add.html" class="user-tovisit">客户添加管理</a>
+                                </div>
                                 <div class="right">
-                                    <input type="submit" value="搜索" class="btn search-btn">
-                                    <button class="clear-btn btn">清空筛选条件</button>
+                                    <input type="submit" value="搜索" class="btn-primary search-btn">
+                                    <button class="clear-btn btn-primary">清空筛选条件</button>
                                 </div>
-                                <p></p>
                             </div>
 
                             <div class="table-wrap">
@@ -399,10 +393,10 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="pagination">
-                                <ul>
+                            <div class="text-center">
+                                <ul class="pagination">
                                     <li><a href="#">&laquo;</a></li>
-                                    <li><a href="#">1</a></li>
+                                    <li class="active"><a href="#">1</a></li>
                                     <li><a href="#">2</a></li>
                                     <li><a href="#">3</a></li>
                                     <li><a href="#">4</a></li>

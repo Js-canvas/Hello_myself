@@ -1,8 +1,8 @@
-#supDetail .header{
+ .header{
     width:100%;
     height:41px;
 }
-#supDetail .content{
+ .content{
     width:100%;
     height:auto;
     position:absolute;
@@ -76,6 +76,7 @@
     margin-top:1px;
     position: relative;
     float: right;
+    color:#cd2f2f;
 }
 .dgIcon>img{
     width: 14px;
@@ -170,7 +171,55 @@
 .info4{
     margin-bottom: 20px;
 }
-
+/*透明层*/
+#opacityDiv{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.15);
+    z-index: 10;
+    position: absolute;
+    top:0;
+    left:0;
+    display: none;
+}
+/*提示框*/
+.askAlert,.askAlert1{
+    width: 70%;
+    height: 35%;
+    position: absolute;
+    top:25%;
+    left:15%;
+    background: #ffffff;
+    z-index: 15;
+    display: none;
+}
+.alertTit{
+    display: block;
+    width: auto;
+    height: auto;
+    margin:10px 8px;
+}
+.infoMessage{
+    width: auto;
+    height: auto;
+    margin:15px 8px;
+}
+.noBtn,.yesBtn{
+    width: 30%;
+    height: 28px;
+    position: absolute;
+    border:1px solid #ff9900;
+    border-radius: 2px;
+    background: #ffffff;
+}
+.noBtn{
+    left:15%;
+    bottom:10%;
+}
+.yesBtn{
+    left:55%;
+    bottom:10%;
+}
 
 
 

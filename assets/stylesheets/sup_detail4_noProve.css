@@ -1,8 +1,8 @@
-#supDetail4No .header{
+ .header{
     width:100%;
     height:41px;
 }
-#supDetail4No .content{
+ .content{
     width:100%;
     height:auto;
     position:absolute;
@@ -53,7 +53,7 @@
     margin-bottom:15px;
 }
 .agree{
-    width: 21%;
+    width: 30%;
     height: 30px;
     border:0;
     color: #ffffff;

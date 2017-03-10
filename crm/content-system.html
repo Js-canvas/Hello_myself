@@ -26,29 +26,25 @@
 <body class="">
 <!--<![endif]-->
 
-<div class="navbar">
-    <div class="navbar-inner">
-        <ul class="nav pull-right">
+<div class="navbar " role="navigation">
+    <ul class="nav pull-right">
+        <li class="dropdown">
+            <a href="#" role="button" class="dropdown-toggle nav-info-btn" data-toggle="dropdown">
+                <i class="fa fa-user"></i> Jack Smith
+                <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-info">
+                <li><a tabindex="-1" href="#">我的账号</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="#">设置</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="sign-in.html">退出</a></li>
+            </ul>
+        </li>
 
-            <li id="fat-menu" class="dropdown">
-                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
-                    <i class="icon-user"></i> Jack Smith
-                    <i class="icon-caret-down"></i>
-                </a>
-
-                <ul class="dropdown-menu">
-                    <li><a tabindex="-1" href="#">我的账号</a></li>
-                    <li class="divider"></li>
-                    <li><a tabindex="-1" href="#">设置</a></li>
-                    <li class="divider"></li>
-                    <li><a tabindex="-1" href="sign-in.html">退出</a></li>
-                </ul>
-            </li>
-
-        </ul>
-        <!--logo-->
-        <a class="logo" href="index.html"><span class="first">Your</span> <span class="second">Company</span></a>
-    </div>
+    </ul>
+    <!--logo-->
+    <a class="logo" href="index.html"><span class="first">Your</span> <span class="second">Company</span></a>
 </div>
 
 
@@ -57,16 +53,16 @@
     <form class="search form-inline">
         <input type="text" placeholder="Search...">
     </form>
-    <a href="index.html" class="nav-header " ><i class="icon-legal"></i>工作台</a>
-    <a href="order.html" class="nav-header" ><i class="icon-book"></i>商品管理</a>
-    <a href="javascripts:;" class="nav-header" ><i class="icon-pencil"></i>订单管理</a>
-    <a href="user.html" class="nav-header" ><i class="icon-user"></i>用户管理</a>
-    <a href="statistics.html" class="nav-header  " ><i class="icon-sitemap"></i>统计管理</a>
-    <a href="javascripts:;" class="nav-header active" ><i class="icon-folder-open"></i>内容管理</a>
-    <a href="javascripts:;" class="nav-header" ><i class="icon-credit-card"></i>资金管理</a>
-    <a href="javascripts:;" class="nav-header" ><i class="icon-home"></i>全局设置</a>
-    <a href="feedback.html" class="nav-header" ><i class="icon-question-sign"></i>反馈建议</a>
-    <a href="application.html" class="nav-header" ><i class="icon-comment"></i>提额申请</a>
+    <a href="index.html" class="nav-header " ><i class="fa fa-legal"></i>工作台</a>
+    <a href="javascript:;" class="nav-header" ><i class="fa fa-book"></i>商品管理</a>
+    <a href="order.html" class="nav-header " ><i class="fa fa-pencil"></i>订单管理</a>
+    <a href="user.html" class="nav-header " ><i class="fa fa-user"></i>用户管理</a>
+    <a href="statistics.html" class="nav-header" ><i class="fa fa-sitemap"></i>统计管理</a>
+    <a href="content.html" class="nav-header active" ><i class="fa fa-folder-open"></i>内容管理</a>
+    <a href="javascripts:;" class="nav-header" ><i class="fa fa-credit-card"></i>资金管理</a>
+    <a href="javascripts:;" class="nav-header" ><i class="fa fa-home"></i>全局设置</a>
+    <a href="feedback.html" class="nav-header" ><i class="fa fa-question"></i>反馈建议</a>
+    <a href="application.html" class="nav-header " ><i class="fa fa-comment"></i>提额申请</a>
 </div>
 
 
@@ -74,27 +70,29 @@
     <div class="header">系统公告</div>
     <div class="container-fluid">
         <div class="row-fluid">
-            <div class="span20">
+            <div class="h5">
                 <span>ID:</span><span>1</span>
             </div>
-            <div class="span20">
+            <div class="h5">
                 <span>面对对象：</span>
                 <select class="input-small">
                     <option value="">采购商</option>
                     <option value="">供货商</option>
                 </select>
             </div>
-            <div class="span20">
+            <div class="h5">
                 <span>公告名称：</span>
-                <input type="text" class="input-medium">
+                <input type="text">
             </div>
-            <div class="span20">
+            <div class="h5">
                 <span>详情编辑：</span>
             </div>
-            <div class="span20"></div>
+            <div class="h5">
+                <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+            </div>
         </div>
         <div class="right">
-            <button class="btn">确定</button>
+            <button class="btn btn-primary">确定</button>
         </div>
     </div>
 

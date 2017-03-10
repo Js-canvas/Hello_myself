@@ -39,29 +39,25 @@
 <body class="">
 <!--<![endif]-->
 
-<div class="navbar">
-    <div class="navbar-inner">
-        <ul class="nav pull-right">
+<div class="navbar " role="navigation">
+    <ul class="nav pull-right">
+        <li class="dropdown">
+            <a href="#" role="button" class="dropdown-toggle nav-info-btn" data-toggle="dropdown">
+                <i class="fa fa-user"></i> Jack Smith
+                <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-info">
+                <li><a tabindex="-1" href="#">我的账号</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="#">设置</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="sign-in.html">退出</a></li>
+            </ul>
+        </li>
 
-            <li id="fat-menu" class="dropdown">
-                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
-                    <i class="icon-user"></i> Jack Smith
-                    <i class="icon-caret-down"></i>
-                </a>
-
-                <ul class="dropdown-menu">
-                    <li><a tabindex="-1" href="#">我的账号</a></li>
-                    <li class="divider"></li>
-                    <li><a tabindex="-1" href="#">设置</a></li>
-                    <li class="divider"></li>
-                    <li><a tabindex="-1" href="sign-in.html">退出</a></li>
-                </ul>
-            </li>
-
-        </ul>
-        <!--logo-->
-        <a class="logo" href="index.html"><span class="first">Your</span> <span class="second">Company</span></a>
-    </div>
+    </ul>
+    <!--logo-->
+    <a class="logo" href="index.html"><span class="first">Your</span> <span class="second">Company</span></a>
 </div>
 
 
@@ -70,28 +66,27 @@
     <form class="search form-inline">
         <input type="text" placeholder="Search...">
     </form>
-    <a href="index.html" class="nav-header " ><i class="icon-legal"></i>工作台</a>
-    <a href="javascript:;" class="nav-header" ><i class="icon-book"></i>商品管理</a>
-    <a href="order.html" class="nav-header active" ><i class="icon-pencil"></i>订单管理</a>
-    <a href="user.html" class="nav-header" ><i class="icon-user"></i>用户管理</a>
-    <a href="statistics.html" class="nav-header" ><i class="icon-sitemap"></i>统计管理</a>
-    <a href="content.html" class="nav-header" ><i class="icon-folder-open"></i>内容管理</a>
-    <a href="javascripts:;" class="nav-header" ><i class="icon-credit-card"></i>资金管理</a>
-    <a href="javascripts:;" class="nav-header" ><i class="icon-home"></i>全局设置</a>
-    <a href="feedback.html" class="nav-header" ><i class="icon-question-sign"></i>反馈建议</a>
-    <a href="application.html" class="nav-header" ><i class="icon-comment"></i>提额申请</a>
+    <a href="index.html" class="nav-header " ><i class="fa fa-legal"></i>工作台</a>
+    <a href="javascript:;" class="nav-header" ><i class="fa fa-book"></i>商品管理</a>
+    <a href="order.html" class="nav-header active" ><i class="fa fa-pencil"></i>订单管理</a>
+    <a href="user.html" class="nav-header " ><i class="fa fa-user"></i>用户管理</a>
+    <a href="statistics.html" class="nav-header" ><i class="fa fa-sitemap"></i>统计管理</a>
+    <a href="content.html" class="nav-header" ><i class="fa fa-folder-open"></i>内容管理</a>
+    <a href="javascripts:;" class="nav-header" ><i class="fa fa-credit-card"></i>资金管理</a>
+    <a href="javascripts:;" class="nav-header" ><i class="fa fa-home"></i>全局设置</a>
+    <a href="feedback.html" class="nav-header" ><i class="fa fa-question"></i>反馈建议</a>
+    <a href="application.html" class="nav-header " ><i class="fa fa-comment"></i>提额申请</a>
 </div>
 
 <div class="content">
-
+    <div class="header header-title">订单详情</div>
     <div class="container-fluid">
-        <div class="row-fluid row">
-            <div class="col-7 col-wrap">
-                <div class="header header-title">订单详情</div>
-                <div class="span">
+        <div class="row-fluid">
+            <div class="col-xs-7">
+                <div class="h5">
                     <span>订单ID：</span><span>1 </span><span> (已逾期三天)</span>
                 </div>
-                <div class="span">
+                <div class="h5">
                     <span>订单状态：</span>
                     <select name="" id="">
                         <option value="">待确认</option>
@@ -100,16 +95,16 @@
                         <option value="">已逾期</option>
                     </select>
                 </div>
-                <div class="span">
+                <div class="h5">
                     <span>订单号：</span><span>dh.124151</span>
                 </div>
-                <div class="span">
+                <div class="h5">
                     <span>采购商：</span><span>兄弟连餐馆——王大锤（12341234123）</span>
                 </div>
-                <div class="span">
+                <div class="h5">
                     <span>供货商：</span><span>北方科技有限公司——王大锤（12341234123）</span>
                 </div>
-                <div class="span">
+                <div class="h5">
                     <span>相关协议/合同：</span>
                     <a href="javascripts:;">《购销协议》</a>,
                     <a href="javascripts:;">《保理协议》</a>,
@@ -118,9 +113,9 @@
                     <a href="javascripts:;">《受让通知》</a>,
                     <a href="javascripts:;">《回购通知》</a>
                 </div>
-                <div class="block span6">
-                    <a href="#tableinfo" class="block-heading" data-toggle="collapse">供货商收款信息</a>
-                    <div id="tableinfo" class="block-body collapse in">
+                <div class="block">
+                    <a href="javascripts:;" class="block-heading">供货商收款信息</a>
+                    <div  class="block-body  in">
                         <table class="table">
                             <tbody>
                             <tr>
@@ -143,9 +138,9 @@
                         </table>
                     </div>
                 </div>
-                <div class="block span6">
-                    <a href="#tableorder" class="block-heading" data-toggle="collapse">订单信息</a>
-                    <div id="tableorder" class="block-body collapse in">
+                <div class="block">
+                    <a href="javascripts:;" class="block-heading">订单信息</a>
+                    <div  class="block-body  in">
                         <table class="table">
                             <tbody>
                             <tr>
@@ -177,8 +172,8 @@
                     </div>
                 </div>
                 <div class="block span">
-                    <a href="#tablecontent" class="block-heading" data-toggle="collapse">订单内容</a>
-                    <div id="tablecontent" class="block-body collapse in">
+                    <a href="javascripts:;" class="block-heading">订单内容</a>
+                    <div  class="block-body in">
                         <table class="table">
                             <tbody>
                             <tr>
@@ -205,8 +200,8 @@
                 </div>
 
                 <div class="block span8">
-                    <a href="#tableorderrate" class="block-heading" data-toggle="collapse">订单金额信息</a>
-                    <div id="tableorderrate" class="block-body collapse in">
+                    <a href="javascripts:;" class="block-heading" >订单金额信息</a>
+                    <div  class="block-body  in">
                         <table class="table">
                             <tbody>
                             <tr>
@@ -243,38 +238,40 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 col-wrap">
-                <div class="header">订单变更记录：</div>
-                <table class="table">
-                    <thead>
-                    <th>时间</th>
-                    <th>操作内容</th>
-                    <th>操作人</th>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>2011-2-1</td>
-                        <td>状态变更——已完成</td>
-                        <td>财务——小芳</td>
-                    </tr>
-                    <tr>
-                        <td>2011-2-1</td>
-                        <td>状态变更——已完成</td>
-                        <td>财务——小芳</td>
-                    </tr>
-                    <tr>
-                        <td>2011-2-1</td>
-                        <td>状态变更——已完成</td>
-                        <td>财务——小芳</td>
-                    </tr>
-                    <tr>
-                        <td>2011-2-1</td>
-                        <td>状态变更——已完成</td>
-                        <td>财务——小芳</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <div class="span block">
+            <div class="col-xs-5">
+                <div class="block">
+                    <div class="header">订单变更记录：</div>
+                    <table class="table">
+                        <thead>
+                        <th>时间</th>
+                        <th>操作内容</th>
+                        <th>操作人</th>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>2011-2-1</td>
+                            <td>状态变更——已完成</td>
+                            <td>财务——小芳</td>
+                        </tr>
+                        <tr>
+                            <td>2011-2-1</td>
+                            <td>状态变更——已完成</td>
+                            <td>财务——小芳</td>
+                        </tr>
+                        <tr>
+                            <td>2011-2-1</td>
+                            <td>状态变更——已完成</td>
+                            <td>财务——小芳</td>
+                        </tr>
+                        <tr>
+                            <td>2011-2-1</td>
+                            <td>状态变更——已完成</td>
+                            <td>财务——小芳</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="block">
                     <div class="header">备注</div>
                     <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
                 </div>
@@ -342,16 +339,13 @@
                             </div>
                         </li>
                     </ul>
-
                 </div>
-
+                <div class="right">
+                    <button class="btn-large btn btn-primary">确认提交</button>
+                </div>
             </div>
         </div>
-        <div class="right">
-            <button class="btn-large btn submit-btn">确认提交</button>
-        </div>
     </div>
-
 </div>
 <!--<div class="mask">-->
     <!--<img src="" alt="">-->

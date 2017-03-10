@@ -1,8 +1,8 @@
-#supBankList .header{
+ .header{
     width:100%;
     height:41px;
 }
-#supBankList .content{
+ .content{
     width:100%;
     height:auto;
     position:absolute;
@@ -64,6 +64,7 @@ label{
     line-height: 15px;
     top:15px;
     right:25px;
+    color: #999999;
 }
 .icon>img{
     width: 14px;

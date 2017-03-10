@@ -4,12 +4,12 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="../stylesheets/iconfont.css">
     <link rel="stylesheet" href="../stylesheets/common.css">
     <link rel="stylesheet" href="../stylesheets/sup_amount.css">
-    <link href="//cdn.bootcss.com/circliful/1.0.1/css/jquery.circliful.min.css" rel="stylesheet">
+    <link href="../stylesheets/jquery.circliful.min.css" rel="stylesheet">
 </head>
 <body>
-    <div id="supAmount">
         <!--header-->
         <div class="header bg">
             <a href="javascript:;" class="reback txtcen">&lt;</a>
@@ -25,8 +25,7 @@
                 <a href="sup_creditRecord.html">授信记录</a>
             </div>
             <div class="infoBox">
-                <p class="borBom"><b class="tit2">当前授信总额度:</b><span class="sumAmount">¥1000000.00</span><i class="icon txtcen"><img src="../images/wenhao.png"
-                                                                                                              alt=""></i></p>
+                <p class="borBom"><b class="tit2">当前授信总额度:</b><span class="sumAmount">¥1000000.00</span><i class="icon txtcen iconfont icon-wenhao"></i></p>
                 <p class="borBom"><b class="tit2">提升授信总额度至：</b><input type="text" placeholder="请输入你想提升总额度至" id="advAmount"><i class="txtcen">万</i></p>
                 <button class="okBtn btnStyle">提交申请</button>
             </div>
@@ -54,9 +53,8 @@
             <p class="infoMessage">您的实际可授信总额度,平台有权根据您的客户的信誉度进行调整，最终解释权归平台所有</p>
             <button class="yesBtn">我知道了</button>
         </div>
-    </div>
 </body>
-<script src="//cdn.bootcss.com/jquery/1.10.0/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/circliful/1.0.2/js/jquery.circliful.js"></script>
+<script src="../javascripts/jquery.min.js"></script>
+<script src="../javascripts/jquery.circliful.js"></script>
 <script src="../javascripts/sup_amount.js"></script>
 </html>

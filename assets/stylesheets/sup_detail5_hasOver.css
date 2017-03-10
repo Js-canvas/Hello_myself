@@ -1,8 +1,8 @@
-#supDetail5Has .header{
+.header{
     width:100%;
     height:41px;
 }
-#supDetail5Has .content{
+ .content{
     width:100%;
     height:auto;
     position:absolute;
@@ -55,7 +55,7 @@
     margin-top:23px;
 }
 .agree{
-    width: 21%;
+    width: 30%;
     height: 30px;
     border:0;
     color: #ffffff;

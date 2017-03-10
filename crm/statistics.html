@@ -26,29 +26,25 @@
 <body class="">
 <!--<![endif]-->
 
-<div class="navbar">
-    <div class="navbar-inner">
-        <ul class="nav pull-right">
+<div class="navbar " role="navigation">
+    <ul class="nav pull-right">
+        <li class="dropdown">
+            <a href="#" role="button" class="dropdown-toggle nav-info-btn" data-toggle="dropdown">
+                <i class="fa fa-user"></i> Jack Smith
+                <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-info">
+                <li><a tabindex="-1" href="#">我的账号</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="#">设置</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="sign-in.html">退出</a></li>
+            </ul>
+        </li>
 
-            <li id="fat-menu" class="dropdown">
-                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
-                    <i class="icon-user"></i> Jack Smith
-                    <i class="icon-caret-down"></i>
-                </a>
-
-                <ul class="dropdown-menu">
-                    <li><a tabindex="-1" href="#">我的账号</a></li>
-                    <li class="divider"></li>
-                    <li><a tabindex="-1" href="#">设置</a></li>
-                    <li class="divider"></li>
-                    <li><a tabindex="-1" href="sign-in.html">退出</a></li>
-                </ul>
-            </li>
-
-        </ul>
-        <!--logo-->
-        <a class="logo" href="index.html"><span class="first">Your</span> <span class="second">Company</span></a>
-    </div>
+    </ul>
+    <!--logo-->
+    <a class="logo" href="index.html"><span class="first">Your</span> <span class="second">Company</span></a>
 </div>
 
 
@@ -57,24 +53,24 @@
     <form class="search form-inline">
         <input type="text" placeholder="Search...">
     </form>
-    <a href="index.html" class="nav-header " ><i class="icon-legal"></i>工作台</a>
-    <a href="order.html" class="nav-header" ><i class="icon-book"></i>商品管理</a>
-    <a href="order.html" class="nav-header" ><i class="icon-pencil"></i>订单管理</a>
-    <a href="user.html" class="nav-header" ><i class="icon-user"></i>用户管理</a>
-    <a href="javascripts:;" class="nav-header  active" ><i class="icon-sitemap"></i>统计管理</a>
-    <a href="content.html" class="nav-header" ><i class="icon-folder-open"></i>内容管理</a>
-    <a href="javascripts:;" class="nav-header" ><i class="icon-credit-card"></i>资金管理</a>
-    <a href="javascripts:;" class="nav-header" ><i class="icon-home"></i>全局设置</a>
-    <a href="feedback.html" class="nav-header" ><i class="icon-question-sign"></i>反馈建议</a>
-    <a href="application.html" class="nav-header" ><i class="icon-comment"></i>提额申请</a>
+    <a href="index.html" class="nav-header " ><i class="fa fa-legal"></i>工作台</a>
+    <a href="javascript:;" class="nav-header" ><i class="fa fa-book"></i>商品管理</a>
+    <a href="order.html" class="nav-header" ><i class="fa fa-pencil"></i>订单管理</a>
+    <a href="user.html" class="nav-header " ><i class="fa fa-user"></i>用户管理</a>
+    <a href="statistics.html" class="nav-header active" ><i class="fa fa-sitemap"></i>统计管理</a>
+    <a href="content.html" class="nav-header" ><i class="fa fa-folder-open"></i>内容管理</a>
+    <a href="javascripts:;" class="nav-header" ><i class="fa fa-credit-card"></i>资金管理</a>
+    <a href="javascripts:;" class="nav-header" ><i class="fa fa-home"></i>全局设置</a>
+    <a href="feedback.html" class="nav-header" ><i class="fa fa-question"></i>反馈建议</a>
+    <a href="application.html" class="nav-header " ><i class="fa fa-comment"></i>提额申请</a>
 </div>
 
 
 <div class="content">
     <div class="header">阿贩提运营管理系统</div>
     <div class="container-fluid">
+        <div class="h5"></div>
         <div class="row-fluid">
-            <div class="span"></div>
             <ul id="myTab" class="nav nav-pills">
                 <li class="active"><a href="#one" data-toggle="tab">收入统计</a></li>
                 <li><a href="#two" data-toggle="tab">订单数量统计</a></li>
@@ -86,7 +82,9 @@
                     <div class="header-sortnav">
                         <div  class="header-detail">
                             <label>日期：</label><input type="date" class="data-input">至<input type="date" class="data-input">
-                            <input type="submit" value="搜索" class="btn">
+                        </div>
+                        <div class="right">
+                            <input type="submit" value="搜索" class="btn-primary search-btn">
                         </div>
                     </div>
                     <div class="table-wrap">
@@ -151,10 +149,10 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="pagination">
-                        <ul>
+                    <div class="text-center">
+                        <ul class="pagination">
                             <li><a href="#">&laquo;</a></li>
-                            <li><a href="#">1</a></li>
+                            <li class="active"><a href="#">1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
                             <li><a href="#">4</a></li>
@@ -167,7 +165,9 @@
                     <div class="header-sortnav">
                         <div  class="header-detail">
                             <label>日期：</label><input type="date" class="data-input">至<input type="date" class="data-input">
-                            <input type="submit" value="搜索" class="btn">
+                        </div>
+                        <div class="right">
+                            <input type="submit" value="搜索" class="btn-primary search-btn">
                         </div>
                     </div>
                     <div class="table-wrap">
@@ -250,10 +250,10 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="pagination">
-                        <ul>
+                    <div class="text-center">
+                        <ul class="pagination">
                             <li><a href="#">&laquo;</a></li>
-                            <li><a href="#">1</a></li>
+                            <li class="active"><a href="#">1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
                             <li><a href="#">4</a></li>
@@ -266,7 +266,9 @@
                     <div class="header-sortnav">
                         <div  class="header-detail">
                             <label>日期：</label><input type="date" class="data-input">至<input type="date" class="data-input">
-                            <input type="submit" value="搜索" class="btn">
+                        </div>
+                        <div class="right">
+                            <input type="submit" value="搜索" class="btn-primary search-btn">
                         </div>
                     </div>
                     <div class="table-wrap">
@@ -319,10 +321,10 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="pagination">
-                        <ul>
+                    <div class="text-center">
+                        <ul class="pagination">
                             <li><a href="#">&laquo;</a></li>
-                            <li><a href="#">1</a></li>
+                            <li class="active"><a href="#">1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
                             <li><a href="#">4</a></li>
@@ -335,7 +337,9 @@
                     <div class="header-sortnav">
                         <div  class="header-detail">
                             <label>日期：</label><input type="date" class="data-input">至<input type="date" class="data-input">
-                            <input type="submit" value="搜索" class="btn">
+                        </div>
+                        <div class="right">
+                            <input type="submit" value="搜索" class="btn-primary search-btn">
                         </div>
                     </div>
                     <div class="table-wrap">
@@ -394,10 +398,10 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="pagination">
-                        <ul>
+                    <div class="text-center">
+                        <ul class="pagination">
                             <li><a href="#">&laquo;</a></li>
-                            <li><a href="#">1</a></li>
+                            <li class="active"><a href="#">1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
                             <li><a href="#">4</a></li>

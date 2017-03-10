@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <title>订单中</title>
-    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="../stylesheets/common.css">
     <link rel="stylesheet" href="../stylesheets/sup_detail.css">
+    <link rel="stylesheet" href="../stylesheets/iconfont.css">
 </head>
 <body>
-    <div id="supDetail">
         <!--header-->
         <div class="header bg">
             <a href="javascript:;" class="reback txtcen">&lt;</a>
@@ -20,16 +19,19 @@
             <!--第一部分-->
             <div class="orderStateBox borBom txtcen">
                 <p class="txt1">订单状态：</p><span class="state fontRed">待确认</span>
-                <p class="txt2">请确认采购商的下单请求，48小时0分后自动关闭订单</p>
+                <div>
+                    <p class="txt2">请确认采购商的下单请求，48小时0分后自动关闭订单</p>
+                </div>
                 <div class="stateBtn">
                     <button class="disagree borR">不同意</button>
                     <button class="agree borR bg">确认</button>
                 </div>
                 <div>
-                    <p class="txt3">我已阅读并同意签署以下内容<i class="dgIcon" ><img src="../images/checked.png" alt=""></i></p>
+                    <p class="txt3">我已阅读并同意签署以下内容<i class="dgIcon iconfont icon-gou" ></i></p>
                 </div>
                 <p class="txt4 clearB">《购销合同》</p>
                 <p class="txt5">《应收账款债权转让通知书》</p>
+
             </div>
             <!--第二部分-->
             <div class="orderInfoBox borBom">
@@ -107,8 +109,23 @@
                 </div>
             </div>
         </div>
+    <!--透明层-->
+    <div id="opacityDiv"></div>
+    <!--自定义对话框-->
+    <div class="askAlert txtcen">
+        <i class="alertTit fontRed">确认订单</i>
+        <p class="infoMessage">本次订单共计3件商品，订单总金额为￥18000.00,还款周期为30天,采购商为XXXXX公司，提款金额将根据该订单金额为准，是否确认提交订单？</p>
+        <button class="noBtn">取消</button>
+        <button class="yesBtn">确认</button>
+    </div>
+    <!--自定义对话框-->
+    <div class="askAlert1 txtcen">
+        <i class="alertTit fontRed">拒绝确认订单</i>
+        <p class="infoMessage">拒绝确认订单您将无法发起提款，确认拒绝吗？</p>
+        <button class="noBtn">取消</button>
+        <button class="yesBtn">确认</button>
     </div>
 </body>
-<script src="//cdn.bootcss.com/zepto/1.1.6/zepto.js"></script>
+<script src="../javascripts/zepto.js"></script>
 <script src="../javascripts/sup_detail.js"></script>
 </html>

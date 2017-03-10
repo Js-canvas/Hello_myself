@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <title>订单中</title>
-    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <link href="../stylesheets/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="../stylesheets/common.css">
     <link rel="stylesheet" href="../stylesheets/sup_order.css">
 </head>
 <body>
-    <div id="supOrder">
         <!--header-->
         <div class="header bg">
             <p>订单中心</p>
@@ -190,7 +189,7 @@
                             </div>
                             <div class="tab-pane fade" id="waitRepay">
                                 <!--订单模板-->
-                                <div class="orderDetail">
+                                <div class="orderDetail" state="1">
                                     <div class="orderHeader">
                                         <span class="orderCode">DJ.20101218.001</span>
                                         <span class="orderState">待还款</span>
@@ -216,7 +215,7 @@
                             </div>
                             <div class="tab-pane fade" id="repay">
                                 <!--订单模板-->
-                                <div class="orderDetail">
+                                <div class="orderDetail" state="0">
                                     <div class="orderHeader">
                                         <span class="orderCode">DJ.20101218.001</span>
                                         <span class="orderState">已逾期</span>
@@ -313,7 +312,7 @@
                     </a>
                 </li>
                 <li class="list txtcen">
-                    <a href="javascript:;">
+                    <a href="sup_message.html">
                         <b class="num font11"></b>
                         <p><img src="../images/message.png" class="listIcon"></p>
                         <span>消息</span>
@@ -327,9 +326,24 @@
                 </li>
             </ul>
         </div>
-    </div>
+        <!--透明层-->
+        <div id="opacityDiv"></div>
+        <!--自定义对话框-->
+        <div class="askAlert txtcen">
+            <i class="alertTit fontRed">确认订单</i>
+            <p class="infoMessage">本次订单共计3件商品，订单总金额为￥18000.00,还款周期为30天,采购商为XXXXX公司，提款金额将根据该订单金额为准，是否确认提交订单？</p>
+            <button class="noBtn">取消</button>
+            <button class="yesBtn">确认</button>
+        </div>
+        <!--自定义对话框-->
+        <div class="askAlert1 txtcen">
+            <i class="alertTit fontRed">拒绝确认订单</i>
+            <p class="infoMessage">拒绝确认订单您将无法发起提款，确认拒绝吗？</p>
+            <button class="noBtn">取消</button>
+            <button class="yesBtn">确认</button>
+        </div>
 </body>
-<script src="//cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+<script src="../javascripts/jquery.min.js"></script>
+<script src="../javascripts/bootstrap.js"></script>
 <script src="../javascripts/sup_order.js"></script>
 </html>

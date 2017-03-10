@@ -27,26 +27,25 @@
 <body class="">
 <!--<![endif]-->
 
-<div class="navbar">
-    <div class="navbar-inner">
-        <ul class="nav pull-right">
-            <li id="fat-menu" class="dropdown">
-                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
-                    <i class="icon-user"></i> Jack Smith
-                    <i class="icon-caret-down"></i>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a tabindex="-1" href="#">我的账号</a></li>
-                    <li class="divider"></li>
-                    <li><a tabindex="-1" href="#">设置</a></li>
-                    <li class="divider"></li>
-                    <li><a tabindex="-1" href="sign-in.html">退出</a></li>
-                </ul>
-            </li>
-        </ul>
-        <!--logo-->
-        <a class="logo" href="index.html"><span class="first">Your</span> <span class="second">Company</span></a>
-    </div>
+<div class="navbar " role="navigation">
+    <ul class="nav pull-right">
+        <li class="dropdown">
+            <a href="#" role="button" class="dropdown-toggle nav-info-btn" data-toggle="dropdown">
+                <i class="fa fa-user"></i> Jack Smith
+                <i class="fa fa-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-info">
+                <li><a tabindex="-1" href="#">我的账号</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="#">设置</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="sign-in.html">退出</a></li>
+            </ul>
+        </li>
+
+    </ul>
+    <!--logo-->
+    <a class="logo" href="index.html"><span class="first">Your</span> <span class="second">Company</span></a>
 </div>
 
 
@@ -55,16 +54,16 @@
     <form class="search form-inline">
         <input type="text" placeholder="Search...">
     </form>
-    <a href="index.html" class="nav-header " ><i class="icon-legal"></i>工作台</a>
-    <a href="javascript:;" class="nav-header" ><i class="icon-book"></i>商品管理</a>
-    <a href="order.html" class="nav-header" ><i class="icon-pencil"></i>订单管理</a>
-    <a href="user.html" class="nav-header" ><i class="icon-user"></i>用户管理</a>
-    <a href="statistics.html" class="nav-header" ><i class="icon-sitemap"></i>统计管理</a>
-    <a href="content.html" class="nav-header" ><i class="icon-folder-open"></i>内容管理</a>
-    <a href="javascript:;" class="nav-header" ><i class="icon-credit-card"></i>资金管理</a>
-    <a href="javascript:;" class="nav-header" ><i class="icon-home"></i>全局设置</a>
-    <a href="feedback.html" class="nav-header" ><i class="icon-question-sign"></i>反馈建议</a>
-    <a href="application.html" class="nav-header active" ><i class="icon-comment"></i>提额申请</a>
+    <a href="index.html" class="nav-header " ><i class="fa fa-legal"></i>工作台</a>
+    <a href="javascript:;" class="nav-header" ><i class="fa fa-book"></i>商品管理</a>
+    <a href="order.html" class="nav-header " ><i class="fa fa-pencil"></i>订单管理</a>
+    <a href="user.html" class="nav-header " ><i class="fa fa-user"></i>用户管理</a>
+    <a href="statistics.html" class="nav-header" ><i class="fa fa-sitemap"></i>统计管理</a>
+    <a href="content.html" class="nav-header" ><i class="fa fa-folder-open"></i>内容管理</a>
+    <a href="javascripts:;" class="nav-header" ><i class="fa fa-credit-card"></i>资金管理</a>
+    <a href="javascripts:;" class="nav-header" ><i class="fa fa-home"></i>全局设置</a>
+    <a href="feedback.html" class="nav-header" ><i class="fa fa-question"></i>反馈建议</a>
+    <a href="application.html" class="nav-header active" ><i class="fa fa-comment"></i>提额申请</a>
 </div>
 
 
@@ -72,56 +71,51 @@
     <div class="header">提额申请详情（供货商）</div>
     <div class="container-fluid">
         <div class="row-fluid">
-            <div class="span"></div>
-            <div class="span">
+            <div class="h5">
                 <span>用户ID:</span><span>1</span>
             </div>
-            <div class="span">
+            <div class="h5">
                 <span>用户账号：</span><span>13212341234</span>
             </div>
-            <div class="span">
+            <div class="h5">
                 <span>用户身份：</span><span>供货商</span>
             </div>
-            <div class="span">
+            <div class="h5">
                 <span>审核状态：</span>
-                <p></p>
                 <select name="" id="">
                     <option value="">未通过</option>
                     <option value="">待审核</option>
                     <option value="">已通过</option>
                 </select>
             </div>
-            <div class="span">
-                <label for="">名称：</label><input type="text" value="兄弟连饭馆">
-                <label for="">真实姓名：</label><input type="text" value="王大锤">
+            <div class="h5">
+                <label>名称：</label><input type="text" value="兄弟连饭馆">
+                <label>真实姓名：</label><input type="text" value="王大锤">
             </div>
-            <div class="span">
+            <div class="h5">
                 <span>申请时间：</span><span>2017-09-18 19:23</span>
             </div>
-            <div class="span7 block">
+            <div class=" block">
                 <p class="header">授信额度</p>
-                <div class="span">
+                <div class="h5 text-margin-left">
                     <span>授信总额度：</span><input type="text" class="input-medium" value="¥100000.00">
-                    <p></p>
-                    <span>当前剩余授信额度：</span><span>¥70000.00</span>
+                    <span class="text-margin-left">当前剩余授信额度：</span><span>¥70000.00</span>
                 </div>
-                <div class="span"></div>
-                <div class="span">
+                <div class="h5 text-margin-left">
                     <span>北方科技：</span><span>¥5000.00</span>
-                    <p></p>
-                    <span>南方科技：</span><span>¥5000.00</span>
+                    <span class="text-margin-left">南方科技：</span><span>¥5000.00</span>
                 </div>
             </div>
-            <div class="span">
+            <div class="h5">
                 <span>申请额度：</span><span>¥1500000.00</span>
             </div>
-            <div class="span">
+            <div class="h5">
                 <span>关联订单数量：</span><a href="javascripts:;">10</a>
             </div>
         </div>
     </div>
     <div class="modal-footer">
-        <button class="btn">确认提交</button>
+        <button class="btn btn-primary">确认提交</button>
     </div>
 </div>
 

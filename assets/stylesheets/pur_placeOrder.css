@@ -1,8 +1,8 @@
-#purOrder .header{
+ .header{
     width:100%;
     height:41px;
 }
-#purOrder .content{
+ .content{
     width:100%;
     height:auto;
     position:absolute;
@@ -93,13 +93,8 @@
     /*多个商品时宽度为65%*/
     height:40px;
     font-size: 12px;
-    text-indent: 25px;
+    text-indent: 30px;
     margin-bottom: 5px;
-}
-.iconM{
-    position: absolute;
-    top:10px;
-    left:23%;
 }
 .deleteBox{
     display: none;
@@ -111,20 +106,25 @@
     margin-top:-10px;
     overflow: hidden;
 }
-.deleteBox>img{
+.delete-icon{
     width: 23px;
     height: 21px;
+    line-height: 20px;
+    display: block;
 }
 .addBtn{
-    width: 30%;
     height: 30px;
-    margin-right: 4%;
     margin-top:5px;
 }
-.addBtn>img{
-    width: 21px;
-    height: 21px;
-    margin: 5px 7px;
+.icon-add{
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background: #ff9900;
+    color: #ffffff;
+    margin:8px 4px;
+    text-align: center;
+    line-height: 16px;
 }
 .btnWord{
     margin-top:10px;
@@ -160,12 +160,83 @@
     position: relative;
     left:-1%;
 }
+@media screen and (max-width: 321px) {
+    .secInp {
+        width: 70.6%;
+    }
+    .selLi>i{
+        right:6.6%;
+    }
+    .iconM{
+        position: absolute;
+        top:10px;
+        left:26%;
+    }
+    .widTxt{
+        margin-right:7.6%;
+    }
+    .addBtn{
+        width: 35%;
+        margin-right: 6%;
+    }
+    .inp{
+        width: 70.6%;
+    }
+    .widInp {
+        width: 66.6%;
+    }
+}
+@media screen and (max-width:375px) and (min-width:321px) {
+    .secInp {
+        width: 76.6%;
+    }
+    .selLi > i {
+        right: 3.6%;
+    }
+    .iconM{
+        position: absolute;
+        top:10px;
+        left:23%;
+    }
+    .widTxt{
+        margin-right:6.6%;
+    }
+    .addBtn{
+        width: 30%;
+        margin-right: 4%;
+    }
+    .widInp{
+        width:72.6% ;
+    }
+}
+@media screen and (min-width: 414px) {
+    .secInp {
+        width: 76.6%;
+    }
+    .selLi > i {
+        right: 4.6%;
+    }
+    .iconM{
+        position: absolute;
+        top:10px;
+        left:21%;
+    }
+    .widTxt{
+        margin-right:5.6%;
+    }
+    .addBtn{
+        width: 30%;
+        margin-right: 5%;
+    }
+    .widInp{
+        width:72.6% ;
+    }
+}
 .selLi>i{
     width: 20px;
     height: 30px;
     display: inline-block;
     position: absolute;
-    right:3.6%;
     top:6px;
 }
 .selLi>i>img{
@@ -176,12 +247,6 @@
     position: absolute;
     top:15px;
     right:8%;
-}
-.widTxt{
-    margin-right:6.6%;
-}
-.widInp{
-    width:72.6% ;
 }
 .okBtn{
     margin-top:5px;
@@ -201,7 +266,8 @@
     margin-left: 6px;
     margin-top:1px;
     position: relative;
-    float: right;
+    color:#cd2f2f;
+    font-size:11px;
 }
 .dgIcon>img{
     width: 14px;

@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <head>
     <title>采购宝</title>
-    <link href="//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <link href="../stylesheets/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/iconfont.css">
     <link rel="stylesheet" href="../stylesheets/common.css">
+    <link rel="stylesheet" href="../stylesheets/iconfont.css">
     <link rel="stylesheet" href="../stylesheets/sup_index.css">
 </head>
 <body>
-    <div id="supIndex">
         <!--header-->
         <div class="header">
             <span class="companyName">华夏科技有限公司</span>
-            <a class="myIcon" href="sup_myCenter.html"><img src="../images/myIcon.png"></a>
+            <a class="myIcon iconfont icon-yonghu" href="sup_myCenter.html"></a>
         </div>
         <!--content-->
         <div class="content">
@@ -103,6 +104,16 @@
                         <span>订单金额</span>
                         <span>环比日上</span>
                     </li>
+                    <li class='borBom'>
+                        <span>2016.1.21</span>
+                        <span>¥100000</span>
+                        <span class="dataClass"><b class="dataUp">30%</b><i class="iconfont icon-shangjiantou"></i></span>
+                    </li>
+                    <li class='borBom'>
+                        <span>2016.1.21</span>
+                        <span>¥100000</span>
+                        <span class="dataClass"><b class="dataDown">30%</b><i class="iconfont icon-xiajiantou"></i></span>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -123,7 +134,7 @@
                     </a>
                 </li>
                 <li class="list txtcen">
-                    <a href="javascript:;">
+                    <a href="sup_message.html">
                         <b class="num font11"></b>
                         <p><img src="../images/message.png" class="listIcon"></p>
                         <span>消息</span>
@@ -137,10 +148,9 @@
                 </li>
             </ul>
         </div>
-    </div>
 </body>
-<script src="//cdn.bootcss.com/echarts/3.4.0/echarts.min.js"></script>
-<script src="//cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+<script src="../javascripts/echarts.min.js"></script>
+<script src="../javascripts/jquery.min.js"></script>
+<script src="../javascripts/bootstrap.js"></script>
 <script src="../javascripts/sup_index.js"></script>
 </html>

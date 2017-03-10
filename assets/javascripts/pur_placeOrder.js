@@ -8,7 +8,6 @@ $(document).ready(function(){
             this.clickAgree();
             this.addPro();
             this.delete();
-            this.iconFlag = true;
         },
         reback:function(){
             $('.reback').on("click",function(){
@@ -17,13 +16,14 @@ $(document).ready(function(){
         },
         //    点击对勾
         clickAgree:function(){
+            var iconFlag = true;
             $('.txt3').on('click',function(){
-                if(this.iconFlag){
-                    $('.dgIcon img').css({'display':'inline-block'})
-                    this.iconFlag=false;
+                if(iconFlag){
+                    $('.dgIcon').removeClass('icon-gou');
+                    iconFlag=false;
                 }else{
-                    $('.dgIcon img').css({'display':'none'})
-                    this.iconFlag=true;
+                    $('.dgIcon').addClass('icon-gou');
+                    iconFlag=true;
                 }
             })
         },

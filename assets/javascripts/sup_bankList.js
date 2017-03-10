@@ -42,9 +42,9 @@ $(document).ready(function(){
             $('.list').delegate("label",'click',function(){
                 var $inp = $('.bankInp');
                 for(var i = 0 ;i < $inp.length ;i++){
-                    $inp.next().children("img").attr({"src":"../images/uncheck.png"})
+                    $inp.next().css({'color':'#999'});
                 }
-                $(this).siblings('i').children('img').attr({'src':'../images/checked.png'})
+                $(this).siblings('i').css({'color':'#cd2f2f'})
                 bankName = $(this).html();
                 console.log(bankName)
             });

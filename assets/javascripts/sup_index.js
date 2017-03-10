@@ -398,7 +398,7 @@ $(document).ready(function(){
 
     var oList = {
         init:function(){
-            this.getData();
+            // this.getData();
         },
         getData:function(){
             this.createLi("2016.1.21","¥20000","30%",1)

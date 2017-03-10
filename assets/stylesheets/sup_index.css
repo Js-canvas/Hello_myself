@@ -1,18 +1,18 @@
-#supIndex .header{
+ .header{
     width: 100%;
     height:61px;
     position: absolute;
     top:0;
     left:0;
 }
-#supIndex .content{
+ .content{
     width: 100%;
     height: auto;
     position: absolute;
     top:61px;
     bottom:53px;
 }
-#supIndex .footer{
+ .footer{
     width:100%;
     height:53px;
     position: absolute;
@@ -33,6 +33,7 @@
     width: 20px;
     height:20px;
     margin:20px 8% 25px 0;
+    color:#ff9900!important;
 }
 .myIcon img{
     width: 20px;
@@ -179,20 +180,15 @@
     flex:1;
 }
 /*不同状态不同样式*/
-.dataUp{
+.dataUp,.icon-shangjiantou{
     color: #cd2f2f;
 }
-.dataDown{
+.dataDown,.icon-xiajiantou{
     color:#35bc6c;
 }
 .dataUp>b,.dataDown>b{
     display: inline-block;
     margin-right: 11px;
-}
-.dataUp>img,.dataDown>img{
-    display: inline-block;
-    width:16px;
-    height: 20px;
 }
 /*footer*/
 .footer ul{
