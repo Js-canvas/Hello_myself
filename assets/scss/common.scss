@@ -1,0 +1,81 @@
+
+$mainCol:#ff9900;
+
+@function mainBor($style){
+  @return 1px $style #666666;
+}
+@function mainBorCol(){
+  @return rgba(102,102,102,0.6);
+}
+
+
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, textarea, button, p, blockquote, th, td{margin: 0;padding: 0;}
+.clear{height:1px;overflow:hidden;clear:both;}
+a,img{border:0;}
+a{text-decoration: none;}
+a:focus{text-decoration: none;}
+li{list-style-type:none;}
+input,button,textarea,select,option:focus{outline:none;}
+i,em{font-style: normal}
+b,strong{font-weight: normal}
+a:link,a:visited,a:hover,a:active{color:#000;}
+
+.fontRed{
+  color:#cd2f2f;
+}
+.fontMain{
+  color:$mainCol!important;
+}
+.bg{
+  background: $mainCol;
+}
+.borTop{
+  border-top:mainBor(solid);
+  border-color: mainBorCol();
+}
+.borBom{
+  border-bottom:mainBor(solid);
+  border-color: mainBorCol();
+}
+.borBomD{
+  border-bottom:mainBor(dashed);
+  border-color: mainBorCol();
+}
+.bor{
+  border:mainBor(solid);
+  border-color: mainBorCol();
+}
+.font11{
+  font:11px/11px '微软雅黑';
+}
+.floatR{
+  float:right;
+}
+.floatL{
+  float:left;
+}
+.clearB{
+  clear:both;
+}
+.borR{
+  border-radius: 2px;
+}
+.btnStyle{
+  width: 80%;
+  height: 40px;
+  background: $mainCol;
+  border:0;
+  border-radius: 2px;
+  color: #ffffff;
+  font-size: 14px;
+  margin:0 10%;
+}
+.txtcen{
+  text-align: center;
+}
+html,body{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}

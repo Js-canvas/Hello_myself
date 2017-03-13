@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     var $reback = $(".reback");
     var $okBtn = $(".okBtn");
-    var $getParNum = $("#getNum");
+    var $getParNum = $(".getNum");
     var getNumFlag = true;
     var code = "";
     var num = 60;
@@ -15,8 +15,8 @@ $(document).ready(function(){
 
     $getParNum.on("click",function(){
 
-        $messageNum = $("#messageNum")[0].value;
-        $userName = $("#userName")[0].value;
+        $messageNum = $(".messageNum")[0].value;
+        $userName = $(".userName")[0].value;
         if(getNumFlag){
             if(/^0?(1)[0-9]{10}$/.test($userName)){
                 // $.ajax({
@@ -54,10 +54,10 @@ $(document).ready(function(){
 
     $okBtn.on("click",function(){
 
-        var $newPw = $("#newPw")[0].value;
+        var $newPw = $(".newPw")[0].value;
         var flag = false;
-        $messageNum = $("#messageNum")[0].value;
-        $userName = $("#userName")[0].value;
+        $messageNum = $(".messageNum")[0].value;
+        $userName = $(".userName")[0].value;
 
         if($userName==""||$newPw==""||$messageNum==""){
             flag = false;

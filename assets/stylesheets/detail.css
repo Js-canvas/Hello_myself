@@ -1,0 +1,33 @@
+html,body{
+    height: auto;
+}
+.content{
+    position: static;
+}
+.order-state{
+    display: inline-block;
+    font: 15px/15px 微软雅黑;
+    margin:20px 0;
+}
+.order-span{
+    display: inline-block;
+    font-size: 12px;
+    margin: 5px;
+}
+.order-btn{
+    padding:5px 10px;
+    color: #ffffff;
+    border:0;
+    margin:5px 15px;
+}
+.order-image{
+    width: 60px;
+    height: 60px;
+    margin-left:10px;
+}
+.order-icon{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin:5px;
+}

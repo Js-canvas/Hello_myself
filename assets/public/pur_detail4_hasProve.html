@@ -5,7 +5,8 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <title>订单中</title>
     <link rel="stylesheet" href="../stylesheets/common.css">
-    <link rel="stylesheet" href="../stylesheets/pur_detail4_hasProve.css">
+    <link rel="stylesheet" href="../stylesheets/detail.css">
+    <link rel="stylesheet" href="../stylesheets/lib/iconfont.css">
 </head>
 <body>
     <!--header-->
@@ -16,158 +17,160 @@
     <!--content-->
     <div class="content">
         <!--第一部分-->
-        <div class="orderStateBox borBom txtcen">
-            <p class="txt1">订单状态：</p><span class="state fontRed">待还款</span>
-            <div class="stateBtn">
-                <button class="agree bg borR">提交还款证明</button>
+        <div class="borBom">
+            <div class="txtcen">
+            <div>
+                <span class="order-state">订单状态：</span><span class="order-state fontRed">待还款</span>
             </div>
-            <p class="txt2">请在还款日到期前还款，并向阿贩提平台提供还款证明</p>
-            <div class="proveImg">
+            <div>
+                <button class="post-btn order-btn borR bg">提交还款证明</button>
+            </div>
+            <div>
+                <p class="order-span">请在还款日到期前还款，并向阿贩提平台提供还款证明</p>
+            </div>
+            </div>
+            <div>
                 <ul>
                     <!--数据模版-->
-                    <li class="borBottom borBom">
-                        <div class="textLeft">
-                            <p class="proveTit">还款快照：</p>
+                    <li class="borBom">
+                        <div class="overflow-hidden">
+                            <p class="order-span floatL">还款快照：</p>
                         </div>
-                        <div class="imgList">
-                            <img src="../images/undefined.png" alt="">
-                            <img src="../images/undefined.png" alt="">
-                            <img src="../images/undefined.png" alt="">
-                            <img src="../images/undefined.png" alt="">
+                        <div class="txtcen">
+                            <b class="order-span">*</b>
+                            <img src="../images/undefined.png" class="order-image">
+                            <img src="../images/undefined.png" class="order-image">
+                            <img src="../images/undefined.png" class="order-image">
+                            <img src="../images/undefined.png" class="order-image">
                         </div>
-                        <div class="textLeft">
-                            <span class="txt3">还款方式：</span><span class="repayWay">支付宝</span>
+                        <div>
+                            <span class="order-span">还款方式：</span><span class="order-span floatR">支付宝</span>
                         </div>
-                        <div class="textLeft">
-                            <span class="txt4">还款人：</span><span class="whoRepay">路人甲</span>
+                        <div>
+                            <span class="order-span">还款人：</span><span class="order-span floatR">路人甲</span>
                         </div>
-                        <div class="textLeft">
-                            <span class="txt5">还款金额：</span><span class="repayMoney">¥100000.00</span>
+                        <div>
+                            <span class="order-span">还款金额：</span><span class="order-span floatR">¥100000.00</span>
                         </div>
-                        <div class="textLeft">
-                            <span class="txt6">还款账号：</span><span class="repayNum">987987987@qq.com</span>
+                        <div>
+                            <span class="order-span">还款账号：</span><span class="order-span floatR">987987987@qq.com</span>
                         </div>
                     </li>
-                    <li class="borBottom">
-                        <div class="textLeft">
-                            <p class="proveTit">还款快照：</p>
+                    <li class="borBom">
+                        <div class="overflow-hidden">
+                            <p class="order-span floatL">还款快照：</p>
                         </div>
-                        <div class="imgList">
-                            <img src="../images/undefined.png" alt="">
-                            <img src="../images/undefined.png" alt="">
-                            <img src="../images/undefined.png" alt="">
-                            <img src="../images/undefined.png" alt="">
+                        <div class="txtcen">
+                            <b class="order-span">*</b>
+                            <img src="../images/undefined.png" class="order-image">
+                            <img src="../images/undefined.png" class="order-image">
+                            <img src="../images/undefined.png" class="order-image">
+                            <img src="../images/undefined.png" class="order-image">
                         </div>
-                        <div class="textLeft">
-                            <span class="txt3">还款方式：</span><span class="repayWay">支付宝</span>
+                        <div>
+                            <span class="order-span">还款方式：</span><span class="order-span floatR">支付宝</span>
                         </div>
-                        <div class="textLeft">
-                            <span class="txt4">还款人：</span><span class="whoRepay">路人甲</span>
+                        <div>
+                            <span class="order-span">还款人：</span><span class="order-span floatR">路人甲</span>
                         </div>
-                        <div class="textLeft">
-                            <span class="txt5">还款金额：</span><span class="repayMoney">¥100000.00</span>
+                        <div>
+                            <span class="order-span">还款金额：</span><span class="order-span floatR">¥100000.00</span>
                         </div>
-                        <div class="textLeft">
-                            <span class="txt6">还款账号：</span><span class="repayNum">987987987@qq.com</span>
+                        <div>
+                            <span class="order-span">还款账号：</span><span class="order-span floatR">987987987@qq.com</span>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
         <!--第二部分-->
-        <div class="orderInfoBox borBom">
+        <div class="borBom">
             <div>
-                <span class="tit1">供货商名称：</span><span class="companyName">XXX有限公司</span><span class="phoneNum floatR">13212341234</span>
+                <span class="order-span">供货商名称：</span><span class="order-span">XXX有限公司</span><span class="order-span floatR">13212341234</span>
             </div>
             <div>
-                <span class="tit2">收货地址：</span><span class="ads">北京市昌平去XXX路XXX院</span>
+                <span class="order-span">收货地址：</span><span class="order-span">北京市昌平去XXX路XXX院</span>
             </div>
             <div>
-                <button class="contentSup bg floatR borR">联系供货商</button>
+                <button class="order-btn bg floatR borR">联系供货商</button>
             </div>
             <div class="clearB">
-                <span class="tit3">还款周期：</span><span class="repayDate">30天</span>
+                <span class="order-span">还款周期：</span><span class="order-span">30天</span>
             </div>
         </div>
         <!--第三部分-->
-        <div class="orderDetailBox borTop">
+        <div class="borTop">
             <ul class="borBom">
                 <li class="borBomD">
-                    <div class="order">
-                        <div>
-                            <span class="mes1">商品名称：</span><span class="proName">茅台酒500ml</span>
-                        </div>
-                        <div class="cle">
-                            <span class="mes2">商品单价：</span><span class="proPrice">¥100.00</span>
-                        </div>
-                        <div class="cle">
-                            <span class="mes3">商品数量：</span><span class="proNum">*100</span>
-                        </div>
-                        <div class="cle">
-                            <span class="mes4">合计金额：</span><span class="proSum">¥10000.00</span>
-                        </div>
-
+                    <div>
+                        <span class="order-span">商品名称：</span><span class="order-span floatR">茅台酒500ml</span>
+                    </div>
+                    <div>
+                        <span class="order-span">商品单价：</span><span class="order-span floatR">¥100.00</span>
+                    </div>
+                    <div>
+                        <span class="order-span">商品数量：</span><span class="order-span floatR">*100</span>
+                    </div>
+                    <div>
+                        <span class="order-span">合计金额：</span><span class="order-span floatR">¥10000.00</span>
                     </div>
                 </li>
                 <li class="borBomD">
-                    <div class="order">
-                        <div>
-                            <span class="mes1">商品名称：</span><span class="proName">茅台酒500ml</span>
-                        </div>
-                        <div class="cle">
-                            <span class="mes2">商品单价：</span><span class="proPrice">¥100.00</span>
-                        </div>
-                        <div class="cle">
-                            <span class="mes3">商品数量：</span><span class="proNum">*100</span>
-                        </div>
-                        <div class="cle">
-                            <span class="mes4">合计金额：</span><span class="proSum">¥10000.00</span>
-                        </div>
-
+                    <div>
+                        <span class="order-span">商品名称：</span><span class="order-span floatR">茅台酒500ml</span>
+                    </div>
+                    <div>
+                        <span class="order-span">商品单价：</span><span class="order-span floatR">¥100.00</span>
+                    </div>
+                    <div>
+                        <span class="order-span">商品数量：</span><span class="order-span floatR">*100</span>
+                    </div>
+                    <div>
+                        <span class="order-span">合计金额：</span><span class="order-span floatR">¥10000.00</span>
                     </div>
                 </li>
                 <div>
-                    <b class="mes5">运费</b><b class="transMoney">¥100.00</b>
+                    <b class="order-span">运费</b><b class="order-span floatR">¥100.00</b>
                 </div>
             </ul>
             <div>
-                <b class="mes6">订单金额</b><b class="sumMoney fontRed">¥10100.00</b>
+                <b class="order-span">订单金额</b><b class="order-span fontRed floatR">¥10100.00</b>
             </div>
             <div>
-                <b class="mes7">逾期天数：</b><b class="dayNum fontRed">3</b>
-            </div>
-            <div class="posr">
-                <b class="mes8">待还金额：</b><b class="repayMon fontRed">¥11000.00</b><i class="icon iconfont icon-wenhao"></i>
+                <b class="order-span">逾期天数：</b><b class="order-span fontRed floatR">3</b>
             </div>
             <div>
-                <b class="mes9">收款人：</b><b class="repayMan">XXX公司</b>
+                <b class="order-span">待还金额：</b><i class="icon iconfont icon-wenhao order-icon fontGray floatR"></i><b class="order-span fontRed floatR">¥11000.00</b>
             </div>
             <div>
-                <b class="mes10">收款卡号：</b><b class="bankCardNum">6666666666666666666</b>
+                <b class="order-span">收款人：</b><b class="order-span floatR">XXX公司</b>
             </div>
             <div>
-                <b class="mes11">收款日：</b><b class="repayDataNum">2017.8.9</b>
+                <b class="order-span">收款卡号：</b><b class="order-span floatR">6666666666666666666</b>
+            </div>
+            <div>
+                <b class="order-span">收款日：</b><b class="order-span floatR">2017.8.9</b>
             </div>
 
         </div>
         <!--第四部分-->
-        <div class="orderMesBox borTop">
+        <div class="borTop">
             <div>
-                <span class="info1">订单编号：</span><span class="orderCode">DJ.20161218.001</span>
+                <span class="order-span fontGray">订单编号：</span><span class="order-span floatR fontGray">DJ.20161218.001</span>
             </div>
             <div>
-                <span class="info2">下单账号：</span><span class="orderUser">13212341234</span>
+                <span class="order-span fontGray">下单账号：</span><span class="order-span floatR fontGray">13212341234</span>
             </div>
             <div>
-                <span class="info3">下单事件：</span><span class="orderTime">2018-8-15 18:07:08</span>
+                <span class="order-span fontGray">下单事件：</span><span class="order-span floatR fontGray">2018-8-15 18:07:08</span>
             </div>
             <div>
-                <span class="info4">订单来源：</span><span class="orderWay">采购宝微信版</span>
+                <span class="order-span fontGray">订单来源：</span><span class="order-span floatR fontGray">采购宝微信版</span>
             </div>
         </div>
     </div>
     <!--透明层-->
-    <div id="opacityDiv"></div>
+    <div class="opacityDiv"></div>
     <!--自定义对话框-->
     <div class="askAlert">
         <i class="alertTit">实际还款金额为：</i>
@@ -175,6 +178,7 @@
         <button class="yesBtn">我知道了</button>
     </div>
 </body>
-<script src="../javascripts/zepto.js"></script>
-<script src="../javascripts/pur_detail4_hasProve.js"></script>
+<script src="../javascripts/lib/zepto.js"></script>
+<script src="../javascripts/detail.js"></script>
+
 </html>

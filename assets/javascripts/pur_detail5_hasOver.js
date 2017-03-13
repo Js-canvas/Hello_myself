@@ -6,27 +6,27 @@ $(document).ready(function(){
     var oDetail5Has = {
         init:function(){
             this.reback();
-            this.iconClick();
-            this.argeeClick();
+            this.alertClick();
+            this.toHref();
         },
         reback:function(){
             $(".reback").on("click",function(){
                 window.history.go(-1);
             });
         },
-        iconClick:function(){
+        alertClick:function(){
             $('.icon').on('click',function(){
-                $("#opacityDiv").css({'display':'block'});
+                $(".opacityDiv").css({'display':'block'});
                 $(".askAlert").css({'display':'block'});
             })
 
             $(".yesBtn").on('click',function(){
-                $("#opacityDiv").css({'display':'none'});
+                $(".opacityDiv").css({'display':'none'});
                 $(".askAlert").css({'display':'none'});
             })
         },
-        argeeClick:function(){
-            $('.agree').on('click',function(){
+        toHref:function(){
+            $('.yes-btn').on('click',function(){
                 window.location.href="pur_repayment.html"
             })
         }

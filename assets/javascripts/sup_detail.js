@@ -6,7 +6,7 @@ $(document).ready(function(){
     var oDetail = {
         init:function(){
             this.reback();
-            this.clickAgree();
+            this.iconClick();
             this.agreeClick();
             this.disagreeClick();
         },
@@ -16,52 +16,52 @@ $(document).ready(function(){
             });
         },
     //    点击对勾
-        clickAgree:function(){
+        iconClick:function(){
             var iconFlag = true;
-            $('.txt3').on('click',function(){
+            $('.order-book').on('click',function(){
                 if(iconFlag){
-                    $('.dgIcon').removeClass('icon-gou')
+                    $('.order-gou').removeClass('icon-gou')
                     iconFlag=false;
                 }else{
-                    $('.dgIcon').addClass('icon-gou')
+                    $('.order-gou').addClass('icon-gou')
                     iconFlag=true;
                 }
             })
         },
         agreeClick:function(){
-            $('.agree').on('click',function(){
-                $("#opacityDiv").css({'display':'block'});
-                $(".askAlert").css({'display':'block'});
+            $('#yes-btn').on('click',function(){
+                $(".opacityDiv").css({'display':'block'});
+                $(".yes-alert").css({'display':'block'});
             })
 
             $(".yesBtn").on('click',function(){
-                $("#opacityDiv").css({'display':'none'});
-                $(".askAlert").css({'display':'none'});
+                $(".opacityDiv").css({'display':'none'});
+                $(".yes-alert").css({'display':'none'});
             //    向后台提交数据改状态
                 window.location.href="sup_order.html"
             })
 
             $(".noBtn").on('click',function(){
-                $("#opacityDiv").css({'display':'none'});
-                $(".askAlert").css({'display':'none'});
+                $(".opacityDiv").css({'display':'none'});
+                $(".yes-alert").css({'display':'none'});
             })
         },
         disagreeClick:function(){
-            $('.disagree').on('click',function(){
-                $("#opacityDiv").css({'display':'block'});
-                $(".askAlert1").css({'display':'block'});
+            $('#no-btn').on('click',function(){
+                $(".opacityDiv").css({'display':'block'});
+                $(".no-alert").css({'display':'block'});
             })
 
             $(".yesBtn").on('click',function(){
-                $("#opacityDiv").css({'display':'none'});
-                $(".askAlert1").css({'display':'none'});
+                $(".opacityDiv").css({'display':'none'});
+                $(".no-alert").css({'display':'none'});
                 //    向后台提交数据改状态
                 window.location.href="sup_order.html"
             })
 
             $(".noBtn").on('click',function(){
-                $("#opacityDiv").css({'display':'none'});
-                $(".askAlert1").css({'display':'none'});
+                $(".opacityDiv").css({'display':'none'});
+                $(".no-alert").css({'display':'none'});
             })
         }
     }
