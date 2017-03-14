@@ -1,0 +1,25 @@
+
+/*content*/
+.suggestions{
+    width: 80%;
+    height: 60%;
+    margin:35px 8% 0 8%;
+    resize: none;
+    padding:9px 5px 9px 7px;
+    line-height: 24px;
+}
+.suggestions::-webkit-input-placeholder{
+    color:rgba(102,102,102,0.6);
+    font: 12px/24px '微软雅黑';
+}
+.tit1{
+    width: auto;
+    height: 12px;
+    line-height: 12px;
+    font-size: 12px;
+    color:rgba(102,102,102,0.6);
+    margin:12px 10% 56px 0 ;
+}
+.okBtn{
+    margin:0 10%;
+}

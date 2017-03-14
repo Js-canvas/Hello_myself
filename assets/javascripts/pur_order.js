@@ -62,7 +62,7 @@ $(document).ready(function(){
                             case 1:
                                 switch(e.target.className){
                                     case "subBtn":
-                                        window.location.href="pur_repayment.html"
+                                        window.location.href="repayment.html"
                                         break;
                                     default:
                                         if($(this).attr('state')==1){
@@ -77,7 +77,7 @@ $(document).ready(function(){
                             case 2:
                                 switch(e.target.className){
                                     case "subBtn":
-                                        window.location.href="pur_repayment.html"
+                                        window.location.href="repayment.html"
                                         break;
                                     default:
                                         if($(this).attr('state')==1){

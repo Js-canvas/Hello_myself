@@ -87,7 +87,7 @@ $(document).ready(function(){
                                 switch(e.target.className){
                                     case "subBtn":
                                         console.log("提交还款证明");
-                                        window.location.href="sup_repayment.html"
+                                        window.location.href="repayment.html"
                                         break;
                                     default:
                                         console.log("跳转到详情");

@@ -1,33 +1,5 @@
- .header{
-    width:100%;
-    height:41px;
-}
- .content{
-    width:100%;
-    height:auto;
-    position:absolute;
-    top:41px;
-    bottom:0px;
-    padding-top:25px;
-}
-.header a{
-    display: inline-block;
-    width:10%;
-    height:41px;
-    line-height: 41px;
-    font-size: 13px;
-    color:#fff;
-}
-.tit{
-    display: inline-block;
-    width:80%;
-    height:41px;
-    text-align: center;
-    font-size: 13px;
-    color:#fff;
-}
 /*content*/
-.rowInp{
+.row-inp{
     width: 100%;
     height: 42px;
     margin-top:10px;
@@ -44,7 +16,10 @@ input{
     margin-right: 15px;
     text-indent: 5px;
 }
-.okBtn{
+.ok-btn{
     margin:30px 10%;
     font-size:16px;
+}
+.margin-top{
+    margin-top:50px;
 }

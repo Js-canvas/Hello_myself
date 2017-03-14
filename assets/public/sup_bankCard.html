@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="../stylesheets/common.css">
+    <link rel="stylesheet" href="../stylesheets/lib/iconfont.css">
     <link rel="stylesheet" href="../stylesheets/sup_bankCard.css">
 </head>
 <body>
@@ -15,34 +16,34 @@
         </div>
         <!--content-->
         <div class="content">
-            <p class="tit1">为了确保资金安全到账请务必绑定自己的银行卡</p>
-            <div class="inpList">
-                <div class="inpBox">
-                    <label for="userName">账户:</label>
-                    <input type="text" id="userName" class="inp bor borR" readonly name="userName" value="13212341234">
-                </div>
-                <div class="inpBox">
-                    <label for="name">真实姓名:</label>
-                    <input type="text" id="name" class="inp bor borR" name="name" placeholder="请保证填写的是真实姓名" value="">
-                    <i class="icon txtcen" id="nameQusetion">?</i>
-                </div>
-                <div class="inpBox">
-                    <a class="aBox" href="sup_bankList.html">
-                        <label for="bank">开户银行:</label>
-                        <input type="text" id="bank" class="inp bor borR" name="bank" placeholder="目前支持收款的银行" readonly value="">
-                        <i class="icon txtcen">&gt;</i>
-                    </a>
-                </div>
-                <div class="inpBox">
-                    <label for="bankNum">银行卡号:</label>
-                    <input type="text" id="bankNum" class="inp bor borR" name="bankNum" placeholder="请填写与您姓名一致的银行卡" value="">
-                </div>
-                <div class="inpBox">
-                    <label for="phoneNum">关联手机:</label>
-                    <input type="text" id="phoneNum" class="inp bor borR" name="phoneNum" placeholder="请填写与此卡绑定的手机" value="">
-                </div>
+            <div>
+                <span class="bank-span">为了确保资金安全到账请务必绑定自己的银行卡</span>
             </div>
-            <button class="okBtn btnStyle">保存信息</button>
+            <div class="bank-inp">
+                <label for="userName">账户:</label>
+                <input type="text" id="userName" class="inp bor borR bg-gray" readonly name="userName" value="13212341234">
+            </div>
+            <div class="bank-inp">
+                <label for="name">真实姓名:</label>
+                <input type="text" id="name" class="inp bor borR" name="name" placeholder="请保证填写的是真实姓名" value="">
+                <i class="icon txtcen icon-wenhao iconfont"></i>
+            </div>
+            <div class="bank-inp">
+                <a  href="sup_bankList.html">
+                    <label for="bank">开户银行:</label>
+                    <input type="text" id="bank" class="inp bor borR" name="bank" placeholder="目前支持收款的银行" readonly value="">
+                    <i class="icon txtcen">&gt;</i>
+                </a>
+            </div>
+            <div class="bank-inp">
+                <label for="bankNum">银行卡号:</label>
+                <input type="text" id="bankNum" class="inp bor borR" name="bankNum" placeholder="请填写与您姓名一致的银行卡" value="">
+            </div>
+            <div class="bank-inp">
+                <label for="phoneNum">关联手机:</label>
+                <input type="text" id="phoneNum" class="inp bor borR" name="phoneNum" placeholder="请填写与此卡绑定的手机" value="">
+            </div>
+            <button class="ok-btn btnStyle">保存信息</button>
         </div>
         <!--透明层-->
         <div id="opacityDiv"></div>

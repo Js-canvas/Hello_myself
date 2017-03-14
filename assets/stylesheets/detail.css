@@ -7,18 +7,12 @@ html,body{
 .order-state{
     display: inline-block;
     font: 15px/15px 微软雅黑;
-    margin:20px 0;
+    margin-top:21px;
 }
 .order-span{
     display: inline-block;
     font-size: 12px;
-    margin: 5px;
-}
-.order-btn{
-    padding:5px 10px;
-    color: #ffffff;
-    border:0;
-    margin:5px 15px;
+    margin: 10px 4% 0 4%;
 }
 .order-image{
     width: 60px;
@@ -31,3 +25,43 @@ html,body{
     display: inline-block;
     margin:5px;
 }
+.order-gou{
+    border:1px solid #cd2f2f;
+    width: 10px;
+    height: 10px;
+    font: 10px/10px '微软雅黑'!important;
+    display: inline-block;
+    float: right;
+    margin:3px 0 0 6px;
+}
+.order-btn{
+    width: 80px;
+    height: 30px;
+    border: 0;
+    color:#ffffff;
+}
+/*part1*/
+.part1>button{
+    width:60px;
+    height: 30px;
+    margin:23px 27px 0 27px ;
+    color: #ffffff;
+    border:0;
+}
+.part1 .order-span{
+    margin-top:9px;
+}
+/*part2*/
+.part2{
+    overflow: hidden;
+}
+.part2>button{
+    width: 80px;
+    height: 30px;
+    margin:5px 4% 0 0;
+    border: 0;
+    color:#ffffff;
+}
+
+
+

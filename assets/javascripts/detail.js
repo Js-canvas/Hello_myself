@@ -9,7 +9,9 @@ $(document).ready(function(){
             this.yesClickSup();
             this.noClickSup();
             this.noClickPur();
-            this.postClick();
+            this.iconClick();
+            this.postClick();//提交还款证明
+            this.cashClick();//提款
         },
         reback:function(){
             $(".reback").on("click",function(){
@@ -96,7 +98,12 @@ $(document).ready(function(){
         },
         postClick:function(){
             $('.post-btn').on('click',function(){
-                window.location.href="pur_repayment.html"
+                window.location.href="repayment.html"
+            })
+        },
+        cashClick:function(){
+            $('.cash-btn').on('click',function(){
+                window.location.href="cashOrder.html"
             })
         }
     }

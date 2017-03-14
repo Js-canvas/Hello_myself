@@ -1,0 +1,44 @@
+/*content*/
+.repayment-span{
+    width: auto;
+    height: 11px;
+    font:11px/11px '微软雅黑';
+    margin:16px 0 0 10%;
+}
+.tit2{
+    margin:17px 0 0 10%;
+}
+.repayment-image{
+    width: 100%;
+    height: auto;
+    margin-top:15px;
+}
+.repayment-image>img{
+    width: 60px;
+    height: 60px;
+    margin:0 5px;
+}
+.icon{
+    margin:15px 0 10px 10%;
+}
+.posir{
+    position: relative;
+}
+.inp{
+    width: 80%;
+    height: 41px;
+    margin:5px 10%;
+    font-size: 11px;
+    text-indent: 60px;
+}
+label{
+    width: auto;
+    height:11px;
+    position: absolute;
+    top:20px;
+    left:11%;
+    font:11px/11px '微软雅黑';
+}
+.okBtn{
+    margin:43px 10% 12px 10%;
+}

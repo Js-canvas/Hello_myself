@@ -14,40 +14,6 @@ $(document).ready(function(){
         window.history.go(-1);
     });
 
-    oProfession.on("click",function(){
-        var area = new LArea();
-        area.init({
-            'trigger': '#profession',//触发选择控件的文本框，同时选择完毕后name属性输出到该位置
-            'valueTo':'#profession',//选择完毕后id属性输出到该位置
-            'keys':{id:'id',name:'name'},//绑定数据源相关字段 id对应valueTo的value属性输出 name对应trigger的value属性输出
-            'type':1,//数据源类型
-            'data':LAreaData//数据源
-        });
-        var LAreaData = [{
-            "id": "2",
-            "name": "一级",
-            "child": [{
-                "id": "21",
-                "name": "二级1",
-                "child": [{
-                    "id": "211",
-                    "name": "三级1"
-                }, {
-                    "id": "212",
-                    "name": "三级2"
-                }, {
-                    "id": "213",
-                    "name": "三级3"
-                }]
-            }, {
-                "id": "22",
-                "name": "二级2"
-            }, {
-                "id": "23",
-                "name": "二级3"
-            }]
-        }];
-    })
 
     $okBtn.on("click",function(){
 

@@ -3,7 +3,7 @@
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 <head>
     <link rel="stylesheet" href="../stylesheets/common.css">
-    <link rel="stylesheet" href="../stylesheets/forgetPw.css">
+    <link rel="stylesheet" href="../stylesheets/register.css">
     <meta charset="UTF-8">
     <title>忘记密码</title>
 </head>
@@ -15,12 +15,22 @@
     </div>
     <!--content-->
     <div class="content">
-        <p class="proMes">重新设置登陆密码</p>
-        <input type="text" class="forgetInp userName" placeholder="请输入您的手机号码">
-        <input type="text" class="forgetInp floatL messageNum" placeholder="请输入短信验证码">
-        <button class="getNum">获取验证码</button>
-        <input type="password" class="forgetInp newPw" placeholder="请填写不少于6位的数字，字母或下划线">
-        <input type="submit" class="okBtn bg txtcen borR" value="确定">
+        <div>
+            <span class="register-span">重新设置登陆密码</span>
+        </div>
+        <div>
+            <input type="text" class="register-inp" placeholder="请输入您的手机号码">
+        </div>
+        <div>
+            <input type="text" class="register-inp floatL code-left" placeholder="请输入短信验证码">
+            <button class="code-right">获取验证码</button>
+        </div>
+        <div>
+            <input type="password" class="register-inp" placeholder="请填写不少于6位的数字，字母或下划线">
+        </div>
+        <div>
+            <input type="submit" class="ok-btn bg txtcen borR" value="确定">
+        </div>
     </div>
 </body>
 <script src="../javascripts/lib/zepto.js"></script>

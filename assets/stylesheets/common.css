@@ -65,6 +65,10 @@ html, body {
   font-size: 11px;
   line-height: 11px; }
 
+.font12 {
+  font-size: 12px;
+  line-height: 12px; }
+
 .floatR {
   float: right; }
 
@@ -78,14 +82,14 @@ html, body {
   border-radius: 2px; }
 
 .btnStyle {
-  width: 80%;
+  width: 82%;
   height: 40px;
   background: #ff9900;
   border: 0;
   border-radius: 2px;
   color: #ffffff;
   font-size: 14px;
-  margin: 0 10%; }
+  margin: 0 9%; }
 
 .txtcen {
   text-align: center; }
@@ -114,7 +118,7 @@ html, body {
 
 .footer {
   width: 100%;
-  height: 41px;
+  height: 53px;
   position: absolute;
   bottom: 0; }
 
@@ -213,4 +217,46 @@ html, body {
 }
 .overflow-hidden{
   overflow: hidden;
+}
+.bg-gray{
+  background: #cccccc;
+}
+.display-none{
+  display: none;
+}
+/*margin*/
+.mar-6{
+  margin:0 6px;
+  margin-top:10px;
+}
+.mar-top-9{
+  margin-top:9px;
+}
+.mar-top-10{
+  margin-top:10px;
+}
+.mar-top-15{
+  margin-top:15px;
+}
+.mar-top-20{
+  margin-top:10px;
+}
+.mar-top-43{
+  margin-top:43px;
+}
+.mar-bottom-15{
+  margin-bottom: 15px;
+}
+.mar-bottom-10{
+  margin-bottom: 10px;
+}
+.mar-right-0{
+  margin-right:0
+}
+.mar-right-25{
+  margin-right:25px;
+}
+/*padding*/
+.padding-bottom-15{
+  padding-bottom:15px;
 }
