@@ -5,9 +5,10 @@ $(document).ready(function(){
 
     var amountApp = {
         init:function(){
+            FastClick.attach(document.body);
             this.getData();
             this.reback();
-            this.iconAlert();
+            this.alertClick();
             this.submitData();
         },
         getData:function(){
@@ -45,7 +46,7 @@ $(document).ready(function(){
             //         $(".overMoney").html(overMoney);
             //         $(".sumAmount").html(nowMoney);
             //         oPercent = Math.round(overMoney/nowMoney)*100;
-            //         $('#myStat').circliful({
+            //          $('#myStat').circliful({
             //             animation: 1,
             //             animationStep: 5,
             //             foregroundBorderWidth: 5,
@@ -65,8 +66,16 @@ $(document).ready(function(){
             //     }
             // });
         },
-        iconAlert:function(){
+        alertClick:function(){
+            $('.icon-wenhao').on('click',function(){
+                $(".opacityDiv").css({'display':'block'});
+                $(".askAlert").css({'display':'block'});
+            })
 
+            $(".yesBtn").on('click',function(){
+                $(".opacityDiv").css({'display':'none'});
+                $(".askAlert").css({'display':'none'});
+            })
         },
         reback:function(){
             $(".reback").on("click",function(){
@@ -76,7 +85,7 @@ $(document).ready(function(){
         submitData:function(){
             var flag = true
             if(flag){
-                $('.okBtn').on('click',function(){
+                $('.ok-btn').on('click',function(){
                     flag = false;
                     var $inpValue = $("#advAmount").val();
                     if(/^[1-9][0-9]*$/.test($inpValue)){

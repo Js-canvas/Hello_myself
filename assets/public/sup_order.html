@@ -6,133 +6,134 @@
     <title>订单中</title>
     <link href="../stylesheets/lib/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="../stylesheets/common.css">
-    <link rel="stylesheet" href="../stylesheets/sup_order.css">
+    <link rel="stylesheet" href="../stylesheets/stylesheet.css">
 </head>
 <body>
         <!--header-->
         <div class="header bg">
-            <p>订单中心</p>
+            <a href="javascript:;" class="fontMain txtcen">&lt;</a>
+            <span class="tit txtcen">订单中心</span>
         </div>
         <!--content-->
         <div class="content">
             <div class="tab">
-                <ul id="myTab" class="nav nav-tabs">
+                <ul id="my-order-tab" class="nav nav-tabs">
                     <li class="active"><a href="#move" data-toggle="tab">进行中</a></li>
                     <li><a href="#success" data-toggle="tab">已完成</a></li>
                     <li><a href="#close" data-toggle="tab">已关闭</a></li>
                 </ul>
-                <div id="myTabContent" class="tab-content">
+                <div id="my-order-tab-content" class="tab-content">
                     <div class="tab-pane fade in active" id="move">
-                        <ul id="mySecTab" class="nav nav-tabs">
+                        <ul id="my-order-sec-tab" class="nav nav-tabs">
                             <li class="active"><a href="#waitOk" data-toggle="tab"><span class="orderNum">1</span><b>待确认</b></a></li>
                             <li><a href="#waitBank" data-toggle="tab"><span class="orderNum">1</span><b>待提款</b></a></li>
                             <li><a href="#Bank" data-toggle="tab"><span class="orderNum">1</span><b>提款审核中</b></a></li>
                             <li><a href="#waitRepay" data-toggle="tab"><span class="orderNum">1</span><b>待还款</b></a></li>
                             <li><a href="#repay" data-toggle="tab"><span class="orderNum">1</span><b>已逾期</b></a></li>
                         </ul>
-                        <div id="mySecTabContent" class="tab-content">
+                        <div id="my-order-sec-tab-content" class="tab-content">
                             <div class="tab-pane fade in active" id="waitOk">
                                 <!--订单模板-->
-                                <div class="orderDetail">
-                                    <div class="orderHeader">
-                                        <span class="orderCode">DJ.20101218.001</span>
-                                        <span class="orderState">待确认</span>
+                                <div class="order-detail">
+                                    <div class="order-header">
+                                        <span class="order-code">DJ.20101218.001</span>
+                                        <span class="order-state">待确认</span>
                                     </div>
-                                    <div class="orderContent">
-                                        <div class="orderName">客户名称：<span class="companyName">兄弟连家常菜</span></div>
-                                        <div class="timeIcon">
-                                            <div class="orderTime">下单时间：<span class="orderDate">2017.1.7  15:24:08</span></div>
-                                            <p class="nextIcon">&gt;</p>
+                                    <div class="order-content">
+                                        <div class="order-name">客户名称：<span>兄弟连家常菜</span></div>
+                                        <div class="time-icon">
+                                            <div class="order-time">下单时间：<span>2017.1.7  15:24:08</span></div>
+                                            <p class="next-icon">&gt;</p>
                                         </div>
-                                        <div class="orderSum">
-                                            <span>共<b class="orderProNum">一</b>种商品，订单总金额 ¥<b class="orderProMoney">1000000.00</b></span>
+                                        <div class="order-sum">
+                                            <span>共<b>一</b>种商品，订单总金额 ¥<b>1000000.00</b></span>
                                         </div>
-                                        <div class="orderBtn">
+                                        <div class="order-btn">
                                             <button class="disagree">不同意</button>
                                             <button class="agree">确认</button>
                                         </div>
                                         <div class="repay">
-                                            <span>还款周期：<i class="orderRepay">30</i>天</span>
+                                            <span>还款周期：<i>30</i>天</span>
                                         </div>
-                                        <div class="orderInfo">
+                                        <div class="order-info">
                                             客户已经确认商品金额并收获请您尽快确认该笔金额是否真实......
                                         </div>
                                     </div>
                                 </div>
-                                <div class="orderDetail">
-                                    <div class="orderHeader">
-                                        <span class="orderCode">DJ.20101218.001</span>
-                                        <span class="orderState">待确认</span>
+                                <div class="order-detail">
+                                    <div class="order-header">
+                                        <span class="order-code">DJ.20101218.001</span>
+                                        <span class="order-state">待确认</span>
                                     </div>
-                                    <div class="orderContent">
-                                        <div class="orderName">客户名称：<span class="companyName">兄弟连家常菜</span></div>
-                                        <div class="timeIcon">
-                                            <div class="orderTime">下单时间：<span class="orderDate">2017.1.7  15:24:08</span></div>
-                                            <p class="nextIcon">&gt;</p>
+                                    <div class="order-content">
+                                        <div class="order-name">客户名称：<span>兄弟连家常菜</span></div>
+                                        <div class="time-icon">
+                                            <div class="order-time">下单时间：<span>2017.1.7  15:24:08</span></div>
+                                            <p class="next-icon">&gt;</p>
                                         </div>
-                                        <div class="orderSum">
-                                            <span>共<b class="orderProNum">一</b>种商品，订单总金额¥<b class="orderProMoney">1000000.00</b></span>
+                                        <div class="order-sum">
+                                            <span>共<b class="orderProNum">一</b>种商品，订单总金额¥<b>1000000.00</b></span>
                                         </div>
-                                        <div class="orderBtn">
+                                        <div class="order-btn">
                                             <button class="disagree">不同意</button>
                                             <button class="agree">确认</button>
                                         </div>
                                         <div class="repay">
                                             <span>还款周期：<i class="orderRepay">30</i>天</span>
                                         </div>
-                                        <div class="orderInfo">
+                                        <div class="order-info">
                                             客户已经确认商品金额并收获请您尽快确认该笔金额是否真实......
                                         </div>
                                     </div>
                                 </div>
-                                <div class="orderDetail">
-                                    <div class="orderHeader">
-                                        <span class="orderCode">DJ.20101218.001</span>
-                                        <span class="orderState">待确认</span>
+                                <div class="order-detail">
+                                    <div class="order-header">
+                                        <span class="order-code">DJ.20101218.001</span>
+                                        <span class="order-state">待确认</span>
                                     </div>
-                                    <div class="orderContent">
-                                        <div class="orderName">客户名称：<span class="companyName">兄弟连家常菜</span></div>
-                                        <div class="timeIcon">
-                                            <div class="orderTime">下单时间：<span class="orderDate">2017.1.7  15:24:08</span></div>
-                                            <p class="nextIcon">&gt;</p>
+                                    <div class="order-content">
+                                        <div class="order-name">客户名称：<span>兄弟连家常菜</span></div>
+                                        <div class="time-icon">
+                                            <div class="order-time">下单时间：<span>2017.1.7  15:24:08</span></div>
+                                            <p class="next-icon">&gt;</p>
                                         </div>
-                                        <div class="orderSum">
-                                            <span>共<b class="orderProNum">一</b>种商品，订单总金额¥<b class="orderProMoney">1000000.00</b></span>
+                                        <div class="order-sum">
+                                            <span>共<b class="orderProNum">一</b>种商品，订单总金额¥<b>1000000.00</b></span>
                                         </div>
-                                        <div class="orderBtn">
+                                        <div class="order-btn">
                                             <button class="disagree">不同意</button>
                                             <button class="agree">确认</button>
                                         </div>
                                         <div class="repay">
                                             <span>还款周期：<i class="orderRepay">30</i>天</span>
                                         </div>
-                                        <div class="orderInfo">
+                                        <div class="order-info">
                                             客户已经确认商品金额并收获请您尽快确认该笔金额是否真实......
                                         </div>
                                     </div>
                                 </div>
-                                <div class="orderDetail">
-                                    <div class="orderHeader">
-                                        <span class="orderCode">DJ.20101218.001</span>
-                                        <span class="orderState">待确认</span>
+                                <div class="order-detail">
+                                    <div class="order-header">
+                                        <span class="order-code">DJ.20101218.001</span>
+                                        <span class="order-state">待确认</span>
                                     </div>
-                                    <div class="orderContent">
-                                        <div class="orderName">客户名称：<span class="companyName">兄弟连家常菜</span></div>
-                                        <div class="timeIcon">
-                                            <div class="orderTime">下单时间：<span class="orderDate">2017.1.7  15:24:08</span></div>
-                                            <p class="nextIcon">&gt;</p>
+                                    <div class="order-content">
+                                        <div class="order-name">客户名称：<span>兄弟连家常菜</span></div>
+                                        <div class="time-icon">
+                                            <div class="order-time">下单时间：<span>2017.1.7  15:24:08</span></div>
+                                            <p class="next-icon">&gt;</p>
                                         </div>
-                                        <div class="orderSum">
-                                            <span>共<b class="orderProNum">一</b>种商品，订单总金额¥<b class="orderProMoney">1000000.00</b></span>
+                                        <div class="order-sum">
+                                            <span>共<b class="orderProNum">一</b>种商品，订单总金额¥<b>1000000.00</b></span>
                                         </div>
-                                        <div class="orderBtn">
+                                        <div class="order-btn">
                                             <button class="disagree">不同意</button>
                                             <button class="agree">确认</button>
                                         </div>
                                         <div class="repay">
                                             <span>还款周期：<i class="orderRepay">30</i>天</span>
                                         </div>
-                                        <div class="orderInfo">
+                                        <div class="order-info">
                                             客户已经确认商品金额并收获请您尽快确认该笔金额是否真实......
                                         </div>
                                     </div>
@@ -140,22 +141,22 @@
                             </div>
                             <div class="tab-pane fade" id="waitBank">
                                 <!--订单模板-->
-                                <div class="orderDetail">
-                                    <div class="orderHeader">
-                                        <span class="orderCode">DJ.20101218.001</span>
-                                        <span class="orderState">待提款</span>
+                                <div class="order-detail">
+                                    <div class="order-header">
+                                        <span class="order-code">DJ.20101218.001</span>
+                                        <span class="order-state">待提款</span>
                                     </div>
-                                    <div class="orderContent">
-                                        <div class="orderName">客户名称：<span class="companyName">兄弟连家常菜</span></div>
-                                        <div class="timeIcon">
-                                            <div class="orderTime">下单时间：<span class="orderDate">2017.1.7  15:24:08</span></div>
-                                            <p class="nextIcon">&gt;</p>
+                                    <div class="order-content">
+                                        <div class="order-name">客户名称：<span>兄弟连家常菜</span></div>
+                                        <div class="time-icon">
+                                            <div class="order-time">下单时间：<span>2017.1.7  15:24:08</span></div>
+                                            <p class="next-icon">&gt;</p>
                                         </div>
-                                        <div class="orderSum">
-                                            <span>共<b class="orderProNum">一</b>种商品，订单总金额 ¥<b class="orderProMoney">1000000.00</b></span>
+                                        <div class="order-sum">
+                                            <span>共<b class="orderProNum">一</b>种商品，订单总金额 ¥<b>1000000.00</b></span>
                                         </div>
-                                        <div class="orderBtn">
-                                            <button class="getMoney">提款</button>
+                                        <div class="order-btn">
+                                            <button class="get-money">提款</button>
                                         </div>
                                         <div class="repay">
                                             <span>还款周期：<i class="orderRepay">30</i>天</span>
@@ -165,21 +166,21 @@
                             </div>
                             <div class="tab-pane fade" id="Bank">
                                 <!--订单模板-->
-                                <div class="orderDetail">
-                                    <div class="orderHeader">
-                                        <span class="orderCode">DJ.20101218.001</span>
-                                        <span class="orderState">提款审核中</span>
+                                <div class="order-detail">
+                                    <div class="order-header">
+                                        <span class="order-code">DJ.20101218.001</span>
+                                        <span class="order-state">提款审核中</span>
                                     </div>
-                                    <div class="orderContent">
-                                        <div class="orderName">客户名称：<span class="companyName">兄弟连家常菜</span></div>
-                                        <div class="timeIcon">
-                                            <div class="orderTime">下单时间：<span class="orderDate">2017.1.7  15:24:08</span></div>
-                                            <p class="nextIcon">&gt;</p>
+                                    <div class="order-content">
+                                        <div class="order-name">客户名称：<span>兄弟连家常菜</span></div>
+                                        <div class="time-icon">
+                                            <div class="order-time">下单时间：<span>2017.1.7  15:24:08</span></div>
+                                            <p class="next-icon">&gt;</p>
                                         </div>
-                                        <div class="orderSum">
-                                            <span>共<b class="orderProNum">一</b>种商品，订单总金额 ¥<b class="orderProMoney">1000000.00</b></span>
+                                        <div class="order-sum">
+                                            <span>共<b class="orderProNum">一</b>种商品，订单总金额 ¥<b>1000000.00</b></span>
                                         </div>
-                                        <div class="getRealMoney">实得金额：¥<span class="realMoney">9000.00</span></div>
+                                        <div class="get-real-money">实得金额：¥<span>9000.00</span></div>
                                         <div class="repay">
                                             <span>还款周期：<i class="orderRepay">30</i>天</span>
                                             <b>提款审核中......</b>
@@ -189,24 +190,24 @@
                             </div>
                             <div class="tab-pane fade" id="waitRepay">
                                 <!--订单模板-->
-                                <div class="orderDetail" state="1">
-                                    <div class="orderHeader">
-                                        <span class="orderCode">DJ.20101218.001</span>
-                                        <span class="orderState">待还款</span>
+                                <div class="order-detail" state="1">
+                                    <div class="order-header">
+                                        <span class="order-code">DJ.20101218.001</span>
+                                        <span class="order-state">待还款</span>
                                     </div>
-                                    <div class="orderContent">
-                                        <div class="orderName">客户名称：<span class="companyName">兄弟连家常菜</span></div>
-                                        <div class="timeIcon">
-                                            <div class="orderTime">下单时间：<span class="orderDate">2017.1.7  15:24:08</span></div>
-                                            <p class="nextIcon">&gt;</p>
+                                    <div class="order-content">
+                                        <div class="order-name">客户名称：<span>兄弟连家常菜</span></div>
+                                        <div class="time-icon">
+                                            <div class="order-time">下单时间：<span>2017.1.7  15:24:08</span></div>
+                                            <p class="next-icon">&gt;</p>
                                         </div>
-                                        <div class="submitBtn">
-                                            <button class="subBtn">提交还款证明</button>
+                                        <div class="submit-btn">
+                                            <button class="sub-btn">提交还款证明</button>
                                         </div>
-                                        <div class="orderRepaySum">
+                                        <div class="order-repay-sum">
                                             待还款金额：¥<span class="repayMoney">10000.00</span>
                                         </div>
-                                        <div class="rpDate">还款日期：<span class="repayDate">2016.8.9</span></div>
+                                        <div class="rp-date">还款日期：<span class="repayDate">2016.8.9</span></div>
                                         <div class="repay">
                                             <span>还款周期：<i class="orderRepay">30</i>天</span>
                                         </div>
@@ -215,21 +216,21 @@
                             </div>
                             <div class="tab-pane fade" id="repay">
                                 <!--订单模板-->
-                                <div class="orderDetail" state="0">
-                                    <div class="orderHeader">
-                                        <span class="orderCode">DJ.20101218.001</span>
-                                        <span class="orderState">已逾期</span>
+                                <div class="order-detail" state="0">
+                                    <div class="order-header">
+                                        <span class="order-code">DJ.20101218.001</span>
+                                        <span class="order-state">已逾期</span>
                                     </div>
-                                    <div class="orderContent">
-                                        <div class="orderName">供货商名称：<span class="supCompanyName">XXX科技有限公司</span></div>
-                                        <div class="timeIcon">
-                                            <div class="orderTime">下单时间：<span class="orderDate">2017.1.7  15:24:08</span></div>
-                                            <p class="nextIcon">&gt;</p>
+                                    <div class="order-content">
+                                        <div class="order-name">供货商名称：<span class="supCompanyName">XXX科技有限公司</span></div>
+                                        <div class="time-icon">
+                                            <div class="order-time">下单时间：<span>2017.1.7  15:24:08</span></div>
+                                            <p class="next-icon">&gt;</p>
                                         </div>
-                                        <div class="orderRepaySum">
+                                        <div class="order-repay-sum">
                                             待还款金额：¥<span class="repayMoney">10000.00</span>
                                         </div>
-                                        <div class="rpDate">还款日期：<span class="repayDate">2016.8.9</span></div>
+                                        <div class="rp-date">还款日期：<span class="repayDate">2016.8.9</span></div>
                                         <div class="repay">
                                             <span>还款周期：<i class="orderRepay">30</i>天</span>
                                         </div>
@@ -239,26 +240,26 @@
                         </div>
                     </div>
                     <div class="tab-pane fade in" id="success">
-                        <div class="sucHeader">
+                        <div class="suc-header">
                             <p>已完成订单数量 <span class="sucOrderNum">2</span></p>
                         </div>
-                        <div class="sucDetail">
+                        <div class="suc-detail">
                             <!--订单模板-->
-                            <div class="orderDetail">
-                                <div class="orderHeader">
-                                    <span class="orderCode">DJ.20101218.001</span>
-                                    <span class="orderState">已完成</span>
+                            <div class="order-detail">
+                                <div class="order-header">
+                                    <span class="order-code">DJ.20101218.001</span>
+                                    <span class="order-state">已完成</span>
                                 </div>
-                                <div class="orderContent">
-                                    <div class="orderName">客户名称：<span class="companyName">兄弟连家常菜</span></div>
-                                    <div class="timeIcon">
-                                        <div class="orderTime">下单时间：<span class="orderDate">2017.1.7  15:24:08</span></div>
-                                        <p class="nextIcon">&gt;</p>
+                                <div class="order-content">
+                                    <div class="order-name">客户名称：<span>兄弟连家常菜</span></div>
+                                    <div class="time-icon">
+                                        <div class="order-time">下单时间：<span>2017.1.7  15:24:08</span></div>
+                                        <p class="next-icon">&gt;</p>
                                     </div>
-                                    <div class="orderSum">
-                                        <span>共<b class="orderProNum">一</b>种商品，订单总金额¥<b class="orderProMoney">1000000.00</b></span>
+                                    <div class="order-sum">
+                                        <span>共<b class="orderProNum">一</b>种商品，订单总金额¥<b>1000000.00</b></span>
                                     </div>
-                                    <div class="getRealMoney">实得金额：¥<span class="realMoney">9850.00</span></div>
+                                    <div class="get-real-money">实得金额：¥<span>9850.00</span></div>
                                     <div class="repay">
                                         <span>还款周期：<i class="orderRepay">30</i>天</span>
                                     </div>
@@ -267,24 +268,24 @@
                         </div>
                     </div>
                     <div class="tab-pane fade in" id="close">
-                        <div class="closeHeader">
+                        <div class="close-header">
                             <p>已关闭订单数量 <span class="closeOrderNum">2</span></p>
                         </div>
-                        <div class="closeDetail">
+                        <div class="close-detail">
                             <!--订单模板-->
-                            <div class="orderDetail">
-                                <div class="orderHeader">
-                                    <span class="orderCode">DJ.20101218.001</span>
-                                    <span class="orderState">已关闭</span>
+                            <div class="order-detail">
+                                <div class="order-header">
+                                    <span class="order-code">DJ.20101218.001</span>
+                                    <span class="order-state">已关闭</span>
                                 </div>
-                                <div class="orderContent">
-                                    <div class="orderName">客户名称：<span class="companyName">兄弟连家常菜</span></div>
-                                    <div class="timeIcon">
-                                        <div class="orderTime">下单时间：<span class="orderDate">2017.1.7  15:24:08</span></div>
-                                        <p class="nextIcon">&gt;</p>
+                                <div class="order-content">
+                                    <div class="order-name">客户名称：<span>兄弟连家常菜</span></div>
+                                    <div class="time-icon">
+                                        <div class="order-time">下单时间：<span>2017.1.7  15:24:08</span></div>
+                                        <p class="next-icon">&gt;</p>
                                     </div>
-                                    <div class="orderSum">
-                                        <span>共<b class="orderProNum">一</b>种商品，订单总金额¥<b class="orderProMoney">1000000.00</b></span>
+                                    <div class="order-sum">
+                                        <span>共<b class="orderProNum">一</b>种商品，订单总金额¥<b>1000000.00</b></span>
                                     </div>
                                     <div class="repay">
                                         <span>还款周期：<i class="orderRepay">30</i>天</span>
@@ -327,16 +328,16 @@
             </ul>
         </div>
         <!--透明层-->
-        <div id="opacityDiv"></div>
+        <div class="opacityDiv"></div>
         <!--自定义对话框-->
-        <div class="askAlert txtcen">
+        <div class="yes-alert txtcen">
             <i class="alertTit fontRed">确认订单</i>
             <p class="infoMessage">本次订单共计3件商品，订单总金额为￥18000.00,还款周期为30天,采购商为XXXXX公司，提款金额将根据该订单金额为准，是否确认提交订单？</p>
             <button class="noBtn">取消</button>
             <button class="yesBtn">确认</button>
         </div>
         <!--自定义对话框-->
-        <div class="askAlert1 txtcen">
+        <div class="no-alert txtcen">
             <i class="alertTit fontRed">拒绝确认订单</i>
             <p class="infoMessage">拒绝确认订单您将无法发起提款，确认拒绝吗？</p>
             <button class="noBtn">取消</button>
@@ -345,5 +346,6 @@
 </body>
 <script src="../javascripts/lib/jquery.min.js"></script>
 <script src="../javascripts/lib/bootstrap.js"></script>
+<script src="../javascripts/lib/fastclick.js"></script>
 <script src="../javascripts/sup_order.js"></script>
 </html>

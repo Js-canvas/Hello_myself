@@ -3,18 +3,18 @@
  */
 $(document).ready(function(){
 
-    var $reback = $(".reback");
-    var $ul = $('.list');
-    var bankName = "";
     var bankList = {
         init:function(){
+            FastClick.attach(document.body);
+            var bankName = "";
             this.reBack();
             // this.getData();
             this.chooseBank();
         },
         reBack:function(){
-            $reback.on("click",function(){
+            $(".reback").on("click",function(){
                 //将选择的银行名称保存到本地
+
                 window.localStorage.setItem("bank",bankName);
                 window.history.go(-1);
             });
@@ -27,10 +27,10 @@ $(document).ready(function(){
                 dataType: "json",
                 success: function(data){
                     for(var i = 0 ; i < data.length ; i++){
-                        str+="<li><label for='1'>"+data[i].bankName+"</label><input type='radio' name='bank' class='bankInp' id="+data[i].bankId+">"
-                        str+="<i class='icon'><img src='../images/uncheck.png'></i></li>"
+                        str+=""
+                        str+=""
                     }
-                    $ul.append(str);
+                    $('.bank-list-ul').append(str);
                     this.chooseBank().bind(this);
                 },
                 error:function(err){
@@ -39,14 +39,13 @@ $(document).ready(function(){
             });
         },
         chooseBank:function(){
-            $('.list').delegate("label",'click',function(){
-                var $inp = $('.bankInp');
+            $('.bank-list-ul').delegate(".bank-list-label",'click',function(){
+                var $inp = $('.bank-list-inp');
                 for(var i = 0 ;i < $inp.length ;i++){
                     $inp.next().css({'color':'#999'});
                 }
                 $(this).siblings('i').css({'color':'#cd2f2f'})
                 bankName = $(this).html();
-                console.log(bankName)
             });
         }
     }

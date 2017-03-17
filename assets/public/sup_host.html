@@ -5,52 +5,67 @@
     <meta charset="UTF-8">
         <title>客户中心</title>
     <link rel="stylesheet" href="../stylesheets/common.css">
-    <link rel="stylesheet" href="../stylesheets/sup_host.css">
+    <link rel="stylesheet" href="../stylesheets/stylesheet.css">
 </head>
 <body>
         <!--header-->
         <div class="header bg">
+            <a href="javascript:;" class="txtcen fontMain"><</a>
             <span class="tit txtcen">客户中心</span>
         </div>
         <!--content-->
         <div class="content">
             <div class="has">
-                <ul class="dataList">
+                <ul class="host-ul">
                     <!--数据模版-->
-                    <li class="borBom">
-                        <p class="companyName font11">刘家兄弟餐馆</p>
-                        <p class="userName font11">13212341234</p>
-                        <div class="creditBox">
-                            <b>透支额度：</b>
-                            <span class="credit">¥123123.00</span>
-                            <span class="connect fontMain">联系客户</span>
+                    <li class="borBom font11 padding-bottom-15">
+                        <div class="borBomGray">
+                            <span class="host-span mar-top-15 padding-bottom-8">刘家兄弟餐馆</span>
                         </div>
-                        <div class="ads">
-                            <b>地区：</b>
-                            <span class="address">北京市昌平区</span>
+                        <div class="mar-top-10">
+                            <span class="host-span">小强</span>
+                            <span class="host-span">13212341234</span>
+                        </div>
+                        <div class="overflow-hidden clearB mar-top-5">
+                            <span class="floatL host-span">透支额度：</span>
+                            <span class="floatL host-span mar-left-0">¥123123.00</span>
+                            <span class="floatR fontMain host-span mar-right-4">联系客户</span>
+                        </div>
+                        <div class="mar-top-5">
+                            <span class="host-span">地区：</span>
+                            <span class="host-span mar-left-0">北京市昌平区</span>
                         </div>
                     </li>
-                    <li class="borBom">
-                        <p class="companyName font11">刘家兄弟餐馆</p>
-                        <p class="userName font11">13212341234</p>
-                        <div class="creditBox">
-                            <b>透支额度：</b>
-                            <span class="credit">¥123123.00</span>
-                            <span class="connect fontMain">联系客户</span>
+                    <li class="borBom font11 padding-bottom-15">
+                        <div class="borBomGray">
+                            <span class="host-span mar-top-15 padding-bottom-8">刘家兄弟餐馆</span>
                         </div>
-                        <div class="ads">
-                            <b>地区：</b>
-                            <span class="address">北京市昌平区</span>
+                        <div class="mar-top-10">
+                            <span class="host-span">小强</span>
+                            <span class="host-span">13212341234</span>
+                        </div>
+                        <div class="overflow-hidden clearB mar-top-5">
+                            <span class="floatL host-span">透支额度：</span>
+                            <span class="floatL host-span mar-left-0">¥123123.00</span>
+                            <span class="floatR fontMain host-span mar-right-4">联系客户</span>
+                        </div>
+                        <div class="mar-top-5">
+                            <span class="host-span">地区：</span>
+                            <span class="host-span mar-left-0">北京市昌平区</span>
                         </div>
                     </li>
                 </ul>
-                <a href="sup_addHost.html" class="addIcon bg txtcen">&#43;</a>
+                <div class="txtcen">
+                    <a href="sup_addHost.html" class="add-icon bg txtcen fontWhite">&#43;</a>
+                </div>
             </div>
-            <!--<div class="noHas">-->
-                <!--<a href="javascript:;" class="addIconNo">&#43;</a>-->
-                <!--<p class="info">添加下游采购商</p>-->
-            <!--</div>-->
-            </div>
+                <!--<div class="no-has">-->
+                    <!--<a href="javascript:;" class="add-icon-no bg txtcen fontWhite">&#43;</a>-->
+                    <!--<div class="txtcen">-->
+                        <!--<span class="span mar-top-15">添加下游采购商</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+        </div>
         <!--footer-->
         <div class="footer bg">
             <ul>
@@ -84,5 +99,6 @@
         </div>
 </body>
 <script src="../javascripts/lib/zepto.js"></script>
+<script src="../javascripts/lib/fastclick.js"></script>
 <script src="../javascripts/sup_host.js"></script>
 </html>

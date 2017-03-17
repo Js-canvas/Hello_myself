@@ -2,6 +2,7 @@ $(document).ready(function(){
 
     var oForget = {
         init:function(){
+            FastClick.attach(document.body);
             this.reback();
             // this.getNum();
             // this.postData();

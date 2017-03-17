@@ -3,7 +3,7 @@
  */
 $(document).ready(function(){
     var winWidth = window.innerWidth;
-    var canHeight = $('.tabPic').height();
+    var canHeight = $('.tab-pic').height();
 
     $("#dayOrderChart").css({'width':winWidth,'height':canHeight});
     $("#dayHostChart").css({'width':winWidth,'height':canHeight});
@@ -398,6 +398,7 @@ $(document).ready(function(){
 
     var oList = {
         init:function(){
+            FastClick.attach(document.body);
             // this.getData();
         },
         getData:function(){
@@ -409,15 +410,15 @@ $(document).ready(function(){
         },
         //根据传入数据的不同判断应该加载什么样式
         createLi:function(date,num,percent,state){
-            var dataClass='dataUp';
+            var dataClass='data-up';
             var imgUrl = '../images/dataUp.PNG';
             switch(state){
                 case 1:
-                    dataClass='dataUp';
+                    dataClass='data-up';
                     imgUrl = '../images/dataUp.PNG';
                     break;
                 case 2:
-                    dataClass='dataDown';
+                    dataClass='data-down';
                     imgUrl = '../images/dataDown.PNG';
                     break;
                 default:

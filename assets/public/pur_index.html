@@ -6,118 +6,146 @@
     <title>采购宝</title>
     <link rel="stylesheet" href="../stylesheets/lib/iconfont.css">
     <link rel="stylesheet" href="../stylesheets/common.css">
-    <link rel="stylesheet" href="../stylesheets/pur_index.css">
+    <link rel="stylesheet" href="../stylesheets/stylesheet.css">
 </head>
 <body>
         <!--header-->
 
         <!--content-->
-        <div class="content">
-            <div class="banner">
-                <img src="../images/banner.jpg" alt="">
+        <div class="pur-index-content">
+            <div class="pur-index-banner">
+                <img src="../images/banner.jpg">
             </div>
-            <div class="hasLimit borR bor">
+            <div class="pur-index-has-limit borR bor">
                 <!--总额度-->
-                <div class="limit borRight">
-                    <p class="limitTxt">我的账单（元）</p>
-                    <p class="stateInfo">30000.00</p>
-
+                <div class="pur-index-limit borRight">
+                    <div>
+                        <span class="font12 mar-top-15 mar-left-10 span">我的账单（元）</span>
+                    </div>
+                    <div class="txtcen">
+                        <spen class="font-weight-bold font13 mar-top-20 span">30000.00</spen>
+                    </div>
                 </div>
                 <!--剩余额度-->
-                <div class="limit">
-                    <p class="limitTxt">我的透支额度（元）</p>
-                    <p class="limitTxt1 font11">可用额度</p>
-                    <p class="stateInfo">50000.00</p>
-                    <a href="pur_amount.html" class="changeMoney fontMain">申请提额</a>
+                <div class="pur-index-limit">
+                    <div class="overflow-hidden">
+                        <span class="font12 mar-top-15 mar-left-10 span floatL">我的透支额度（元）</span>
+                    </div>
+                    <div class=" overflow-hidden fontGray">
+                        <span class="font12  span mar-top-5 mar-left-10 floatL">可用额度</span>
+                    </div>
+                    <div class="txtcen">
+                        <span class="font-weight-bold font13 span mar-top-5">50000.00</span>
+                    </div>
+                    <div class="overflow-hidden mar-top-15">
+                        <a href="sup_amount.html" class="font11 fontMain floatR mar-right-4">申请提额</a>
+                    </div>
                 </div>
             </div>
             <!--下拉框-->
-            <div class="selectBox bor floatR">
-                <i class="img iconfont icon-xiasanjiao-copy"></i>
+            <div class="pur-index-select bor floatR">
+                <i class="pur-index-down iconfont icon-xiasanjiao-copy"></i>
                 <select name="" id="select" class="font11">
                     <option value="">所有商家</option>
                 </select>
             </div>
             <!--list-->
             <div class="clearB">
-                <ul class="dataList borTop">
+                <ul class="pur-index-ul borTop">
                     <!--数据模版-->
                     <li class="borBom">
-                        <div class="floatL icon">
+                        <div class="floatL pur-index-img">
                             <img src="../images/company.png" alt="">
                         </div>
                         <div class="floatL font11">
-                            <p class="companyName">北方科技公司</p>
-                            <span class="tit1">行业:</span><span class="profession">生活服务类</span>
+                            <div>
+                                <span>北方科技公司</span>
+                            </div>
+                            <div>
+                                <span class="span fontGray mar-top-28">行业:</span><span>生活服务类</span>
+                            </div>
                         </div>
                         <div class="floatR font11">
-                            <p class="tit2">联系方式：<span class="connectPhone">18777777777</span></p>
-                            <button class="buyBtn btnStyle floatR">下单</button>
+                            <div>
+                                <span>联系方式：</span><span>18777777777</span>
+                            </div>
+                            <a href="pur_placeOrder.html" class="buy-btn btnStyle floatR fontWhite txtcen">下单</a>
                         </div>
                     </li>
                     <li class="borBom">
-                        <div class="floatL icon">
+                        <div class="floatL pur-index-img">
                             <img src="../images/company.png" alt="">
                         </div>
                         <div class="floatL font11">
-                            <p class="companyName">北方科技公司</p>
-                            <span class="tit1">行业:</span><span class="profession">生活服务类</span>
+                            <div>
+                                <span>北方科技公司</span>
+                            </div>
+                            <div>
+                                <span class="span fontGray mar-top-28">行业:</span><span>生活服务类</span>
+                            </div>
                         </div>
                         <div class="floatR font11">
-                            <p class="tit2">联系方式：<span class="connectPhone">18777777777</span></p>
-                            <button class="buyBtn btnStyle floatR">下单</button>
+                            <div>
+                                <span>联系方式：</span><span>18777777777</span>
+                            </div>
+                            <a href="pur_placeOrder.html" class="buy-btn btnStyle floatR fontWhite txtcen">下单</a>
                         </div>
                     </li>
                     <li class="borBom">
-                        <div class="floatL icon">
+                        <div class="floatL pur-index-img">
                             <img src="../images/company.png" alt="">
                         </div>
                         <div class="floatL font11">
-                            <p class="companyName">北方科技公司</p>
-                            <span class="tit1">行业:</span><span class="profession">生活服务类</span>
+                            <div>
+                                <span>北方科技公司</span>
+                            </div>
+                            <div>
+                                <span class="span fontGray mar-top-28">行业:</span><span>生活服务类</span>
+                            </div>
                         </div>
                         <div class="floatR font11">
-                            <p class="tit2">联系方式：<span class="connectPhone">18777777777</span></p>
-                            <button class="buyBtn btnStyle floatR">下单</button>
+                            <div>
+                                <span>联系方式：</span><span>18777777777</span>
+                            </div>
+                            <a href="pur_placeOrder.html" class="buy-btn btnStyle floatR fontWhite txtcen">下单</a>
                         </div>
                     </li>
                     <li class="borBom">
-                        <div class="floatL icon">
+                        <div class="floatL pur-index-img">
                             <img src="../images/company.png" alt="">
                         </div>
                         <div class="floatL font11">
-                            <p class="companyName">北方科技公司</p>
-                            <span class="tit1">行业:</span><span class="profession">生活服务类</span>
+                            <div>
+                                <span>北方科技公司</span>
+                            </div>
+                            <div>
+                                <span class="span fontGray mar-top-28">行业:</span><span>生活服务类</span>
+                            </div>
                         </div>
                         <div class="floatR font11">
-                            <p class="tit2">联系方式：<span class="connectPhone">18777777777</span></p>
-                            <button class="buyBtn btnStyle floatR">下单</button>
+                            <div>
+                                <span>联系方式：</span><span>18777777777</span>
+                            </div>
+                            <a href="pur_placeOrder.html" class="buy-btn btnStyle floatR fontWhite txtcen">下单</a>
                         </div>
                     </li>
                     <li class="borBom">
-                        <div class="floatL icon">
+                        <div class="floatL pur-index-img">
                             <img src="../images/company.png" alt="">
                         </div>
                         <div class="floatL font11">
-                            <p class="companyName">北方科技公司</p>
-                            <span class="tit1">行业:</span><span class="profession">生活服务类</span>
+                            <div>
+                                <span>北方科技公司</span>
+                            </div>
+                            <div>
+                                <span class="span fontGray mar-top-28">行业:</span><span>生活服务类</span>
+                            </div>
                         </div>
                         <div class="floatR font11">
-                            <p class="tit2">联系方式：<span class="connectPhone">18777777777</span></p>
-                            <button class="buyBtn btnStyle floatR">下单</button>
-                        </div>
-                    </li>
-                    <li class="borBom">
-                        <div class="floatL icon">
-                            <img src="../images/company.png" alt="">
-                        </div>
-                        <div class="floatL font11">
-                            <p class="companyName">北方科技公司</p>
-                            <span class="tit1">行业:</span><span class="profession">生活服务类</span>
-                        </div>
-                        <div class="floatR font11">
-                            <p class="tit2">联系方式：<span class="connectPhone">18777777777</span></p>
-                            <button class="buyBtn btnStyle floatR">下单</button>
+                            <div>
+                                <span>联系方式：</span><span>18777777777</span>
+                            </div>
+                            <a href="pur_placeOrder.html" class="buy-btn btnStyle floatR fontWhite txtcen">下单</a>
                         </div>
                     </li>
                 </ul>
@@ -157,5 +185,6 @@
         </div>
 </body>
     <script src="../javascripts/lib/zepto.js"></script>
+    <script src="../javascripts/lib/fastclick.js"></script>
     <script src="../javascripts/pur_index.js"></script>
 </html>

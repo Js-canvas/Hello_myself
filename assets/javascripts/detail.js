@@ -4,14 +4,15 @@
 $(document).ready(function(){
     var oDetail = {
         init:function(){
+            FastClick.attach(document.body);
             this.reback();
             this.alertClick();
             this.yesClickSup();
             this.noClickSup();
             this.noClickPur();
             this.iconClick();
-            this.postClick();//提交还款证明
-            this.cashClick();//提款
+            // this.postClick();//提交还款证明
+            // this.cashClick();//提款
         },
         reback:function(){
             $(".reback").on("click",function(){
@@ -21,12 +22,12 @@ $(document).ready(function(){
         //    点击对勾
         iconClick:function(){
             var iconFlag = true;
-            $('.order-book').on('click',function(){
+            $('.detail-book').on('click',function(){
                 if(iconFlag){
-                    $('.order-gou').removeClass('icon-gou')
+                    $('.detail-gou').removeClass('icon-gou')
                     iconFlag=false;
                 }else{
-                    $('.order-gou').addClass('icon-gou')
+                    $('.detail-gou').addClass('icon-gou')
                     iconFlag=true;
                 }
             })
@@ -95,17 +96,18 @@ $(document).ready(function(){
                     $(".no-alert").css({'display':'none'});
                 })
             })
-        },
-        postClick:function(){
-            $('.post-btn').on('click',function(){
-                window.location.href="repayment.html"
-            })
-        },
-        cashClick:function(){
-            $('.cash-btn').on('click',function(){
-                window.location.href="cashOrder.html"
-            })
         }
+        // ,
+        // postClick:function(){
+        //     $('.post-btn').on('click',function(){
+        //         window.location.href="repayment.html"
+        //     })
+        // },
+        // cashClick:function(){
+        //     $('.cash-btn').on('click',function(){
+        //         window.location.href="cashOrder.html"
+        //     })
+        // }
     }
 
     oDetail.init();

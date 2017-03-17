@@ -4,9 +4,10 @@
 $(document).ready(function(){
     var oPurOrder = {
         init:function(){
+            FastClick.attach(document.body);
             // this.getState();
             this.clickHref();
-            // this.disagreeClick();
+            this.disagreeClick();
         },
         getState:function(){
             $.ajax({
@@ -42,16 +43,16 @@ $(document).ready(function(){
             });
         },
         clickHref:function(){
-            $('.orderDetail').on('click',function(e){
+            $('.order-detail').on('click',function(e){
                 var e = e||window.event;
-                switch ($('#myTab li').filter('.active').index()){
+                switch ($('#my-order-tab li').filter('.active').index()){
                     //判断状态 0 进行中 1 已完成 2 已关闭
                     case 0:
-                        switch($('#mySecTab li').filter('.active').index()){
+                        switch($('#my-order-sec-tab li').filter('.active').index()){
                             // 0 待确认 1 待还款 2 已逾期
                             case 0:
                                 switch(e.target.className){
-                                    case "disOrderBtn":
+                                    case "dis-order-btn":
                                         this.disagreeClick()
                                         break;
                                     default:
@@ -61,7 +62,7 @@ $(document).ready(function(){
                                 break;
                             case 1:
                                 switch(e.target.className){
-                                    case "subBtn":
+                                    case "sub-btn":
                                         window.location.href="repayment.html"
                                         break;
                                     default:
@@ -76,7 +77,7 @@ $(document).ready(function(){
                                 break;
                             case 2:
                                 switch(e.target.className){
-                                    case "subBtn":
+                                    case "sub-btn":
                                         window.location.href="repayment.html"
                                         break;
                                     default:
@@ -106,20 +107,20 @@ $(document).ready(function(){
             }.bind(this))
         },
         disagreeClick:function(){
-            $('.disOrderBtn').on('click',function(){
-                $("#opacityDiv").css({'display':'block'});
+            $('.dis-order-btn').on('click',function(){
+                $(".opacityDiv").css({'display':'block'});
                 $(".askAlert").css({'display':'block'});
             })
 
             $(".yesBtn").on('click',function(){
-                $("#opacityDiv").css({'display':'none'});
+                $(".opacityDiv").css({'display':'none'});
                 $(".askAlert").css({'display':'none'});
                 //    向后台提交数据改状态
                 window.location.href="pur_order.html"
             })
 
             $(".noBtn").on('click',function(){
-                $("#opacityDiv").css({'display':'none'});
+                $(".opacityDiv").css({'display':'none'});
                 $(".askAlert").css({'display':'none'});
             })
         }

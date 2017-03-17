@@ -8,32 +8,32 @@
     <link rel="stylesheet" href="../stylesheets/lib/iconfont.css">
     <link rel="stylesheet" href="../stylesheets/common.css">
     <link rel="stylesheet" href="../stylesheets/lib/iconfont.css">
-    <link rel="stylesheet" href="../stylesheets/sup_index.css">
+    <link rel="stylesheet" href="../stylesheets/stylesheet.css">
 </head>
 <body>
         <!--header-->
-        <div class="header">
-            <span class="companyName">华夏科技有限公司</span>
-            <a class="myIcon iconfont icon-yonghu" href="sup_myCenter.html"></a>
+        <div class="index-header">
+            <span class="index-header-span">华夏科技有限公司</span>
+            <a class="index-icon iconfont icon-yonghu" href="sup_myCenter.html"></a>
         </div>
         <!--content-->
-        <div class="content">
-            <div class="hasLimit bor borR">
+        <div class="index-content">
+            <div class="has-limit bor borR">
                 <!--总额度-->
                 <div class="limit borRight">
-                    <p class="limitTxt">授信总额度（元）</p>
-                    <p class="stateInfo stateOk">审核中</p>
-                    <a href="sup_amount.html" class="changeMoney">申请提额</a>
+                    <p class="index-limit-txt-txt">授信总额度（元）</p>
+                    <p class="index-state-info index-state-ok">审核中</p>
+                    <a href="sup_amount.html" class="index-header-a">申请提额</a>
                 </div>
                 <!--剩余额度-->
                 <div class="limit">
-                    <p class="limitTxt">剩余授信额度（元）</p>
-                    <p class="stateInfo">暂无</p>
-                    <a href="sup_creditRecord.html" class="changeMoney">授信记录</a>
+                    <p class="index-limit-txt">剩余授信额度（元）</p>
+                    <p class="index-state-info">暂无</p>
+                    <a href="sup_creditRecord.html" class="index-header-a">授信记录</a>
                 </div>
             </div>
             <!--选项卡表格-->
-            <div class="tabPic">
+            <div class="index-tab-list">
                 <ul id="myTab" class="nav nav-tabs">
                     <li class="active"><a href="#day" data-toggle="tab">日</a></li>
                     <li><a href="#month" data-toggle="tab">月</a></li>
@@ -97,8 +97,8 @@
                 </div>
             </div>
             <!--list-->
-            <div class="listNum">
-                <ul class="listUl">
+            <div class="index-list">
+                <ul class="index-list-ul">
                     <li class="borBom">
                         <span>日期</span>
                         <span>订单金额</span>
@@ -107,12 +107,12 @@
                     <li class='borBom'>
                         <span>2016.1.21</span>
                         <span>¥100000</span>
-                        <span class="dataClass"><b class="dataUp">30%</b><i class="iconfont icon-shangjiantou"></i></span>
+                        <span class="dataClass"><b class="data-up">30%</b><i class="iconfont icon-shangjiantou"></i></span>
                     </li>
                     <li class='borBom'>
                         <span>2016.1.21</span>
                         <span>¥100000</span>
-                        <span class="dataClass"><b class="dataDown">30%</b><i class="iconfont icon-xiajiantou"></i></span>
+                        <span class="dataClass"><b class="data-down">30%</b><i class="iconfont icon-xiajiantou"></i></span>
                     </li>
                 </ul>
             </div>
@@ -152,5 +152,6 @@
 <script src="../javascripts/lib/echarts.min.js"></script>
 <script src="../javascripts/lib/jquery.min.js"></script>
 <script src="../javascripts/lib/bootstrap.js"></script>
+    <script src="../javascripts/lib/fastclick.js"></script>
 <script src="../javascripts/sup_index.js"></script>
 </html>

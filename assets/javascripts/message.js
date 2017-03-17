@@ -5,6 +5,7 @@ $(document).ready(function(){
 
     var oMes = {
         init:function(){
+            FastClick.attach(document.body);
             this.reback();
         },
         reback:function(){

@@ -4,6 +4,7 @@
 $(document).ready(function(){
     var oSupOrder = {
         init:function(){
+            FastClick.attach(document.body);
             // this.getState();
             this.clickHref();
             this.agreeClick();
@@ -43,12 +44,12 @@ $(document).ready(function(){
             });
         },
         clickHref:function(){
-            $('.orderDetail').on('click',function(e){
+            $('.order-detail').on('click',function(e){
                 var e = e||window.event;
-                switch ($('#myTab li').filter('.active').index()){
+                switch ($('#my-order-tab li').filter('.active').index()){
                     //判断状态 0 进行中 1 已完成 2 已关闭
                     case 0:
-                        switch($('#mySecTab li').filter('.active').index()){
+                        switch($('#my-order-sec-tab li').filter('.active').index()){
                             case 0:
                                 console.log('状态1');
                                 switch(e.target.className){
@@ -67,7 +68,7 @@ $(document).ready(function(){
                             case 1:
                                 console.log('状态2');
                                 switch(e.target.className){
-                                    case "getMoney":
+                                    case "get-money":
                                         console.log("提款页面");
                                         window.location.href="sup_cashOrder.html"
                                         break;
@@ -85,7 +86,7 @@ $(document).ready(function(){
                             case 3:
                                 console.log('状态4');
                                 switch(e.target.className){
-                                    case "subBtn":
+                                    case "sub-btn":
                                         console.log("提交还款证明");
                                         window.location.href="repayment.html"
                                         break;
@@ -127,38 +128,38 @@ $(document).ready(function(){
         },
         agreeClick:function(){
             $('.agree').on('click',function(){
-                $("#opacityDiv").css({'display':'block'});
-                $(".askAlert").css({'display':'block'});
+                $(".opacityDiv").css({'display':'block'});
+                $(".yes-alert").css({'display':'block'});
             })
 
             $(".yesBtn").on('click',function(){
-                $("#opacityDiv").css({'display':'none'});
-                $(".askAlert").css({'display':'none'});
+                $(".opacityDiv").css({'display':'none'});
+                $(".yes-alert").css({'display':'none'});
                 //    向后台提交数据改状态
                 window.location.href="sup_order.html"
             })
 
             $(".noBtn").on('click',function(){
-                $("#opacityDiv").css({'display':'none'});
-                $(".askAlert").css({'display':'none'});
+                $(".opacityDiv").css({'display':'none'});
+                $(".yes-alert").css({'display':'none'});
             })
         },
         disagreeClick:function(){
             $('.disagree').on('click',function(){
-                $("#opacityDiv").css({'display':'block'});
-                $(".askAlert1").css({'display':'block'});
+                $(".opacityDiv").css({'display':'block'});
+                $(".no-alert").css({'display':'block'});
             })
 
             $(".yesBtn").on('click',function(){
-                $("#opacityDiv").css({'display':'none'});
-                $(".askAlert1").css({'display':'none'});
+                $(".opacityDiv").css({'display':'none'});
+                $(".no-alert").css({'display':'none'});
                 //    向后台提交数据改状态
                 window.location.href="sup_order.html"
             })
 
             $(".noBtn").on('click',function(){
-                $("#opacityDiv").css({'display':'none'});
-                $(".askAlert1").css({'display':'none'});
+                $(".opacityDiv").css({'display':'none'});
+                $(".no-alert").css({'display':'none'});
             })
         }
     }

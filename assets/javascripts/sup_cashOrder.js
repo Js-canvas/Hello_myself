@@ -5,6 +5,7 @@ $(document).ready(function(){
 
     var oCashOrder = {
         init:function(){
+            FastClick.attach(document.body);
             this.getData();
             this.reback();
             this.iconAlert();
@@ -69,36 +70,36 @@ $(document).ready(function(){
         },
         invoice:function(){
             var invoiceFlag = true;
-            $('.invoiceFlag').on('click',function(){
+            $('.span-invo').on('click',function(){
                 if(invoiceFlag){
-                    $('.invoice').addClass('icon-gou')
+                    $('.icon-invo').addClass('icon-gou')
                     invoiceFlag = false
                 }else{
-                    $('.invoice').removeClass('icon-gou')
+                    $('.icon-invo').removeClass('icon-gou')
                     invoiceFlag = true
                 }
             })
         },
         read:function(){
             var read = false;
-            $('.readFlag').on('click',function(){
+            $('.span-read').on('click',function(){
                 if(read){
-                    $('.readImg').addClass('icon-gou')
+                    $('.icon-read').addClass('icon-gou')
                     read = false
                 }else{
-                    $('.readImg').removeClass('icon-gou')
+                    $('.icon-read').removeClass('icon-gou')
                     read = true
                 }
             })
         },
         iconAlert:function(){
-            $('.icon').on('click',function(){
-                $("#opacityDiv").css({'display':'block'});
+            $('.icon-wenhao').on('click',function(){
+                $(".opacityDiv").css({'display':'block'});
                 $(".askAlert").css({'display':'block'});
             })
 
             $(".yesBtn").on('click',function(){
-                $("#opacityDiv").css({'display':'none'});
+                $(".opacityDiv").css({'display':'none'});
                 $(".askAlert").css({'display':'none'});
             })
         },

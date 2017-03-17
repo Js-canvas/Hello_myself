@@ -4,6 +4,7 @@
 $(document).ready(function(){
     var purOrder = {
         init:function(){
+            FastClick.attach(document.body);
             this.reback()
             this.clickAgree();
             this.addPro();
@@ -29,28 +30,28 @@ $(document).ready(function(){
         },
     //    点击添加商品
         addPro:function(){
-            $('.addBtn').on('click',function(){
-                $('.list input').addClass('cloneInp');
-                $('.deleteBox').css({'display':'block'});
+            $('.add-btn').on('click',function(){
+                $('.place-order-list input').addClass('clone-inp');
+                $('.delete-box').css({'display':'block'});
                 $('.borLine1').css({'display':'block'});
-                var newList = $('.list').first().clone();
+                var newList = $('.place-order-list').first().clone();
                 newList.find('input').val("")
-                $('#wrap').append(newList);
-                $('.list').eq(0).find('.borLine1').css({'display':'none'});
+                $('.place-order-wrap').append(newList);
+                $('.place-order-list').eq(0).find('.borLine1').css({'display':'none'});
             })
         },
     //    删除按钮
         delete:function(){
-            $('#wrap').delegate('.deleteBox','click',function(e){
-                var oLength = $('.list').length;
+            $('.place-order-wrap').delegate('.delete-box','click',function(e){
+                var oLength = $('.place-order-list').length;
                 if(oLength==2){
                     e.target.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode);
-                    $('.list input').removeClass('cloneInp');
-                    $('.deleteBox').css({'display':'none'})
-                    $('.list').eq(0).find('.borLine1').css({'display':'none'});
+                    $('.place-order-list input').removeClass('clone-inp');
+                    $('.delete-box').css({'display':'none'})
+                    $('.place-order-list').eq(0).find('.borLine1').css({'display':'none'});
                 }else{
                     e.target.parentNode.parentNode.parentNode.removeChild(e.target.parentNode.parentNode);
-                    $('.list').eq(0).find('.borLine1').css({'display':'none'});
+                    $('.place-order-list').eq(0).find('.borLine1').css({'display':'none'});
                 }
             })
         }

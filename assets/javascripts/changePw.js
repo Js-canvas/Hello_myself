@@ -5,6 +5,7 @@ $(document).ready(function(){
 
     var oChangePw = {
         init:function(){
+            FastClick.attach(document.body);
             this.reback();
             this.postClick();
         },
@@ -14,7 +15,7 @@ $(document).ready(function(){
             });
         },
         postClick:function(){
-            $(".okbtn").on('click',function(){
+            $(".ok-btn").on('click',function(){
                 var $oldPw = $("#oldPw").val();
                 var $newPw = $("#newPw").val();
                 var $againPw = $("#againPw").val();

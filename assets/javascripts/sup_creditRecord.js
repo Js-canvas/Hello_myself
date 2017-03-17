@@ -3,14 +3,12 @@
  */
 $(document).ready(function(){
 
-    var $reback = $(".reback");
-    var $icon = $('.icon');
-    var $yesBtn = $('.yesBtn');
-
     var oCredit = {
         init:function(){
-            this.getData();
+            FastClick.attach(document.body);
+            // this.getData();
             this.reback();
+            this.alertClick();
         },
         getData:function(){
             var str = "<li><span>授信日期</span><span>授信账号</span><span>授信额度</span><span>实得金额<i class='icon'>?</i></span></li>"
@@ -32,19 +30,17 @@ $(document).ready(function(){
             });
         },
         reback:function(){
-            $reback.on("click",function(){
+            $(".reback").on("click",function(){
                 window.history.go(-1);
             });
         },
-        icon:function(){
-            $icon.on('click',function(){
-                $("#opacityDiv").css({'display':'block'});
+        alertClick:function(){
+            $('.icon-wenhao').on('click',function(){
+                $(".opacityDiv").css({'display':'block'});
                 $(".askAlert").css({'display':'block'});
             })
-        },
-        yesBtn:function(){
-            $yesBtn.on('click',function(){
-                $("#opacityDiv").css({'display':'none'});
+            $('.yesBtn').on('click',function(){
+                $(".opacityDiv").css({'display':'none'});
                 $(".askAlert").css({'display':'none'});
             })
         }

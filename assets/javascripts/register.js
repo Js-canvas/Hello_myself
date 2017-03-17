@@ -5,6 +5,7 @@ $(document).ready(function(){
 
     var oRegister = {
         init:function(){
+            FastClick.attach(document.body);
             this.reback();
             // this.getNum();
             // this.postData();

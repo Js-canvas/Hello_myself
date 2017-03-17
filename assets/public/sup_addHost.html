@@ -6,7 +6,7 @@
     <title>登陆</title>
     <link rel="stylesheet" href="../stylesheets/lib/iconfont.css">
     <link rel="stylesheet" href="../stylesheets/common.css">
-    <link rel="stylesheet" href="../stylesheets/sup_addHost.css">
+    <link rel="stylesheet" href="../stylesheets/stylesheet.css">
 </head>
 <body>
         <!--header-->
@@ -16,7 +16,7 @@
         </div>
         <!--content-->
         <div class="content">
-            <ul class="list">
+            <ul class="add-host-ul">
                 <li class="borBom">
                     <span>客户名称</span>
                     <input type="text" placeholder="请填写客户的名称或公司/店名" id="hostName">
@@ -35,18 +35,20 @@
                 </li>
                 <li class="borBom">
                     <span>地区</span>
-                    <div class="box1 bor borR floatL">
-                        <label for="province" class="downIcon txtcen">▼</label>
+                    <div class="host-select mar-left-15 bor borR floatL">
+                        <label for="province" class="host-icon-down txtcen">▼</label>
                         <select name="province" id="province"></select>
                     </div>
-                    <div class="box2 bor borR floatL">
-                        <label for="city" class="downIcon txtcen">▼</label>
+                    <div class="host-select mar-left-7 bor borR floatL">
+                        <label for="city" class="host-icon-down txtcen">▼</label>
                         <select name="city" id="city"></select>
                     </div>
                     <i class="iconfont icon-pen"></i>
                 </li>
             </ul>
-            <button class="okBtn btnStyle">保存并邀请</button>
+            <div>
+                <button class="ok-btn btnStyle mar-top-45">保存并邀请</button>
+            </div>
         </div>
         <!--透明层-->
         <div class="opacityDiv"></div>
@@ -58,6 +60,7 @@
         </div>
 </body>
 <script src="../javascripts/lib/zepto.js"></script>
-<script src="../javascripts/tools/PCASClass.js"></script>
-<script type="text/javascript" src="../javascripts/sup_addHost.js"></script>
+<script src="../javascripts/lib/PCASClass.js"></script>
+<script src="../javascripts/lib/fastclick.js"></script>
+<script src="../javascripts/sup_addHost.js"></script>
 </html>

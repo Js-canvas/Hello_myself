@@ -8,6 +8,7 @@ $(document).ready(function(){
 
     var addNewHost = {
         init:function(){
+            FastClick.attach(document.body);
             this.reback();
         },
         reback:function(){

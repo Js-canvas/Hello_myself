@@ -5,18 +5,19 @@ $(document).ready(function(){
 
     var addHost = {
         init:function(){
+            FastClick.attach(document.body);
             new PCAS("province","city","");
             this.reback();
-            this.postData();
-            this.myAlert();
+            this.postClick();
+            this.alertClick();
         },
         reback:function(){
             $('.reback').on("click",function(){
                 window.history.go(-1);
             });
         },
-        postData:function(){
-            $(".okBtn").on('click',function(){
+        postClick:function(){
+            $(".ok-btn").on('click',function(){
                 var $hostName = $('#hostName').val();
                 var $creditMoney = $('#creditMoney').val();
                 var $province = $('#province').val();
@@ -94,14 +95,14 @@ $(document).ready(function(){
             //     }
             // });
         },
-        myAlert:function(){
+        alertClick:function(){
             $('.icon').on('click',function(){
-                $("#opacityDiv").css({'display':'block'});
+                $(".opacityDiv").css({'display':'block'});
                 $(".askAlert").css({'display':'block'});
             })
 
             $(".yesBtn").on('click',function(){
-                $("#opacityDiv").css({'display':'none'});
+                $(".opacityDiv").css({'display':'none'});
                 $(".askAlert").css({'display':'none'});
             })
         }

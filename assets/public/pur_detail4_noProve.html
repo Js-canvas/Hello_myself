@@ -6,7 +6,7 @@
     <title>订单中</title>
     <link rel="stylesheet" href="../stylesheets/lib/iconfont.css">
     <link rel="stylesheet" href="../stylesheets/common.css">
-    <link rel="stylesheet" href="../stylesheets/detail.css">
+    <link rel="stylesheet" href="../stylesheets/stylesheet.css">
 </head>
 <body>
         <!--header-->
@@ -17,99 +17,99 @@
         <!--content-->
         <div class="content">
             <!--第一部分-->
-            <div class="borBom txtcen">
+            <div class="borBom txtcen padding-bottom-15">
                 <div>
-                    <span class="order-state">订单状态：</span><span class="order-state fontRed">待还款</span>
+                    <span class="detail-state">订单状态：</span><span class="detail-state fontRed">待还款</span>
+                </div>
+                <div class="mar-top-10">
+                    <button class="detail-btn post-btn bg borR">提交还款证明</button>
                 </div>
                 <div>
-                    <button class="order-btn bg borR post-btn">提交还款证明</button>
-                </div>
-                <div>
-                    <span class="order-span">请在还款日之前还款</span>
+                    <span class="detail-span">请在还款日前还款，并向阿贩提平台提交还款证明</span>
                 </div>
             </div>
             <!--第二部分-->
             <div class="borBom">
                 <div>
-                    <span class="order-span mar-right-0">收货人：</span><span class="font12">兄弟连饭馆</span><span class="order-span floatR">13212341234</span>
+                    <span class="detail-span mar-right-0">供货商名称：</span><span class="font12">XXX有限公司</span><span class="detail-span floatR">13212341234</span>
                 </div>
                 <div>
-                    <span class="order-span mar-right-0">收货地址：</span><span class="font12">北京市昌平去XXX路XXX院</span>
+                    <span class="detail-span mar-right-0">收货地址：</span><span class="font12">北京市昌平去XXX路XXX院</span>
                 </div>
-                <div class="part2">
-                    <button class="bg borR floatR ">联系采购商</button>
+                <div>
+                    <button class="bg borR floatR detail-connect-btn">联系供货商</button>
                 </div>
-                <div class="clearB mar-bottom-10">
-                    <span class="order-span fontGray mar-right-0">还款周期：</span><span class="font12 fontGray">30天</span>
+                <div class="clearB">
+                    <span class="detail-span fontGray mar-right-0 mar-bottom-10">还款周期：</span><span class="font12 fontGray mar-bottom-10">30天</span>
                 </div>
             </div>
             <!--第三部分-->
-            <div>
+            <div class="borTop mar-top-15">
                 <ul class="borBom">
                     <li class="borBomD">
                         <div>
-                            <span class="order-span">商品名称：</span><span class="order-span floatR">茅台酒500ml</span>
+                            <span class="detail-span">商品名称：</span><span class="detail-span floatR mar-right-25">茅台酒500ml</span>
                         </div>
                         <div>
-                            <span class="order-span">商品单价：</span><span class="order-span floatR">¥100.00</span>
+                            <span class="detail-span">商品单价：</span><span class="detail-span floatR mar-right-25">¥100.00</span>
                         </div>
                         <div>
-                            <span class="order-span">商品数量：</span><span class="order-span floatR">*100</span>
+                            <span class="detail-span">商品数量：</span><span class="detail-span floatR mar-right-25">*100</span>
                         </div>
                         <div>
-                            <span class="order-span">合计金额：</span><span class="order-span floatR">¥10000.00</span>
+                            <span class="detail-span mar-bottom-10">合计金额：</span><span class="detail-span floatR mar-right-25">¥10000.00</span>
                         </div>
                     </li>
                     <li class="borBomD">
                         <div>
-                            <span class="order-span">商品名称：</span><span class="order-span floatR">茅台酒500ml</span>
+                            <span class="detail-span">商品名称：</span><span class="detail-span floatR mar-right-25">茅台酒500ml</span>
                         </div>
                         <div>
-                            <span class="order-span">商品单价：</span><span class="order-span floatR">¥100.00</span>
+                            <span class="detail-span">商品单价：</span><span class="detail-span floatR mar-right-25">¥100.00</span>
                         </div>
                         <div>
-                            <span class="order-span">商品数量：</span><span class="order-span floatR">*100</span>
+                            <span class="detail-span">商品数量：</span><span class="detail-span floatR mar-right-25">*100</span>
                         </div>
                         <div>
-                            <span class="order-span">合计金额：</span><span class="order-span floatR">¥10000.00</span>
+                            <span class="detail-span mar-bottom-10">合计金额：</span><span class="detail-span floatR mar-right-25">¥10000.00</span>
                         </div>
                     </li>
                     <div>
-                        <b class="order-span">运费</b><b class="order-span floatR floatR">¥100.00</b>
+                        <b class="detail-span mar-top-10 mar-bottom-10">运费</b><b class="detail-span floatR mar-top-10 mar-bottom-10 mar-right-25">¥100.00</b>
                     </div>
                 </ul>
                 <div>
-                    <b class="order-span">订单金额</b><b class="order-span fontRed floatR">¥10100.00</b>
+                    <b class="detail-span">订单金额</b><b class="detail-span fontRed floatR mar-right-25">¥10100.00</b>
                 </div>
                 <div>
-                    <b class="order-span">逾期天数：</b><b class="order-span fontRed floatR">3</b>
-                </div>
-                <div class="posr">
-                    <b class="order-span">待还金额：</b><i class="icon iconfont icon-wenhao order-icon floatR fontGray"></i><b class="order-span fontRed floatR">¥11000.00</b>
+                    <b class="detail-span mar-bottom-10 ">逾期天数：</b><b class="detail-span floatR fontRed mar-right-25 mar-bottom-10">3</b>
                 </div>
                 <div>
-                    <b class="order-span">收款人：</b><b class="order-span floatR">XXX公司</b>
+                    <b class="detail-span ">待还金额：</b><i class="icon iconfont icon-wenhao detail-icon floatR fontGray mar-6"></i><b class="detail-span floatR fontRed mar-right-0">¥11000.00</b>
                 </div>
                 <div>
-                    <b class="order-span">收款卡号：</b><b class="order-span floatR">6666666666666666666</b>
+                    <b class="detail-span">收款人：</b><b class="detail-span floatR mar-right-25">XXX公司</b>
                 </div>
                 <div>
-                    <b class="order-span">收款日：</b><b class="order-span floatR">2017.8.9</b>
+                    <b class="detail-span">收款卡号：</b><b class="detail-span floatR mar-right-25">6666666666666666666</b>
+                </div>
+                <div>
+                    <b class="detail-span mar-bottom-10">收款日：</b><b class="detail-span floatR mar-right-25 mar-bottom-10">2017.8.9</b>
                 </div>
             </div>
             <!--第四部分-->
             <div class="borTop">
                 <div>
-                    <span class="order-span fontGray">订单编号：</span><span class="order-span fontGray floatR">DJ.20161218.001</span>
+                    <span class="detail-span fontGray mar-top-20 mar-right-0">订单编号：</span><span class="font12 fontGray mar-top-20">DJ.20161218.001</span>
                 </div>
                 <div>
-                    <span class="order-span fontGray">下单账号：</span><span class="order-span fontGray floatR">13212341234</span>
+                    <span class="detail-span fontGray mar-right-0">下单账号：</span><span class="font12 fontGray">13212341234</span>
                 </div>
                 <div>
-                    <span class="order-span fontGray">下单事件：</span><span class="order-span fontGray floatR">2018-8-15 18:07:08</span>
+                    <span class="detail-span fontGray mar-right-0">下单事件：</span><span class="font12 fontGray">2018-8-15 18:07:08</span>
                 </div>
                 <div>
-                    <span class="order-span fontGray">订单来源：</span><span class="order-span fontGray floatR">采购宝微信版</span>
+                    <span class="detail-span fontGray mar-bottom-15 mar-right-0">订单来源：</span><span class="font12 fontGray mar-bottom-15">采购宝微信版</span>
                 </div>
             </div>
         </div>
@@ -123,6 +123,7 @@
         </div>
 </body>
 <script src="../javascripts/lib/zepto.js"></script>
+<script src="../javascripts/lib/fastclick.js"></script>
 <script src="../javascripts/detail.js"></script>
 
 </html>

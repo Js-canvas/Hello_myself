@@ -5,6 +5,7 @@ $(document).ready(function(){
 
     var oBank = {
         init:function(){
+            FastClick.attach(document.body);
             this.reback();
             this.postClick();
             this.alertClick();
@@ -16,12 +17,12 @@ $(document).ready(function(){
             });
         },
         alertClick:function(){
-            $('icon-wenhao').on('click',function(){
+            $('.icon-wenhao').on('click',function(){
                 $(".opacityDiv").css({'display':'block'});
                 $(".askAlert").css({'display':'block'});
             })
 
-            $yesBtn.on('click',function(){
+            $('.yesBtn').on('click',function(){
                 $(".opacityDiv").css({'display':'none'});
                 $(".askAlert").css({'display':'none'});
             })

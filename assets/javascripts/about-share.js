@@ -6,6 +6,7 @@ $(document).ready(function(){
     var oShare = {
         init:function(){
             this.reback();
+            FastClick.attach(document.body);
         },
         reback:function(){
             $('.reback').on("click",function(){
