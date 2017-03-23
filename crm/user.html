@@ -85,9 +85,6 @@
                             <div class="header-sortnav">
                                 <div  class="header-detail">
                                     <label>日期：</label><input type="date" class="data-input">至<input type="date" class="data-input">
-
-                                </div>
-                                <div>
                                     <label class="radio-btn">手机:</label><input type="text" class="radio-input">
                                     <a href="user-visit.html" class="user-tovisit">邀请管理</a>
                                 </div>
@@ -96,7 +93,6 @@
                                     <button class="clear-btn btn-primary">清空筛选条件</button>
                                 </div>
                             </div>
-
                             <div class="table-wrap">
                                 <table class="table">
                                     <thead>
@@ -249,18 +245,9 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="text-center">
-                                <ul class="pagination">
-                                    <li><a href="#">&laquo;</a></li>
-                                    <li class="active"><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
-                                    <li><a href="#">&raquo;</a></li>
-                                </ul>
-                            </div>
+                            <div class="text-center" id="tab-one"></div>
                         </div>
+
                         <div class="tab-pane fade" id="two">
                             <div class="header-sortnav">
                                 <div  class="header-detail">
@@ -274,7 +261,6 @@
                                     <button class="clear-btn btn-primary">清空筛选条件</button>
                                 </div>
                             </div>
-
                             <div class="table-wrap">
                                 <table class="table">
                                     <thead>
@@ -427,18 +413,9 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="text-center">
-                                <ul class="pagination">
-                                    <li><a href="#">&laquo;</a></li>
-                                    <li class="active"><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
-                                    <li><a href="#">&raquo;</a></li>
-                                </ul>
-                            </div>
+                            <div class="text-center" id="tab-two"></div>
                         </div>
+
                         <div class="tab-pane fade" id="thr">
                             <div class="header-sortnav">
                                 <div  class="header-detail">
@@ -452,7 +429,6 @@
                                     <button class="clear-btn btn-primary">清空筛选条件</button>
                                 </div>
                             </div>
-
                             <div class="table-wrap">
                                 <table class="table">
                                     <thead>
@@ -605,17 +581,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="text-center">
-                                <ul class="pagination">
-                                    <li><a href="#">&laquo;</a></li>
-                                    <li class="active"><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
-                                    <li><a href="#">&raquo;</a></li>
-                                </ul>
-                            </div>
+                            <div class="text-center" id="tab-thr"></div>
                         </div>
                     </div>
 
@@ -630,6 +596,7 @@
 
 
 <script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/bootstrap/js/bootstrap-paginator.js"></script>
 <script src="javascripts/user.js"></script>
 <!--<script type="text/javascript">-->
 <!--$("[rel=tooltip]").tooltip();-->

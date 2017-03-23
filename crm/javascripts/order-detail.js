@@ -7,13 +7,20 @@ $(document).ready(function(){
             this.clearClick();
         },
         clearClick:function(){
+            var inpVal = $('.table-input').val()
+            var oldVal = $('.table-input').val()
             $('.table-input').dblclick(function(){
-                $('.table-btn').css({'display':"inline-block"});
                 $('.table-input').removeAttr('readonly');
+                inpVal = $('.table-input').val();
             })
             $('.table-btn').click(function(){
-                $('.table-input').attr('readonly','');
-                $('.table-btn').css({'display':"none"});
+                inpVal = $('.table-input').val();
+                if(/^\d+(\.\d+)?$/.test(inpVal)){
+                    $('.table-input').attr('readonly','');
+                }else{
+                    alert('请输入正确金额');
+                    $('.table-input').val(oldVal)
+                }
             })
         }
     }

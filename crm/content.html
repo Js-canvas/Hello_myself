@@ -76,10 +76,8 @@
             <div id="myTabContent" class="tab-content">
                 <div class="tab-pane fade in active" id="one">
                     <div class="header-sortnav">
-                        <div  class="header-detail">
-                            <label>日期：</label><input type="date" class="data-input">至<input type="date" class="data-input">
-                        </div>
                         <div class="header-detail">
+                            <label>日期：</label><input type="date" class="data-input">至<input type="date" class="data-input">
                             <label>ID:</label><input type="text" class="input-mini">
                             <label>状态：</label>
                             <select class="input-mini">
@@ -112,7 +110,7 @@
                                 <td>多下单送iphone</td>
                                 <td>2017-05-05</td>
                                 <td>下架</td>
-                                <td><span class="edit">编辑</span> <span class="delete">删除</span></td>
+                                <td><span class="edit">编辑</span> <span class="delete" data-toggle="modal" data-target="#myModal">删除</span></td>
                             </tr>
                             <tr>
                                 <td>120</td>
@@ -120,7 +118,7 @@
                                 <td>多下单送iphone</td>
                                 <td>2017-05-05</td>
                                 <td>下架</td>
-                                <td><span class="edit">编辑</span> <span class="delete">删除</span></td>
+                                <td><span class="edit">编辑</span> <span class="delete" data-toggle="modal" data-target="#myModal">删除</span></td>
                             </tr>
                             <tr>
                                 <td>130</td>
@@ -128,7 +126,7 @@
                                 <td>多下单送iphone</td>
                                 <td>2017-05-05</td>
                                 <td>下架</td>
-                                <td><span class="edit">编辑</span> <span class="delete">删除</span></td>
+                                <td><span class="edit">编辑</span> <span class="delete" data-toggle="modal" data-target="#myModal">删除</span></td>
                             </tr>
                             <tr>
                                 <td>10</td>
@@ -136,7 +134,7 @@
                                 <td>多下单送iphone</td>
                                 <td>2017-05-05</td>
                                 <td>下架</td>
-                                <td><span class="edit">编辑</span> <span class="delete">删除</span></td>
+                                <td><span class="edit">编辑</span> <span class="delete" data-toggle="modal" data-target="#myModal">删除</span></td>
                             </tr>
                             <tr>
                                 <td>10</td>
@@ -144,7 +142,7 @@
                                 <td>多下单送iphone</td>
                                 <td>2017-05-05</td>
                                 <td>下架</td>
-                                <td><span class="edit">编辑</span> <span class="delete">删除</span></td>
+                                <td><span class="edit">编辑</span> <span class="delete" data-toggle="modal" data-target="#myModal">删除</span></td>
                             </tr>
                             <tr>
                                 <td>10</td>
@@ -152,29 +150,17 @@
                                 <td>多下单送iphone</td>
                                 <td>2017-05-05</td>
                                 <td>下架</td>
-                                <td><span class="edit">编辑</span> <span class="delete">删除</span></td>
+                                <td><span class="edit">编辑</span> <span class="delete" data-toggle="modal" data-target="#myModal">删除</span></td>
                             </tr>
                             </tbody>
                         </table>
                     </div>
-                    <div class="text-center">
-                        <ul class="pagination">
-                            <li><a href="#">&laquo;</a></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">&raquo;</a></li>
-                        </ul>
-                    </div>
+                    <div class="text-center" id="tab-one"></div>
                 </div>
                 <div class="tab-pane fade" id="two">
                     <div class="header-sortnav">
-                        <div  class="header-detail">
-                            <label>日期：</label><input type="date" class="data-input">至<input type="date" class="data-input">
-                        </div>
                         <div class="header-detail">
+                            <label>日期：</label><input type="date" class="data-input">至<input type="date" class="data-input">
                             <label>ID:</label><input type="text" class="input-mini">
                         </div>
                         <div class="h5 right">
@@ -195,55 +181,45 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td>10</td>
+                                <td>110</td>
                                 <td>多下单送iphone</td>
                                 <td>2017-05-05</td>
-                                <td><span>编辑</span> <span>删除</span></td>
+                                <td><span class="edit">编辑</span> <span class="delete" data-toggle="modal" data-target="#myModal">删除</span></td>
+                            </tr>
+                            <tr>
+                                <td>120</td>
+                                <td>多下单送iphone</td>
+                                <td>2017-05-05</td>
+                                <td><span class="edit">编辑</span> <span class="delete" data-toggle="modal" data-target="#myModal">删除</span></td>
+                            </tr>
+                            <tr>
+                                <td>130</td>
+                                <td>多下单送iphone</td>
+                                <td>2017-05-05</td>
+                                <td><span class="edit">编辑</span> <span class="delete" data-toggle="modal" data-target="#myModal">删除</span></td>
                             </tr>
                             <tr>
                                 <td>10</td>
                                 <td>多下单送iphone</td>
                                 <td>2017-05-05</td>
-                                <td><span>编辑</span> <span>删除</span></td>
+                                <td><span class="edit">编辑</span> <span class="delete" data-toggle="modal" data-target="#myModal">删除</span></td>
                             </tr>
                             <tr>
                                 <td>10</td>
                                 <td>多下单送iphone</td>
                                 <td>2017-05-05</td>
-                                <td><span>编辑</span> <span>删除</span></td>
+                                <td><span class="edit">编辑</span> <span class="delete" data-toggle="modal" data-target="#myModal">删除</span></td>
                             </tr>
                             <tr>
                                 <td>10</td>
                                 <td>多下单送iphone</td>
                                 <td>2017-05-05</td>
-                                <td><span>编辑</span> <span>删除</span></td>
-                            </tr>
-                            <tr>
-                                <td>10</td>
-                                <td>多下单送iphone</td>
-                                <td>2017-05-05</td>
-                                <td><span>编辑</span> <span>删除</span></td>
-                            </tr>
-                            <tr>
-                                <td>10</td>
-                                <td>多下单送iphone</td>
-                                <td>2017-05-05</td>
-                                <td><span>编辑</span> <span>删除</span></td>
+                                <td><span class="edit">编辑</span> <span class="delete" data-toggle="modal" data-target="#myModal">删除</span></td>
                             </tr>
                             </tbody>
                         </table>
                     </div>
-                    <div class="text-center">
-                        <ul class="pagination">
-                            <li><a href="#">&laquo;</a></li>
-                            <li class="active"><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">&raquo;</a></li>
-                        </ul>
-                    </div>
+                    <div class="text-center" id="tab-two"></div>
                 </div>
             </div>
         </div>
@@ -253,21 +229,26 @@
     </div>
 </div>
 <!-- Modal -->
-<div class="modal hide fade" id="myModal" tabindex="-1" role="dialog">
-    <div class="modal-header">
-        <button class="close" type="button" data-dismiss="modal">×</button>
-        <h3 id="myModalLabel">删除</h3>
-    </div>
-    <div class="modal-body">
-        是否删除该条活动
-    </div>
-    <div class="right span20">
-        <button class="no-btn btn">取消</button>
-        <button class="yes-btn btn">确定</button>
-    </div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">删除</h4>
+            </div>
+            <div class="modal-body">是否删除该条活动</div>
+            <div class="modal-footer">
+                <button class="btn-default btn">取消</button>
+                <button class="btn-primary btn">确定</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
 </div>
 
+
+
 <script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/bootstrap/js/bootstrap-paginator.js"></script>
 <script src="javascripts/content.js"></script>
 
 </body>

@@ -332,10 +332,10 @@ a.block-heading:hover,
 }
 .sidebar-nav .active{
   background: #B0E0E6;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0,#4682B4), color-stop(1,#87CEFA));
-  background: -ms-linear-gradient(bottom, #5F9EA0, #B0E0E6);
-  background: -o-linear-gradient(bottom, #5F9EA0, #B0E0E6);
-  color: #ffffff;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0,#ffffff), color-stop(1,#ffffff));
+  background: -ms-linear-gradient(bottom, #ffffff, #ffffff);
+  background: -o-linear-gradient(bottom, #ffffff, #ffffff);
+  color: #000;
 
 }
 .sidebar-nav .nav-header .label {
@@ -344,15 +344,15 @@ a.block-heading:hover,
   margin-right: .25em;
   line-height: 1.5em;
 }
-.sidebar-nav .nav-header:hover {
-  background: #666;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #4682B4), color-stop(1, #87CEFA));
-  background: -ms-linear-gradient(bottom, #4682B4, #87CEFA);
-  background: -o-linear-gradient(bottom, #4682B4, #87CEFA);
-  filter: progid:dximagetransform.microsoft.gradient(startColorStr='#e6e6e6', EndColorStr='#ffffff');
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#454545',EndColorStr='#333333')";
-  color: #ffffff;
-}
+/*.sidebar-nav .nav-header:hover {*/
+  /*background: #666;*/
+  /*background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #4682B4), color-stop(1, #87CEFA));*/
+  /*background: -ms-linear-gradient(bottom, #4682B4, #87CEFA);*/
+  /*background: -o-linear-gradient(bottom, #4682B4, #87CEFA);*/
+  /*filter: progid:dximagetransform.microsoft.gradient(startColorStr='#e6e6e6', EndColorStr='#ffffff');*/
+  /*-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#454545',EndColorStr='#333333')";*/
+  /*color: #ffffff;*/
+/*}*/
 .sidebar-nav .nav-header.collapsed .icon-chevron-up::before {
   content: "\f078";
 }
@@ -904,9 +904,6 @@ table.table.list tr:first-child td {
   margin:0!important;
   padding:0!important;
 }
-.table-btn{
-  display: none;
-}
 #textarea{
   resize:none;
   width: 100%;
@@ -979,4 +976,7 @@ th{
 .footer>p{
   text-align: center;
   padding:5em 0;
+}
+.textarea{
+  text-indent:20px;
 }
