@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta charset="UTF-8">
+    <title>收款银行</title>
+    <link rel="stylesheet" href="../stylesheets/common.css">
+    <link rel="stylesheet" href="../stylesheets/lib/iconfont.css">
+    <link rel="stylesheet" href="../stylesheets/stylesheet.css">
+</head>
+<body>
+        <!--header-->
+        <div class="header bg">
+            <a href="javascript:;" class="reback txtcen">&lt;</a>
+            <span class="tit txtcen">收款银行</span>
+        </div>
+        <!--content-->
+        <div class="content">
+            <div class="borBom padding-bottom-9 mar-top-9">
+                <span class="fontGray font12 mar-left-4">目前支持首款的中国主流银行</span>
+            </div>
+            <ul class="bank-list-ul overflow-hidden clearB">
+                <li class="borBom">
+                    <label for="1" class="bank-list-label">中国工商银行</label>
+                    <input type="radio" name="bank" class="display-none bank-list-inp" id="1">
+                    <i class="bank-list-icon iconfont icon-gou"></i>
+                </li>
+                <li class="borBom">
+                    <label for="2" class="bank-list-label">中国建设银行</label>
+                    <input type="radio" name="bank" class="display-none bank-list-inp"  id="2">
+                    <i class="bank-list-icon iconfont icon-gou"></i>
+                </li>
+                <li class="borBom">
+                    <label for="3" class="bank-list-label">中国农业银行</label>
+                    <input type="radio" name="bank" class="display-none bank-list-inp"  id="3">
+                    <i class="bank-list-icon iconfont icon-gou"></i>
+                </li>
+                <li class="borBom">
+                    <label for="4" class="bank-list-label">中国交通银行</label>
+                    <input type="radio" name="bank" class="display-none bank-list-inp" id="4">
+                    <i class="bank-list-icon iconfont icon-gou"></i>
+                </li>
+            </ul>
+        </div>
+</body>
+<script src="../javascripts/lib/zepto.js"></script>
+<script src="../javascripts/lib/fastclick.js"></script>
+<script src="../javascripts/sup_bankList.js"></script>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../stylesheets/lib/iconfont.css">
+    <link rel="stylesheet" href="../stylesheets/common.css">
+    <link rel="stylesheet" href="../stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="../stylesheets/lib/jquery.circliful.min.css">
+</head>
+<body>
+        <!--header-->
+        <div class="header bg">
+            <a href="javascript:;" class="reback txtcen">&lt;</a>
+            <span class="tit txtcen">提额申请</span>
+        </div>
+        <!--content-->
+        <div class="content">
+            <div class="circle borBom">
+                <div id="myStat">
+                    <span class="over-money fontMain">¥990000.00</span>
+                    <span class="amount-info txtcen fontMain">剩余授信额度</span>
+                </div>
+                <a href="sup_creditRecord.html">授信记录</a>
+            </div>
+            <div>
+                <div class="borBom overflow-hidden padding-bottom-14 padding-top-14">
+                    <span class="mar-left-4 floatL font14">当前授信总额度:</span>
+                    <span class="font15 floatL mar-left-9">¥1000000.00</span>
+                    <i class="iconfont icon-wenhao fontGray floatR mar-right-4"></i>
+                </div>
+                <div class="borBom overflow-hidden padding-bottom-14 padding-top-14">
+                    <span class="mar-left-4 floatL font14">提升授信总额度至：</span>
+                    <input type="text" placeholder="请输入你想提升总额度至" id="advAmount" class="amount-inp floatL">
+                    <i class="fontGray floatR mar-right-4 font14">万</i>
+                </div>
+                <div>
+                    <button class="ok-btn btnStyle mar-top-30">提交申请</button>
+                </div>
+            </div>
+            <div class="font14">
+                <div class="mar-top-20 padding-bottom-12 borBom">
+                    <span class="mar-left-4">申请记录</span>
+                </div>
+                <div class="borBom txtcen padding-bottom-9 padding-top-9">
+                    <span class="floatL mar-left-4">授信日期</span><span>状态</span><span class="floatR mar-right-4">申请额度</span>
+                </div>
+                <ul>
+                    <!--数据模板-->
+                    <li class="padding-bottom-9 padding-top-9 amount-li borBom">
+                        <span class="mar-left-4 floatL">2017.7.1</span>
+                        <span class="fontMain txtcen">审核中</span>
+                        <span class="floatR mar-right-4 txtR">¥1000000.00</span>
+                    </li>
+                    <li class="padding-bottom-9 padding-top-9 amount-li borBom">
+                        <span class="mar-left-4 floatL">2017.7.1</span>
+                        <span class="fontRed txtcen">已通过</span>
+                        <span class="floatR mar-right-4 txtR">¥1000000.00</span>
+                    </li>
+                    <li class="padding-bottom-9 padding-top-9 amount-li borBom">
+                        <span class="mar-left-4 floatL">2017.7.1</span>
+                        <span class="fontGray txtcen">未通过</span>
+                        <span class="floatR mar-right-4 txtR">¥1000000.00</span>
+                    </li>
+                    <li class="padding-bottom-9 padding-top-9 amount-li borBom">
+                        <span class="mar-left-4 floatL">2017.7.1</span>
+                        <span class="fontMain txtcen">审核中</span>
+                        <span class="floatR mar-right-4 txtR">¥1000000.00</span>
+                    </li>
+                    <li class="padding-bottom-9 padding-top-9 amount-li borBom">
+                        <span class="mar-left-4 floatL">2017.7.1</span>
+                        <span class="fontRed txtcen">已通过</span>
+                        <span class="floatR mar-right-4 txtR">¥1000000.00</span>
+                    </li>
+                    <li class="padding-bottom-9 padding-top-9 amount-li borBom">
+                        <span class="mar-left-4 floatL">2017.7.1</span>
+                        <span class="fontGray txtcen">未通过</span>
+                        <span class="floatR mar-right-4 txtR">¥1000000.00</span>
+                    </li>
+                    <li class="padding-bottom-9 padding-top-9 amount-li borBom">
+                        <span class="mar-left-4 floatL">2017.7.1</span>
+                        <span class="fontMain txtcen">审核中</span>
+                        <span class="floatR mar-right-4 txtR">¥1000000.00</span>
+                    </li>
+                    <li class="padding-bottom-9 padding-top-9 amount-li borBom">
+                        <span class="mar-left-4 floatL">2017.7.1</span>
+                        <span class="fontRed txtcen">已通过</span>
+                        <span class="floatR mar-right-4 txtR">¥1000000.00</span>
+                    </li>
+                    <li class="padding-bottom-9 padding-top-9 amount-li borBom">
+                        <span class="mar-left-4 floatL">2017.7.1</span>
+                        <span class="fontGray txtcen">未通过</span>
+                        <span class="floatR mar-right-4 txtR">¥1000000.00</span>
+                    </li>
+                </ul>
+                <div class="clearB"></div>
+            </div>
+        </div>
+        <!--透明层-->
+        <div class="opacityDiv"></div>
+        <!--自定义对话框-->
+        <div class="askAlert">
+            <p class="fontRed alertTit">温馨提示：</p>
+            <p class="infoMessage">您的实际可授信总额度,平台有权根据您的客户的信誉度进行调整，最终解释权归平台所有</p>
+            <button class="yesBtn">我知道了</button>
+        </div>
+</body>
+<script src="../javascripts/lib/jquery.min.js"></script>
+<script src="../javascripts/lib/jquery.circliful.js"></script>
+<script src="../javascripts/lib/fastclick.js"></script>
+<script src="../javascripts/sup_amount.js"></script>
+</html>

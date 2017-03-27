@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta charset="UTF-8">
+    <title>下单中心</title>
+    <link rel="stylesheet" href="../stylesheets/lib/iconfont.css">
+    <link rel="stylesheet" href="../stylesheets/common.css">
+    <link rel="stylesheet" href="../stylesheets/stylesheet.css">
+</head>
+<body>
+        <!--header-->
+        <div class="header bg">
+            <a href="javascript:;" class="reback txtcen">&lt;</a>
+            <span class="tit txtcen">下单中心</span>
+        </div>
+        <!--content-->
+        <div class="content">
+            <div class="overflow-hidden padding-left-4 padding-right-4 borBom">
+                <div class="floatL mar-right-4">
+                    <img src="../images/logo.png" class="place-order-img">
+                </div>
+                <div class="floatL width-79">
+                    <div class="mar-top-16 font11">
+                        <span>北方科技公司</span>
+                        <span class="floatR">18777777777</span>
+                        <span class="floatR">联系方式：</span>
+                    </div>
+                    <div class="mar-top-8 font11 fontGray">
+                        <span class="">行业：<span>生活服务类</span></span>
+                    </div>
+                    <div class="mar-top-10 font11 fontRed">
+                        <span>您在该供货商的可透支金额为</span><span>¥30000.00</span>
+                    </div>
+                    <div class="font11 fontRed mar-top-5">
+                        <span>当月剩余：</span><span>¥20000.00</span>
+                    </div>
+                </div>
+            </div>
+            <!--list-->
+            <div class="mar-left-4 mar-right-4 mar-top-10">
+                <span class="font14">订单详情填写</span>
+            </div>
+            <div class="place-order-wrap mar-top-10">
+                <div class="place-order-list">
+                    <div class='borBom clearB borLine1'></div>
+                    <ul>
+                        <li>
+                            <div>
+                                <span class="place-order-span font11">商品名称：</span><input type="text" class="bor borR place-order-inp" placeholder="请填写您购买商品的名称">
+                            </div>
+                            <div>
+                                <span class="place-order-span font11">单品价格：</span><b class="iconM">¥</b><input type="text" class="bor borR place-order-inp" placeholder="请填写您与采购商约定的单价">
+                            </div>
+                            <div>
+                                <span class="place-order-span font11">商品数量：</span><input type="text" class="bor borR place-order-inp" placeholder="请输入您购买此商品的数量">
+                            </div>
+                            <div>
+                                <span class="place-order-span font11">合计金额：</span><input type="text" class="bor borR place-order-inp" placeholder="¥9000.00">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="delete-box">
+                        <i class="iconfont icon-shanchu delete-icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="add-btn borR bor floatR mar-right-4">
+                <i class="iconfont icon-tianjia floatL icon-add"></i>
+                <span class="mar-top-10 floatL font11">继续添加商品</span>
+            </div>
+            <div class="borBom clearB borLine"></div>
+            <div class="detail-info font11">
+                <ul>
+                    <li class="sel-li">
+                        <span class="place-order-span">收货店址：</span>
+                        <select name="" id="" class="bor borR place-order-inp sec-inp">
+                            <option value="">请选择收货店面</option>
+                        </select>
+                        <i class="iconfont icon-xiasanjiao-copy txtcen place-order-icon"></i>
+                    </li>
+                    <li>
+                        <span class="place-order-span">还款周期：</span><input type="text" class="bor borR place-order-inp" placeholder="请填写您想还款的周期"><b class="iconD">天</b>
+                    </li>
+                    <li>
+                        <span class="place-order-span wid-txt">运费：</span><input type="text" class="bor borR place-order-inp" placeholder="如果您与供货商约定了运费请输入">
+                    </li>
+                    <li>
+                        <span class="place-order-span">订单总金额：</span><input type="text" class="bor borR place-order-inp wid-inp" placeholder="¥1800.00">
+                    </li>
+                </ul>
+                <button class="ok-btn btnStyle mar-top-5">提交订单</button>
+                <div class="txtcen">
+                    <p class="place-order-book">我已阅读并同意签署以下内容<i class="gou-Icon iconfont icon-gou floatR"></i></p>
+                </div>
+                <p class="fontMain mar-top-9 font12 clearB txtcen">《购销合同》</p>
+                <p class="fontMain mar-top-9 font12 mar-bottom-15 txtcen">《应收账款债权转让通知书》</p>
+            </div>
+        </div>
+</body>
+<script src="../javascripts/lib/zepto.js"></script>
+<script src="../javascripts/lib/fastclick.js"></script>
+<script src="../javascripts/pur_placeOrder.js"></script>
+</html>

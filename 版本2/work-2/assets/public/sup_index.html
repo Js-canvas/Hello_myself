@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta charset="UTF-8">
+    <head>
+    <title>采购宝</title>
+    <link href="../stylesheets/lib/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../stylesheets/lib/iconfont.css">
+    <link rel="stylesheet" href="../stylesheets/common.css">
+    <link rel="stylesheet" href="../stylesheets/lib/iconfont.css">
+    <link rel="stylesheet" href="../stylesheets/stylesheet.css">
+</head>
+<body>
+        <!--header-->
+        <div class="index-header bgWhite">
+            <span class="index-header-span">华夏科技有限公司</span>
+            <a class="index-icon iconfont icon-yonghu" href="sup_myCenter.html"></a>
+        </div>
+        <!--content-->
+        <div class="index-content">
+            <div class="has-limit borR">
+                <!--总额度-->
+                <div class="limit bor-m bgWhite mar-right-2">
+                    <p class="index-limit-txt">授信总额度（元）</p>
+                    <p class="index-state-info">300000.00</p>
+                    <p class="index-state-info-no">审核中</p>
+                    <a href="sup_amount.html" class="index-header-a fontMain mar-top-25 floatR">申请提额</a>
+                </div>
+                <!--剩余额度-->
+                <div class="limit bor-m bgWhite mar-left-2">
+                    <p class="index-limit-txt">剩余授信额度（元）</p>
+                    <p class="index-state-info">200000.00</p>
+                    <p class="index-state-info-no">暂无</p>
+                    <a href="sup_creditRecord.html" class="index-header-a fontMain mar-top-25 floatR">授信记录</a>
+                </div>
+            </div>
+            <!--选项卡表格-->
+            <div class="index-tab-list bgWhite overflow-hidden">
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade in active" id="day">
+                        <ul id="mySecTabDay" class="nav nav-tabs">
+                            <li class="active" id="do"><a href="#dayOrder" data-toggle="tab">订单统计</a></li>
+                            <li id="dh"><a href="#dayHost" data-toggle="tab">客户统计</a></li>
+                            <li id="dn"><a href="#dayNum" data-toggle="tab">订单数量</a></li>
+                        </ul>
+                        <div id="mySecTabContentDay" class="tab-content">
+                            <div class="tab-pane fade in active" id="dayOrder">
+                                <div id="dayOrderChart"></div>
+                            </div>
+                            <div class="tab-pane fade" id="dayHost">
+                                <div id="dayHostChart"></div>
+                            </div>
+                            <div class="tab-pane fade" id="dayNum">
+                                <div id="dayNumChart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade in" id="month">
+                        <ul id="mySecTabMonth" class="nav nav-tabs">
+                            <li class="active"><a href="#monthOrder" data-toggle="tab">订单统计</a></li>
+                            <li><a href="#monthHost" data-toggle="tab">客户统计</a></li>
+                            <li><a href="#monthNum" data-toggle="tab">订单数量</a></li>
+                        </ul>
+                        <div id="myTabContentMonth" class="tab-content">
+                            <div class="tab-pane fade in active" id="monthOrder">
+                                <div id="monthOrderChart"></div>
+                            </div>
+                            <div class="tab-pane fade" id="monthHost">
+                                <div id="monthHostChart"></div>
+                            </div>
+                            <div class="tab-pane fade" id="monthNum">
+                                <div id="monthNumChart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade in" id="year">
+                        <ul id="mySecTabYear" class="nav nav-tabs">
+                            <li class="active"><a href="#yearOrder" data-toggle="tab">订单统计</a></li>
+                            <li><a href="#yearHost" data-toggle="tab">客户统计</a></li>
+                            <li><a href="#yearNum" data-toggle="tab">订单数量</a></li>
+                        </ul>
+                        <div id="mySecTabContentYear" class="tab-content">
+                            <div class="tab-pane fade in active" id="yearOrder">
+                                <div id="yearOrderChart"></div>
+                            </div>
+                            <div class="tab-pane fade" id="yearHost">
+                                <div id="yearHostChart"></div>
+                            </div>
+                            <div class="tab-pane fade" id="yearNum">
+                                <div id="yearNumChart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul id="myTab" class="nav nav-tabs">
+                    <li class="active"><a href="#day" data-toggle="tab">日</a></li>
+                    <li><a href="#month" data-toggle="tab">月</a></li>
+                    <li><a href="#year" data-toggle="tab">年</a></li>
+                </ul>
+            </div>
+            <!--list-->
+            <div class="index-list bgWhite">
+                <ul class="index-list-ul">
+                    <li class="borBomD">
+                        <span class="floatL txtL">日期</span>
+                        <span class="txtcen">订单金额</span>
+                        <span class="floatR txtR">环比日上</span>
+                    </li>
+                    <li class='borBomD'>
+                        <span class="floatL txtL">2016.1.21</span>
+                        <span class="txtcen">¥100000</span>
+                        <span class="floatR txtR"><b class="data-up">30%</b><i class="iconfont icon-shangjiantou"></i></span>
+                    </li>
+                    <li class='borBomD'>
+                        <span class="floatL txtL">2016.1.21</span>
+                        <span class="txtcen">¥100000</span>
+                        <span class="floatR txtR"><b class="data-down">30%</b><i class="iconfont icon-xiajiantou"></i></span>
+                    </li>
+                    <li class='borBomD'>
+                        <span class="floatL txtL">2016.1.21</span>
+                        <span class="txtcen">¥100000</span>
+                        <span class="floatR txtR"><b class="data-down">30%</b><i class="iconfont icon-xiajiantou"></i></span>
+                    </li>
+                    <li class='borBomD'>
+                        <span class="floatL txtL">2016.1.21</span>
+                        <span class="txtcen">¥100000</span>
+                        <span class="floatR txtR"><b class="data-down">30%</b><i class="iconfont icon-xiajiantou"></i></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sup-index-no">
+            <span class="fontRed">您的账号未通过审核无法申请提额</span>
+        </div>
+        <!--footer-->
+        <div class="footer bg">
+            <ul>
+                <li class="list txtcen">
+                    <a href="javascript:;">
+                        <p><img src="../images/indexed.png" class="listIcon"></p>
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li class="list txtcen">
+                    <a href="sup_order.html">
+                        <b class="num font11">1</b>
+                        <p><img src="../images/order.png" class="listIcon"></p>
+                        <span>订单</span>
+                    </a>
+                </li>
+                <li class="list txtcen">
+                    <a href="sup_message.html">
+                        <b class="num font11"></b>
+                        <p><img src="../images/message.png" class="listIcon"></p>
+                        <span>消息</span>
+                    </a>
+                </li>
+                <li class="list txtcen">
+                    <a href="sup_host.html">
+                        <p><img src="../images/host.png" class="listIcon"></p>
+                        <span>客户</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+</body>
+<script src="../javascripts/lib/echarts.min.js"></script>
+<script src="../javascripts/lib/jquery.min.js"></script>
+<script src="../javascripts/lib/bootstrap.js"></script>
+    <script src="../javascripts/lib/fastclick.js"></script>
+<script src="../javascripts/sup_index.js"></script>
+</html>

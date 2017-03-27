@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../stylesheets/common.css">
+    <link rel="stylesheet" href="../stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="../stylesheets/lib/iconfont.css">
+    <link rel="stylesheet" href="../stylesheets/lib/jquery.circliful.min.css">
+</head>
+<!--边距 都是4%-->
+<body>
+        <!--header-->
+        <div class="header bg">
+            <a href="javascript:;" class="reback txtcen">&lt;</a>
+            <span class="tit txtcen">提款订单</span>
+        </div>
+        <!--content-->
+        <div class="content font11">
+            <div class="circle padding-bottom-19 bgWhite">
+                <span class="cash-span mar-top-20 ">本单可提款金额</span>
+                <div id="myStat">
+                    <span class="over-money fontMain">¥990000.00</span>
+                </div>
+            </div>
+            <div class=" mar-top-10 bgWhite">
+                <div class="borBomShallow padding-bottom-14 padding-top-14">
+                    <span class="cash-span">订单编号：</span><span class="orderNum">DJ.20161218.001</span>
+                </div>
+                <div class="borBomShallow padding-bottom-14 padding-top-14">
+                    <span class="cash-span">还款周期：</span><span class="repayDate">30天</span>
+                </div>
+                <div class="borBomShallow padding-bottom-14 padding-top-14">
+                    <span class="cash-span">日利率：</span><span class="dayRate">&ensp;&ensp;0.05%</span>
+                    <i class="floatR icon iconfont icon-wenhao fontGray mar-right-4"></i>
+                </div>
+                <div class="padding-bottom-14 padding-top-14">
+                    <span class="cash-span">实际收入：</span><span class="realGet fontRed">¥9580</span>
+                </div>
+            </div>
+            <div class=" mar-top-5 bgWhite">
+                <div class="borBomShallow padding-bottom-14 padding-top-14 mar-top-15">
+                    <span class="cash-span">我的银行卡：</span>
+                    <i class="floatR icon mar-right-4">&gt;</i>
+                    <span class="cash-span floatR fontRed font11 mar-right-4">已绑定</span>
+                </div>
+                <div class="padding-bottom-14 padding-top-14">
+                    <span class="cash-span">登陆密码：</span>
+                    <input type="password" placeholder="请输入登陆密码确认提款" class="cash-inp">
+                </div>
+            </div>
+            <div class="mar-top-15">
+                <i class="bor floatL iconfont mar-left-4 icon-invo fontRed"></i>
+                <span class="floatL cash-span font14 span-invo">开具发票</span>
+            </div>
+            <div>
+                <button class="okBtn btnStyle mar-top-12">确认提款</button>
+            </div>
+            <div class="txtcen mar-top-10">
+                <div class="overflow-hidden read-box">
+                    <span class="span span-read font14">我已阅读并同意签署以下内容
+                    <i class="bor iconfont icon-gou fontRed icon-read floatR mar-left-6"></i></span>
+
+                </div>
+            </div>
+            <div class="txtcen clearB mar-top-9">
+                <a href="javascript:;" class="fontMain">《购销合同》</a>
+            </div>
+            <div class="txtcen clearB mar-top-9">
+                <a href="javascript:;" class="fontMain">《应收账款债权转让通知书》</a>
+            </div>
+        </div>
+        <!--透明层-->
+        <div class="opacityDiv"></div>
+        <!--自定义对话框-->
+        <div class="askAlert">
+            <p class="fontRed alertTit">温馨提示：</p>
+            <p class="infoMessage">实际收入=订单金额-订单金额*还款天数*日利率</p>
+            <button class="yesBtn">我知道了</button>
+        </div>
+</body>
+<script src="../javascripts/lib/jquery.min.js"></script>
+<script src="../javascripts/lib/jquery.circliful.js"></script>
+<script src="../javascripts/lib/fastclick.js"></script>
+<script src="../javascripts/sup_cashOrder.js"></script>
+</html>

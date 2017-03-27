@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../stylesheets/common.css">
+    <link rel="stylesheet" href="../stylesheets/lib/iconfont.css">
+    <link rel="stylesheet" href="../stylesheets/stylesheet.css">
+</head>
+<body>
+        <!--header-->
+        <div class="header bg">
+            <a href="javascript:;" class="reback txtcen">&lt;</a>
+            <span class="tit txtcen">客户授信记录</span>
+        </div>
+        <!--content-->
+        <div class="content">
+            <div class="borBom fontGray mar-top-10 padding-bottom-10">
+                <span class="mar-left-4 font12">目前您共有<b>3</b>条授信记录</span>
+            </div>
+            <ul class="record-list">
+                <li class="borBom txtcen">
+                    <span class="txtL mar-left-4 floatL">授信日期</span>
+                    <span>授信账号</span>
+                    <span>授信额度</span>
+                    <span class="txtR floatR">实得金额</span>
+                    <i class="record-icon mar-right-4 fontGray icon-wenhao iconfont"></i>
+                </li>
+                <!--记录模板-->
+                <li class="borBom txtcen">
+                    <span class="txtL mar-left-4 floatL">2017.7.1</span>
+                    <span>18612341234</span>
+                    <span>¥100000</span>
+                    <span class="txtR mar-right-9 floatR">¥90000</span>
+                </li>
+                <li class="borBom txtcen">
+                    <span class="txtL mar-left-4 floatL">2017.7.1</span>
+                    <span>18612341234</span>
+                    <span>¥100000</span>
+                    <span class="txtR mar-right-9 floatR">¥90000</span>
+                </li>
+                <li class="borBom txtcen">
+                    <span class="txtL mar-left-4 floatL">2017.7.1</span>
+                    <span>18612341234</span>
+                    <span>¥100000</span>
+                    <span class="txtR mar-right-9 floatR">¥90000</span>
+                </li>
+            </ul>
+        </div>
+        <!--透明层-->
+        <div class="opacityDiv"></div>
+        <!--自定义对话框-->
+        <div class="askAlert">
+            <p class="fontRed alertTit">温馨提示：</p>
+            <p class="infoMessage">实得额度是指平台对您的客户进行评估后,给予的实际可透支额度</p>
+            <button class="yesBtn">知道了</button>
+        </div>
+</body>
+<script src="../javascripts/lib/zepto.js"></script>
+<script src="../javascripts/lib/fastclick.js"></script>
+<script src="../javascripts/sup_creditRecord.js"></script>
+</html>
