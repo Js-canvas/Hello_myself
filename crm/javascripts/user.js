@@ -21,6 +21,7 @@ $(document).ready(function(){
             $('#tab-one').bootstrapPaginator(options);
             $('#tab-two').bootstrapPaginator(options);
             $('#tab-thr').bootstrapPaginator(options);
+            $('#tab-fou').bootstrapPaginator(options);
         }
     }
     oUser.init();
