@@ -5,7 +5,6 @@ $(document).ready(function(){
 
     var oDetailInfo = {
         init:function(){
-            FastClick.attach(document.body);
             new PCAS("province","city","area");
             this.reback();
             this.postClick();

@@ -5,7 +5,6 @@ $(document).ready(function(){
 
     var addHost = {
         init:function(){
-            FastClick.attach(document.body);
             new PCAS("province","city","");
             this.reback();
             this.postClick();

@@ -73,6 +73,6 @@ window.onload = function(){
         }
     }
 
-
+    oLogin.init();
 
 }

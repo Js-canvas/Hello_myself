@@ -5,8 +5,6 @@ $(document).ready(function(){
 
     var oPurIndex = {
         init:function(){
-            FastClick.attach(document.body);
-
         }
     }
     oPurIndex.init();

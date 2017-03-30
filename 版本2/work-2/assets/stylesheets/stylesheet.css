@@ -508,10 +508,10 @@
 }
 .add-host-ul>li>input{
     width: 51%;
-    height: 11px;
-    font:11px/11px '微软雅黑';
+    height: 41px;
+    font:11px/41px '微软雅黑';
     border:0;
-    margin:15px 0 0 8%;
+    margin-left:8%;
     float: left;
 }
 .add-host-ul>li>b{
@@ -540,6 +540,10 @@
     margin-top:6px;
     display: inline-block;
     position: relative;
+}
+.host-select>select{
+    width: 100%;
+    height: 28px;
 }
 .host-icon-down{
     display: block;
@@ -605,6 +609,9 @@
     font: 12px/24px '微软雅黑';
 }
 /*============== sup_index ==============*/
+.bottom-53{
+	bottom: 53px;
+}
 .index-header{
     width: 100%;
     height:55px;
@@ -1531,4 +1538,14 @@
     left:-2px;
     top:-2px;
 }
-/*==============  ==============*/
+/*============== 协议 ==============*/
+.protocol-span{
+    font-size:14px;
+    line-height: 18px;
+    display: block;
+}
+/*============== 取消苹果 默认样式 ==============*/
+input[type="button"], input[type="submit"], input[type="reset"] {
+    -webkit-appearance: none;
+}
+textarea { -webkit-appearance: none;}

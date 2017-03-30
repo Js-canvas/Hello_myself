@@ -4,7 +4,6 @@
 $(document).ready(function(){
     var purOrder = {
         init:function(){
-            FastClick.attach(document.body);
             this.reback()
             this.clickAgree();
             this.addPro();

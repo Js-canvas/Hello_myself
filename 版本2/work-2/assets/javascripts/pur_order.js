@@ -4,10 +4,11 @@
 $(document).ready(function(){
     var oPurOrder = {
         init:function(){
-            FastClick.attach(document.body);
+        		FastClick.attach(document.body);
             // this.getState();
             this.clickHref();
-            this.disagreeClick();
+            this.disOrderBtnClick()
+            
         },
         getState:function(){
             $.ajax({
@@ -45,21 +46,23 @@ $(document).ready(function(){
         clickHref:function(){
             $('.order-detail').on('click',function(e){
                 var e = e||window.event;
+                e.preventDefault();
                 switch ($('#my-order-tab li').filter('.active').index()){
                     //判断状态 0 进行中 1 已完成 2 已关闭
                     case 0:
                         switch($('#my-order-sec-tab li').filter('.active').index()){
                             // 0 待确认 1 待还款 2 已逾期
                             case 0:
-                                switch(e.target.className){
-                                    case "dis-order-btn":
-                                        this.disagreeClick()
-                                        break;
-                                    default:
-                                        window.location.href="pur_detail.html"
-                                        break;
-                                }
-                                break;
+                            var classNameArr = e.target.className.split(' ');
+                            var oLength = classNameArr.length
+                            for(var i = 0 ; i <  oLength; i++){
+                            		if(classNameArr[i]=="dis-order-btn"){
+                            			break;
+                            		}else if(i == oLength-1 ){
+                            			window.location.href="pur_detail.html"
+                            		}
+                            	}
+                            break;
                             case 1:
                                 switch(e.target.className){
                                     case "sub-btn":
@@ -106,23 +109,23 @@ $(document).ready(function(){
 
             }.bind(this))
         },
-        disagreeClick:function(){
-            $('.dis-order-btn').on('click',function(){
-                $(".opacityDiv").css({'display':'block'});
-                $(".askAlert").css({'display':'block'});
-            })
-
-            $(".yesBtn").on('click',function(){
-                $(".opacityDiv").css({'display':'none'});
-                $(".askAlert").css({'display':'none'});
-                //    向后台提交数据改状态
-                window.location.href="pur_order.html"
-            })
-
-            $(".noBtn").on('click',function(){
-                $(".opacityDiv").css({'display':'none'});
-                $(".askAlert").css({'display':'none'});
-            })
+        disOrderBtnClick:function(){
+	        	$('.dis-order-btn').on('click',function(){
+	            $(".opacityDiv").css({'display':'block'});
+	            $(".askAlert").css({'display':'block'});
+	        })
+	
+	        $(".yesBtn").on('click',function(){
+	            $(".opacityDiv").css({'display':'none'});
+	            $(".askAlert").css({'display':'none'});
+	            //    向后台提交数据改状态
+	            window.location.href="pur_order.html"
+	        })
+	
+	        $(".noBtn").on('click',function(){
+	            $(".opacityDiv").css({'display':'none'});
+	            $(".askAlert").css({'display':'none'});
+	        })
         }
     };
     oPurOrder.init();

@@ -5,7 +5,6 @@ $(document).ready(function(){
 
     var bankList = {
         init:function(){
-            FastClick.attach(document.body);
             var bankName = "";
             this.reBack();
             // this.getData();
